@@ -1,0 +1,182 @@
+<div class="fixedTop">
+  <!-- Top bar -->
+<div class="d-none d-lg-block">
+  <div class="top-bar">
+    <div class="container d-flex justify-content-end align-items-center mx-auto">
+      <ul class="list-styled mb-0 d-flex" id="contact-info">
+        <li>
+          <a href="#" class="text-align-right fw-bold top-bar-link">
+            <i class="fa-solid fa-phone-volume icon mx-2"></i> {{ phone }}
+          </a>
+        </li>
+        <li class="text-dark mx-2">|</li>
+        <li>
+          <a href="mailto: {{ mail }}" class="text-align-right fw-bold top-bar-link">
+            <i class="fa-regular fa-envelope icon mx-2"></i> {{ mail }}
+          </a>          
+        </li>
+        <li class="text-dark mx-2">|</li>
+        <li>
+          <a href="#" class="text-align-right fw-bold top-bar-link">
+            <i class="fa-regular fa-file mx-2"></i> Verify Certificate
+          </a>
+        </li>
+      </ul>        
+    </div>
+  </div>
+</div>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="/">
+      <img src="static/images/logo.png" alt="Logo" class="logo">
+    </a>
+    <button class="navbar-toggler togglerButton" type="button" data-bs-toggle="collapse" 
+            data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" 
+            aria-label="Toggle navigation">
+      <img src="static/images/icons8-menu.gif" alt="Menu Icon" style="height: 24px;">
+    </button>
+
+    <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+      <ul class="navbar-nav d-flex gap-2">
+        <li class="nav-item">
+          <a class="nav-link styled-link" href="/about-us">About Us</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link styled-link" href="/services">Services</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link styled-link" href="/training-courses">Training Courses</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link styled-link" href="/careers">Careers</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link styled-link" href="/news-blogs">News & Blogs</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link styled-link" href="/contact">Contact Us</a>
+        </li>
+
+        <li class="nav-item d-flex align-items-center justify-content-center" style="width: 45px; height: 45px;">
+          <a class="nav-link styled-link p-0" href="#download-section">
+            <dotlottie-player 
+              id="hoverLottie"
+              src="https://lottie.host/66513ce5-ad73-409e-bbfa-7c0c2b4bf68e/wBSP8oc94L.lottie"
+              background="transparent"
+              speed="1"
+              style="width: 100px; height: 100px;"
+              direction="1"
+              playMode="normal"
+              loop>
+            </dotlottie-player>
+            <span class="custom-tooltip">Profile</span>
+          </a>
+        </li>
+
+<!-- JavaScript to control hover playback -->
+<script type="module">
+  const lottiePlayer = document.getElementById('hoverLottie');
+
+  lottiePlayer.addEventListener('mouseenter', () => {
+    lottiePlayer.play();
+  });
+
+  lottiePlayer.addEventListener('mouseleave', () => {
+    lottiePlayer.stop();
+  });
+</script>
+
+
+        <li class="nav-item dropdown" id="portalsDropdown" style="left: 60px;">
+          <a class="nav-link styled-link" href="">Portals <i class="ri-arrow-down-s-line"></i></a>
+          <div class="dropdown-menu position-absolute" style="display: none; top: 100%; left: 0; border-radius: 0px; text-align: center; border: none;">
+            <a class="dropdown-item" href="#">Student Portal</a>
+            <a class="dropdown-item" href="#">Vendor Portal</a>
+            <a class="dropdown-item" href="#">Customer Portal</a>
+            <a class="dropdown-item" href="#">Employee Portal</a>
+          </div>
+        </li>
+      </ul>
+    </div>
+
+    <!-- Load Lottie Player -->
+    <script src="https://unpkg.com/@dotlottie/player-component@2.7.12/dist/dotlottie-player.mjs" type="module"></script>
+
+    <!-- Lottie Animation Link Button -->
+    <a class="nav-link styled-link" href="#our-locations" style="display: flex; align-items: center; justify-content: center; width: 35px; height: 35px;">
+      <dotlottie-player 
+        src="https://lottie.host/a0c08b52-c0ba-49f5-878d-02585178a7cc/5dO39dyEu4.lottie"
+        background="transparent"
+        speed="1"
+        style="width: 100%; height: 100%;"
+        direction="1"
+        playMode="normal"
+        loop
+        autoplay>
+      </dotlottie-player>
+    </a>
+
+    <form method="POST" action="/" class="d-flex">
+      <select name="country" class="form-select fw-bold custom-dropdown border-0 focus-border-none" style="text-align: center; border: none;" onchange="this.form.submit()">
+        <option value="Canada" {% if country == 'Canada' %}selected{% endif %}>Canada</option>
+        <option value="UK" {% if country == 'UK' %}selected{% endif %}>UK</option>
+        <option value="Qatar" {% if country == 'Qatar' %}selected{% endif %}>Qatar</option>
+        <option value="India" {% if country == 'India' %}selected{% endif %}>India</option>
+      </select>
+    </form>
+  </div>
+</nav>
+</div>
+
+<!-- JavaScript for Auto Dropdown -->
+<script>
+  const portalsDropdown = document.getElementById('portalsDropdown');
+  const dropdownMenu = portalsDropdown.querySelector('.dropdown-menu');
+
+  portalsDropdown.addEventListener('mouseenter', () => {
+    dropdownMenu.style.display = 'block';
+  });
+
+  portalsDropdown.addEventListener('mouseleave', () => {
+    dropdownMenu.style.display = 'none';
+  });
+</script>
+
+<style>
+    /* Hover effect for dropdown items */
+    .dropdown-item:hover {
+      background-color: #0C334A;
+      color: white; /* optional: make text readable */
+    }
+  
+    /* Show dropdown on hover */
+    #portalsDropdown:hover .dropdown-menu {
+      display: block;
+    }
+
+    .custom-tooltip {
+      visibility: hidden;
+      background-color: white;
+      color: #0C334A;
+      text-align: center;
+      padding: 4px 8px;
+      border-radius: 4px;
+      position: absolute;
+      top: 60%; /* Position it above the icon */
+      left: 50%;
+      transform: translateX(-50%);
+      white-space: nowrap;
+      font-size: 12px;
+      z-index: 1;
+      opacity: 0;
+      transition: opacity 0.2s ease;
+      border: none; /* No border */
+    }
+  
+    .nav-item:hover .custom-tooltip {
+      visibility: visible;
+      opacity: 1;
+    }
+</style>
