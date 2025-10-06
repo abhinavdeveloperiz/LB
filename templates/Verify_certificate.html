@@ -1,0 +1,82 @@
+{% extends 'base.html' %}
+{% block title %}Contact Us | L B Certifications Pvt. Ltd{% endblock %}
+{% block content %}
+
+
+
+
+<section class="responsive-section">
+    <div class="card border-0">
+        <div class="position-relative">
+            <!-- Background -->
+            <div class="background-image"
+                style="background-image: url('https://images.pexels.com/photos/571252/pexels-photo-571252.jpeg?cs=srgb&dl=pexels-levi-damasceno-169031-571252.jpg&fm=jpg'); height: 40vh; background-size: cover; background-position: center;">
+            </div>
+
+            <!-- Dark overlay -->
+            <div class="position-absolute top-0 start-0 w-100 h-100" style="background: rgba(0,0,0,0.5);"></div>
+
+            <!-- Text content -->
+            <div class="carousel-caption d-md-block">
+                <h1 class="fw-light lh-lg text-white mb-3">Verify Your Certificate</h1>
+
+
+                <!-- Breadcrumb -->
+                <nav class="d-flex justify-content-center align-items-center mt-3"
+                    style="--bs-breadcrumb-divider: url('data:image/svg+xml,%3Csvg xmlns=\'http://www.w3.org/2000/svg\' width=\'8\' height=\'8\'%3E%3Cpath d=\'M2.5 0L1 1.5 3.5 4 1 6.5 2.5 8l4-4-4-4z\' fill=\'%23ffffff\'/%3E%3C/svg%3E');"
+                    aria-label="breadcrumb">
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item"><a href="/" class="text-white text-decoration-none">Home</a></li>
+                        <li class="breadcrumb-item active text-white" aria-current="page">Certificate</li>
+                    </ol>
+                </nav>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+
+<section class="py-5">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-lg-6">
+                <div class="card shadow-sm border-0"style="background-color: #f0fff4;">
+                    <div class="card-body p-5 text-center">
+                        <h2 class="mb-4">Certificate Verification</h2>
+                        <p class="text-muted mb-4">Enter your certificate number below to verify it.</p>
+
+                        <!-- Verification Form -->
+                        <form action="{{ url_for('Verify_certificate') }}" method="get" class="mb-4">
+                            <div class="input-group mb-3">
+                                <input type="text" name="certificate_number" class="form-control form-control-lg"
+                                    placeholder="Enter Certificate Number" required>
+                                <button type="submit" class="btn btn-success btn-lg"
+                                    style="transition: all 0.3s ease;"
+                                    onmouseover="this.style.backgroundColor='#4cd964';"
+                                    onmouseout="this.style.backgroundColor='#28a745';">
+                                    Verify <i class="fas fa-check-circle ms-2"></i>
+                                </button>
+                            </div>
+                        </form>
+
+                        <!-- Dummy Result -->
+                        {% if certificate_number %}
+                        <div class="alert alert-success d-flex align-items-center justify-content-center" role="alert">
+                            <i class="fas fa-check-circle fa-2x me-3"></i>
+                            <div>
+                                Certificate <strong>{{ certificate_number }}</strong> is <strong>VERIFIED</strong>!
+                            </div>
+                        </div>
+                        {% endif %}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+{% endblock %}

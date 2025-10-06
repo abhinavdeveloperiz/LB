@@ -1,0 +1,135 @@
+{% extends 'base.html' %}
+{% block title %}Contact Us | L B Certifications Pvt. Ltd{% endblock %}
+{% block content %}
+
+
+
+
+<section class="responsive-section">
+    <div class="card border-0">
+        <div class="position-relative">
+            <!-- Background -->
+            <div class="background-image"
+                style="background-image: url('https://dorsetfireprotection.co.uk/app/uploads/2020/03/fire-safety-training.jpg'); height: 40vh; background-size: cover; background-position: center;">
+            </div>
+
+            <!-- Dark overlay -->
+            <div class="position-absolute top-0 start-0 w-100 h-100" style="background: rgba(0,0,0,0.5);"></div>
+
+            <!-- Text content -->
+            <div class="carousel-caption d-md-block">
+                <h1 class="fw-light lh-lg text-white mb-3">Contact Us</h1>
+
+
+                <!-- Breadcrumb -->
+                <nav class="d-flex justify-content-center align-items-center mt-3"
+                    style="--bs-breadcrumb-divider: url('data:image/svg+xml,%3Csvg xmlns=\'http://www.w3.org/2000/svg\' width=\'8\' height=\'8\'%3E%3Cpath d=\'M2.5 0L1 1.5 3.5 4 1 6.5 2.5 8l4-4-4-4z\' fill=\'%23ffffff\'/%3E%3C/svg%3E');"
+                    aria-label="breadcrumb">
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item"><a href="/" class="text-white text-decoration-none">Home</a></li>
+                        <li class="breadcrumb-item active text-white" aria-current="page">Contact</li>
+                    </ol>
+                </nav>
+            </div>
+        </div>
+    </div>
+</section>
+
+<style>
+    @media (max-width: 768px) {
+        .carousel-caption .badge {
+            font-size: 14px;
+            padding: 6px 10px;
+        }
+    }
+
+    @media (max-width: 768px) {
+        .responsive-section {
+            margin-top: 0 !important;
+        }
+    }
+</style>
+
+
+<!-- Contact Us Section -->
+<section class="py-5" >
+    <div class="container">
+        <div class="text-center mb-5">
+            <!-- <h2 class="fw-bold">Contact Us</h2> -->
+            <p class="text-muted">We’d love to hear from you! Reach out to us for any queries or support.</p>
+        </div>
+
+        <div class="row g-5">
+            <!-- Contact Form -->
+            <div class="col-lg-6">
+                <div class="card shadow-sm border-0 rounded-5" style="background-color: #f0fff4;">
+                    <div class="card-body p-4">
+                        <h4 class="card-title mb-4">Send Us a Message</h4>
+                        <form action="{{ url_for('Contact') }}" method="post">
+                            <!-- Name -->
+                            <div class="mb-3">
+                                <label for="name" class="form-label">Name</label>
+                                <input type="text" class="form-control" id="name" name="name" placeholder="Your Name"
+                                    required>
+                            </div>
+
+                            <!-- Choose Course -->
+                            <div class="mb-3">
+                                <label for="course" class="form-label">Choose Course</label>
+                                <select class="form-select" id="course" name="course" required>
+                                    <option value="" selected disabled>Select a course</option>
+                                    <option value="course1">Course 1</option>
+                                    <option value="course2">Course 2</option>
+                                    <option value="course3">Course 3</option>
+                                    <option value="course4">Course 4</option>
+                                </select>
+                            </div>
+
+                            <!-- Phone -->
+                            <div class="mb-3">
+                                <label for="phone" class="form-label">Phone Number</label>
+                                <input type="tel" class="form-control" id="phone" name="phone"
+                                    placeholder="Your Phone Number" required>
+                            </div>
+
+                            <!-- Message -->
+                            <div class="mb-3">
+                                <label for="message" class="form-label">Message</label>
+                                <textarea class="form-control" id="message" name="message" rows="5"
+                                    placeholder="Write your message here..." required></textarea>
+                            </div>
+
+                            <!-- Submit Button -->
+                            <button type="submit" class="btn btn-success btn-lg w-100 text-white"
+                                style="transition: all 0.3s ease;" onmouseover="this.style.backgroundColor='#4cd964';"
+                                onmouseout="this.style.backgroundColor='#28a745';">
+                                Send Message
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- Contact Info & Google Map -->
+            <div class="col-lg-6">
+                <div class="mb-4">
+                    <h4 class="fw-bold">Our Office</h4>
+                    <p><i class="bi bi-geo-alt-fill me-2"></i>Lloyids Bureau, UAE</p>
+                    <p><i class="bi bi-telephone-fill me-2"></i>+966 55 274 1995</p>
+                    <p><i class="bi bi-envelope-fill me-2"></i>info@Lloyidsbureau.com</p>
+                    <p><i class="bi bi-clock-fill me-2"></i>Mon - Sat: 9:00 AM - 6:00 PM</p>
+                </div>
+
+                <div class="card shadow-sm border-0">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3567.298161774365!2d76.60182027449757!3d8.880261391300577!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3b05fdb97250aad5%3A0xbff685223bfa38ea!2sInspireZest%20Technologies%20Pvt%20Ltd!5e1!3m2!1sen!2sin!4v1759733765241!5m2!1sen!2sin"
+                        width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy"
+                        class="rounded-2"></iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+{% endblock %}

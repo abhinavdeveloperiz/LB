@@ -1,0 +1,212 @@
+{% extends 'base.html' %}
+{% block title %}News & Blog | L B Certifications Pvt. Ltd{% endblock %}
+
+{% block content %}
+
+<!-- Banner Section -->
+<section class="responsive-section mb-5">
+    <div class="card border-0">
+        <div class="position-relative">
+            <!-- Background -->
+            <div class="background-image"
+                style="background-image: url('https://dorsetfireprotection.co.uk/app/uploads/2020/03/fire-safety-training.jpg'); height: 40vh; background-size: cover; background-position: center;">
+            </div>
+
+            <!-- Dark overlay -->
+            <div class="position-absolute top-0 start-0 w-100 h-100" style="background: rgba(0,0,0,0.5);"></div>
+
+            <!-- Text content -->
+            <div class="carousel-caption d-md-block text-center">
+                <h1 class="fw-light lh-lg text-white mb-3">News & Blogs</h1>
+
+                <!-- Breadcrumb -->
+                <nav class="d-flex justify-content-center align-items-center mt-3"
+                    style="--bs-breadcrumb-divider: url('data:image/svg+xml,%3Csvg xmlns=\'http://www.w3.org/2000/svg\' width=\'8\' height=\'8\'%3E%3Cpath d=\'M2.5 0L1 1.5 3.5 4 1 6.5 2.5 8l4-4-4-4z\' fill=\'%23ffffff\'/%3E%3C/svg%3E');"
+                    aria-label="breadcrumb">
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item"><a href="/" class="text-white text-decoration-none">Home</a></li>
+                        <li class="breadcrumb-item active text-white" aria-current="page">News & Blogs</li>
+                    </ol>
+                </nav>
+
+
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Cards Section -->
+<section class="py-5">
+    <div class="container">
+        <div class="row g-4" id="cardsContainer">
+            <!-- Buttons for filter -->
+            <div class="mt-4">
+                <button class="btn btn-success me-2 filter-btn active" data-filter="all">All</button>
+                <button class="btn btn-success filter-btn" data-filter="blog">Blog</button>
+                <button class="btn btn-success me-2 filter-btn" data-filter="news">News</button>
+            </div>
+
+            <!-- News Card 1 -->
+            <div class="col-md-4 filter-item news">
+                <div class="card shadow-sm border-0 h-100 rounded-4 blog-card">
+                    <img src="https://nistglobal.com/blog/wp-content/uploads/2025/09/why-you-should-conduct-fire-safety-training-at-work.jpg"
+                        class="card-img-top rounded-4" alt="News Image" style="height: 200px; object-fit: cover;">
+                    <div class="card-body">
+                        <h5 class="card-title fw-bold">Fire Safety Training Update</h5>
+                        <p class="card-text text-muted">Latest guidelines on workplace fire safety, compliance
+                            requirements, and best practices for training employees.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- News Card 2 -->
+            <div class="col-md-4 filter-item news">
+                <div class="card shadow-sm border-0 h-100 rounded-4 blog-card">
+                    <img src="https://greenwgroup.co.in/wp-content/uploads/2017/07/firesafety-1_39_11zon.jpg"
+                        class="card-img-top rounded-4" alt="News Image" style="height: 200px; object-fit: cover;">
+                    <div class="card-body">
+                        <h5 class="card-title fw-bold">Certification Guidelines 2025</h5>
+                        <p class="card-text text-muted">New policies for certification in industries, including updates
+                            on audits, safety protocols, and training modules.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- News Card 3 -->
+            <div class="col-md-4 filter-item news">
+                <div class="card shadow-sm border-0 h-100 rounded-4 blog-card">
+                    <img src="static/images/4131.jpg" class="card-img-top rounded-4" alt="News Image"
+                        style="height: 200px; object-fit: cover;">
+                    <div class="card-body">
+                        <h5 class="card-title fw-bold">LB Certifications in Media</h5>
+                        <p class="card-text text-muted">Coverage of LB Certifications Pvt. Ltd in international media
+                            highlighting industry achievements and innovations.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- News Card 4 -->
+            <div class="col-md-4 filter-item news">
+                <div class="card shadow-sm border-0 h-100 rounded-4 blog-card">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQE6qqIwk1XADXX5CmSk9tytj01IGVp7zIBCXVC3JCshn8vFz2rXVtI-vdANiAVXeHWrAY&usqp=CAU"
+                        class="card-img-top rounded-4" alt="News Image" style="height: 200px; object-fit: cover;">
+                    <div class="card-body">
+                        <h5 class="card-title fw-bold">Upcoming Certification Programs</h5>
+                        <p class="card-text text-muted">Announcements of new certification programs and workshops for
+                            professionals and organizations globally.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Blog Card 1 -->
+            <div class="col-md-4 filter-item blog">
+                <div class="card shadow-sm border-0 h-100 rounded-4 blog-card">
+                    <img src="static/images/4131.jpg" class="card-img-top rounded-4" alt="Blog Image"
+                        style="height: 200px; object-fit: cover;">
+                    <div class="card-body">
+                        <h5 class="card-title fw-bold">Certificate Verification Tips</h5>
+                        <p class="card-text text-muted">Learn how to easily verify your certificates and ensure
+                            authenticity in minutes. Step-by-step guidance for professionals and HR managers.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Blog Card 2 -->
+            <div class="col-md-4 filter-item blog">
+                <div class="card shadow-sm border-0 h-100 rounded-4 blog-card">
+                    <img src="static/images/lloyods-bureau-logo.png" class="card-img-top rounded-4" alt="Blog Image"
+                        style="height: 200px; object-fit: cover;">
+                    <div class="card-body">
+                        <h5 class="card-title fw-bold">Our Journey So Far</h5>
+                        <p class="card-text text-muted">Discover how LB Certifications Pvt. Ltd became a trusted name in
+                            certification worldwide, including milestones and client success stories.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Blog Card 3 -->
+            <div class="col-md-4 filter-item blog">
+                <div class="card shadow-sm border-0 h-100 rounded-4 blog-card">
+                    <img src="static/images/9.webp" class="card-img-top rounded-4" alt="Blog Image"
+                        style="height: 200px; object-fit: cover;">
+                    <div class="card-body">
+                        <h5 class="card-title fw-bold">Client Success Stories</h5>
+                        <p class="card-text text-muted">Read how our certification solutions helped clients gain
+                            international recognition and achieve excellence in their industry.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Blog Card 4 -->
+            <div class="col-md-4 filter-item blog">
+                <div class="card shadow-sm border-0 h-100 rounded-4 blog-card">
+                    <img src="https://greenwgroup.co.in/wp-content/uploads/2017/07/firesafety-1_39_11zon.jpg"
+                        class="card-img-top rounded-4" alt="Blog Image" style="height: 200px; object-fit: cover;">
+                    <div class="card-body">
+                        <h5 class="card-title fw-bold">Industry Updates</h5>
+                        <p class="card-text text-muted">Stay updated with the latest trends in certification, industry
+                            best practices, and professional development opportunities.</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<style>
+    .blog-card {
+        transition: all 0.3s ease;
+        cursor: pointer;
+    }
+
+    .blog-card:hover {
+        background-color: #6cff40c3;
+        /* light green hover effect */
+        transform: translateY(-5px);
+        box-shadow: 0 15px 25px rgba(0, 0, 0, 0.15);
+    }
+
+    .filter-btn.active {
+        background-color: #4cd964 !important;
+        border-color: #4cd964 !important;
+    }
+
+    @media (max-width: 768px) {
+        .filter-btn {
+            margin-bottom: 10px;
+            width: 100%;
+        }
+    }
+</style>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        const buttons = document.querySelectorAll(".filter-btn");
+        const cards = document.querySelectorAll(".filter-item");
+
+        buttons.forEach(btn => {
+            btn.addEventListener("click", function () {
+                // Remove active class from all buttons
+                buttons.forEach(b => b.classList.remove("active"));
+                this.classList.add("active");
+
+                const filter = this.getAttribute("data-filter");
+
+                cards.forEach(card => {
+                    if (filter === "all") {
+                        card.style.display = "block";
+                    } else {
+                        if (card.classList.contains(filter)) {
+                            card.style.display = "block";
+                        } else {
+                            card.style.display = "none";
+                        }
+                    }
+                });
+            });
+        });
+    });
+</script>
+
+{% endblock %}

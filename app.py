@@ -69,6 +69,23 @@ def partner():
     return render_template("partnerProfile.html", country=g.selected_country, phone=g.phone, mail=g.mail)
 
 
+@app.route("/contact")
+def Contact():
+    return render_template("contact.html", country=g.selected_country, phone=g.phone, mail=g.mail)
+
+
+@app.route("/Verifycertificate")
+def Verify_certificate():
+    return render_template("Verify_certificate.html", country=g.selected_country, phone=g.phone, mail=g.mail)
+
+@app.route("/news-blogs")
+def news_blogs():
+    return render_template("news_blogs.html", country=g.selected_country, phone=g.phone, mail=g.mail)
+
+
+@app.route("/careers")
+def careers():
+    return render_template("careers.html", country=g.selected_country, phone=g.phone, mail=g.mail)
 
 if __name__ == '__main__':
     app.run(
