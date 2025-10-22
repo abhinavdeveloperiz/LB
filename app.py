@@ -95,5 +95,13 @@ if __name__ == '__main__':
         port=5000
     )
 
+@app.route('/faq')
+def faq():
+    return render_template("faq.html", country=g.selected_country, phone=g.phone, mail=g.mail)
+
+@app.route('/feedback')
+def feedback():
+    return render_template("feedback.html", country=g.selected_country, phone=g.phone, mail=g.mail)
+
 
 

@@ -1,0 +1,138 @@
+{% extends 'base.html' %}
+{% block title %}
+  Feedback | L B Certifications Pvt. Ltd
+{% endblock %}
+
+{% block content %}
+    <section class="responsive-section">
+    <div class="card border-0">
+        <div class="position-relative">
+            <!-- Background -->
+            <div class="background-image"
+                style="background-image: url('https://dorsetfireprotection.co.uk/app/uploads/2020/03/fire-safety-training.jpg'); height: 40vh; background-size: cover; background-position: center;">
+            </div>
+
+            <!-- Dark overlay -->
+            <div class="position-absolute top-0 start-0 w-100 h-100" style="background: rgba(0,0,0,0.5);"></div>
+
+            <!-- Text content -->
+            <div class="carousel-caption d-md-block">
+                <h1 class="fw-light lh-lg text-white mb-3">SUBMIT YOUR FEEDBACK</h1>
+
+
+                <!-- Breadcrumb -->
+                <nav class="d-flex justify-content-center align-items-center mt-3"
+                    style="--bs-breadcrumb-divider: url('data:image/svg+xml,%3Csvg xmlns=\'http://www.w3.org/2000/svg\' width=\'8\' height=\'8\'%3E%3Cpath d=\'M2.5 0L1 1.5 3.5 4 1 6.5 2.5 8l4-4-4-4z\' fill=\'%23ffffff\'/%3E%3C/svg%3E');"
+                    aria-label="breadcrumb">
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item"><a href="/" class="text-white text-decoration-none">Home</a></li>
+                        <li class="breadcrumb-item active text-white" aria-current="page">Feedback</li>
+                    </ol>
+                </nav>
+            </div>
+        </div>
+    </div>
+</section>
+
+  <section class="mt-5 mb-5">
+    <div class="container-fluid">
+      <div class="card rounded-4 pt-5 pb-5 border-0">
+        <div class="container">
+          
+          <div class="text-center">
+            <h2 class="card-title fw-bold" style="font-size: clamp(1.75rem, 0.8571rem + 2.8571vw, 3rem); color: #0C334A;">
+              Share Your <span style="color: #75D457">Feedback</span>
+            </h2>
+            <h6 class="card-subtitle mt-3 mb-5 text-body-secondary">
+              We value your input. Please let us know how we're doing.
+            </h6>
+          </div>
+
+          <div class="row">
+            <div class="col-lg-10 offset-lg-1 col-md-12">
+              
+              <form class="row g-3" action="/submit-feedback" method="POST">
+                
+              
+
+                <div class="col-md-6">
+                  <label for="inputName" class="form-label">Full Name <span class="text-danger">*</span></label>
+                  <input type="text" class="form-control" id="inputName" name="full_name" required />
+                </div>
+
+                <div class="col-md-6">
+                  <label for="inputEmail" class="form-label">Email Address <span class="text-danger">*</span></label>
+                  <input type="email" class="form-control" id="inputEmail" name="email" required />
+                </div>
+
+                <div class="col-md-6">
+                  <label for="inputCompany" class="form-label">Student Name</label>
+                  <input type="text" class="form-control" id="inputCompany" name="company_name" />
+                </div>
+                
+                <div class="col-md-6">
+                  <label for="inputPhone" class="form-label">Phone Number</label>
+                  <input type="tel" class="form-control" id="inputPhone" name="phone" />
+                </div>
+
+                <div class="col-12">
+                  <label for="inputService" class="form-label">Which service is this feedback for? <span class="text-danger">*</span></label>
+                  <select id="inputService" class="form-select" name="service_type" required>
+                    <option value="" selected disabled>Choose...</option>
+                    <option value="iso_9001">Course 1</option>
+                    <option value="iso_14001">Course 2</option>
+                    <option value="iso_45001">Course 3</option>
+                    <option value="auditing">Course 4</option>
+                    <option value="training">Course 5</option>
+                    <option value="customer_service">Course 6</option>
+                    <option value="general">Course 7</option>
+                    <option value="other">Course 8</option>
+                  </select>
+                </div>
+
+                <div class="col-12">
+                  <label class="form-label d-block">Overall Satisfaction <span class="text-danger">*</span></label>
+                  <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="satisfaction" id="ratingExcellent" value="excellent" required />
+                    <label class="form-check-label" for="ratingExcellent">Excellent</label>
+                  </div>
+                  <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="satisfaction" id="ratingGood" value="good" />
+                    <label class="form-check-label" for="ratingGood">Good</label>
+                  </div>
+                  <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="satisfaction" id="ratingAverage" value="average" />
+                    <label class="form-check-label" for="ratingAverage">Average</label>
+                  </div>
+                  <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="satisfaction" id="ratingPoor" value="poor" />
+                    <label class="form-check-label" for="ratingPoor">Poor</label>
+                  </div>
+                </div>
+
+                <div class="col-12">
+                  <label for="inputMessage" class="form-label">Your Feedback <span class="text-danger">*</span></label>
+                  <textarea class="form-control" id="inputMessage" name="message" rows="6" required placeholder="Please provide details here..."></textarea>
+                </div>
+
+                <div class="col-12 text-center mt-4">
+                  <button type="submit" class="btn" style="
+                      background-color: #75D457; 
+                      color: #0C334A; 
+                      border: 1px solid #0C334A; 
+                      font-weight: bold;
+                      padding: 12px 35px;
+                      font-size: 1.1rem;
+                    ">
+                    Submit Feedback
+                  </button>
+                </div>
+              </form>
+              
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+{% endblock %}

@@ -1,23 +1,2866 @@
 {% extends 'base.html' %}
 {% block title %}
-  About | L B Certifications Pvt. Ltd
+Training Courses | L B Certifications Pvt. Ltd
 {% endblock %}
+
 {% block content %}
-  <section class="otherSections mt-5 mb-5">
-    <div class="card border-0">
-      <div class="background-image" style="background-image: url('static/images/112.jpg'); height: 40vh;"></div>
-      <div class="gradient-overlay"></div>
-      <div class="carousel-caption d-md-block">
-        <h1 class="fw-light lh-lg">TRAINING COURSES</h1>
-        <nav class="text-center d-flex justify-content-center align-items-center" style="--bs-breadcrumb-divider: url('data:image/svg+xml,%3Csvg xmlns=\'http://www.w3.org/2000/svg\' width=\'8\' height=\'8\'%3E%3Cpath d=\'M2.5 0L1 1.5 3.5 4 1 6.5 2.5 8l4-4-4-4z\' fill=\'%23ffffff\'/%3E%3C/svg%3E') ;" aria-label="breadcrumb">
-          <ol class="breadcrumb">
-            <li class="breadcrumb-item">
-              <a href="/" class="noLink">Home</a>
-            </li>
-            <li class="breadcrumb-item active text-white" aria-current="page">Training Courses</li>
-          </ol>
-        </nav>
+
+<!-- Required CDNs: Bootstrap, FontAwesome, AOS -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.min.css" rel="stylesheet">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet">
+
+<section class="otherSections mt-5 mb-5">
+  <div class="card border-0 hero-card overflow-hidden rounded-0">
+    <div class="background-image"
+      style="background-image: url('static/images/112.jpg'); height: 40vh; background-size: cover; background-position: center;">
+    </div>
+    <div class="gradient-overlay"></div>
+    <div class="carousel-caption d-md-block hero-caption mt-5">
+      <h1 class="fw-light lh-lg hero-title text-white">TRAINING COURSES</h1>
+      <nav class="text-center d-flex justify-content-center align-items-center"
+        style="--bs-breadcrumb-divider: url('data:image/svg+xml,%3Csvg xmlns=\'http://www.w3.org/2000/svg\' width=\'8\' height=\'8\'%3E%3Cpath d=\'M2.5 0L1 1.5 3.5 4 1 6.5 2.5 8l4-4-4-4z\' fill=\'%23ffffff\'/%3E%3C/svg%3E') ;"
+        aria-label="breadcrumb">
+        <ol class="breadcrumb mb-0">
+          <li class="breadcrumb-item">
+            <a href="/" class="noLink text-white">Home</a>
+          </li>
+          <li class="breadcrumb-item active text-white" aria-current="page">Training Courses</li>
+        </ol>
+      </nav>
+    </div>
+  </div>
+</section>
+
+<div class="container py-5">
+  <div class="text-center mb-5">
+    <h2 class="card-title fw-bold section-title" style="color: #0C334A;">
+      Our Training <span style="color: #75D547">Programs</span>
+    </h2>
+    <h6 class="card-subtitle mt-3 text-body-secondary section-subtitle">
+      Internationally accredited courses for every industry.
+    </h6>
+  </div>
+
+  <!-- Programs grid -->
+  <div class="row g-4">
+    <!-- Repeatable course cards — each has an AOS animation (flip/zoom/fade) but not slide-left -->
+    <div class="col-6 col-md-4 col-lg-3" data-aos="flip-up" data-aos-delay="50">
+      <div class="course-card h-100">
+        <div class="img-wrap">
+          <img src="static/training/opito.webp" alt="OPITO" loading="lazy">
+        </div>
+        <div class="course-title">OPITO Courses</div>
       </div>
     </div>
-  </section>
+
+    <div class="col-6 col-md-4 col-lg-3" data-aos="zoom-in" data-aos-delay="80">
+      <div class="course-card h-100">
+        <div class="img-wrap">
+          <img src="static/training/leea.webp" alt="LEEA" loading="lazy">
+        </div>
+        <div class="course-title">LEEA Courses</div>
+      </div>
+    </div>
+
+    <div class="col-6 col-md-4 col-lg-3" data-aos="flip-down" data-aos-delay="110">
+      <div class="course-card h-100">
+        <div class="img-wrap">
+          <img src="static/training/compex.webp" alt="CompEx" loading="lazy">
+        </div>
+        <div class="course-title">CompEx Courses</div>
+      </div>
+    </div>
+
+    <div class="col-6 col-md-4 col-lg-3" data-aos="zoom-in" data-aos-delay="140">
+      <div class="course-card d-flex flex-column justify-content-center align-items-center h-100">
+        <div class="course-title">Digital Learning</div>
+      </div>
+    </div>
+
+    <div class="col-6 col-md-4 col-lg-3" data-aos="flip-up" data-aos-delay="170">
+      <div class="course-card h-100">
+        <div class="img-wrap">
+          <img src="static/training/ecitb.webp" alt="ECITB" loading="lazy">
+        </div>
+        <div class="course-title">ECITB Courses</div>
+      </div>
+    </div>
+
+    <div class="col-6 col-md-4 col-lg-3" data-aos="zoom-in" data-aos-delay="200">
+      <div class="course-card h-100">
+        <div class="img-wrap">
+          <img src="static/training/cisrs.webp" alt="CISRS" loading="lazy">
+        </div>
+        <div class="course-title">CISRS Courses</div>
+      </div>
+    </div>
+
+    <div class="col-6 col-md-4 col-lg-3" data-aos="flip-down" data-aos-delay="230">
+      <div class="course-card h-100">
+        <div class="img-wrap">
+          <img src="static/training/stcw.webp" alt="STCW" loading="lazy">
+        </div>
+        <div class="course-title">STCW Courses</div>
+      </div>
+    </div>
+
+    <div class="col-6 col-md-4 col-lg-3" data-aos="zoom-in" data-aos-delay="260">
+      <div class="course-card h-100">
+        <div class="img-wrap">
+          <img src="static/training/nfpa.webp" alt="NFPA" loading="lazy">
+        </div>
+        <div class="course-title">NFPA Courses</div>
+      </div>
+    </div>
+
+    <div class="col-6 col-md-4 col-lg-3" data-aos="flip-up" data-aos-delay="290">
+      <div class="course-card h-100">
+        <div class="img-wrap">
+          <img src="static/training/gwo.webp" alt="GWO" loading="lazy">
+        </div>
+        <div class="course-title">GWO Courses</div>
+      </div>
+    </div>
+
+    <div class="col-6 col-md-4 col-lg-3" data-aos="zoom-in" data-aos-delay="320">
+      <div class="course-card h-100">
+        <div class="img-wrap">
+          <img src="static/training/irata.webp" alt="IRATA" loading="lazy">
+        </div>
+        <div class="course-title">IRATA Courses</div>
+      </div>
+    </div>
+
+    <div class="col-6 col-md-4 col-lg-3" data-aos="flip-down" data-aos-delay="350">
+      <div class="course-card h-100">
+        <div class="img-wrap">
+          <img src="static/training/pasma.webp" alt="PASMA" loading="lazy">
+        </div>
+        <div class="course-title">PASMA Courses</div>
+      </div>
+    </div>
+
+    <div class="col-6 col-md-4 col-lg-3" data-aos="zoom-in" data-aos-delay="380">
+      <div class="course-card h-100">
+        <div class="img-wrap">
+          <img src="static/training/ivv.webp" alt="IVV" loading="lazy">
+        </div>
+        <div class="course-title">IVV Courses</div>
+      </div>
+    </div>
+
+    <div class="col-6 col-md-4 col-lg-3" data-aos="flip-up" data-aos-delay="410">
+      <div class="course-card h-100">
+        <div class="img-wrap">
+          <img src="static/training/span.webp" alt="SpanSet" loading="lazy">
+        </div>
+        <div class="course-title">SpanSet Courses</div>
+      </div>
+    </div>
+
+    <div class="col-6 col-md-4 col-lg-3" data-aos="zoom-in" data-aos-delay="440">
+      <div class="course-card h-100">
+        <div class="img-wrap">
+          <img src="static/training/Highfield.webp" alt="Highfield" loading="lazy">
+        </div>
+        <div class="course-title">Highfield Courses</div>
+      </div>
+    </div>
+
+    <div class="col-6 col-md-4 col-lg-3" data-aos="flip-down" data-aos-delay="470">
+      <div class="course-card h-100">
+        <div class="img-wrap">
+          <img src="static/training/hsi.webp" alt="HSI" loading="lazy">
+        </div>
+        <div class="course-title">HSI First Aid Courses</div>
+      </div>
+    </div>
+
+    <div class="col-6 col-md-4 col-lg-3" data-aos="zoom-in" data-aos-delay="500">
+      <div class="course-card h-100">
+        <div class="img-wrap">
+          <img src="static/training/non.webp" alt="Non-accredited" loading="lazy">
+        </div>
+        <div class="course-title">Non-accredited Training Courses</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+<div class="text-center my-5">
+    <h2 class="card-title fw-bold section-title" style="color: #0C334A;">
+      All <span style="color: #75D547">Course</span>
+    </h2>
+    <h6 class="card-subtitle mt-3 text-body-secondary section-subtitle">
+      Internationally accredited courses for every industry.
+    </h6>
+  </div>
+
+<section class="course-content">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12">
+        <div class="row">
+
+
+
+
+
+
+          <div class="col-lg-12 col-md-12 d-flex">
+            <div class="course-box course-design list-course d-flex">
+              <div class="product">
+                <div class="product-content">
+                  <div class="head-course-title row">
+
+
+
+                    <div class="col-lg-4">
+                      <h3 class="title">
+                        <a
+                          href="https://gss-training.com/e-learning/course/opito/offshore-lifeboat-coxswain-further-training/Q291cnNlVGVtcGxhdGU6MQ==">
+                          OPITO Approved - Offshore Lifeboat Coxswain Further Training (Twin Fall)
+                        </a>
+                      </h3>
+                    </div>
+
+                    <div class="col-lg-6">
+                      <p></p>
+                      <p>This programme is designed to meet the further training and assessment requirements for
+                        Offshore Lifeboat Coxswains in the oil and gas industry.</p>
+                      <p></p>
+                    </div>
+
+                    <div class="col-lg-2 all-btn all-category d-flex align-items-center">
+                      <a href="https://gss-training.com/e-learning/course/opito/offshore-lifeboat-coxswain-further-training/Q291cnNlVGVtcGxhdGU6MQ=="
+                        class="btn btn-primary">
+                        <i class="fa-solid fa-eye" aria-hidden="true"></i> View
+                      </a>
+
+
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+
+
+          <div class="col-lg-12 col-md-12 d-flex">
+            <div class="course-box course-design list-course d-flex">
+              <div class="product">
+                <div class="product-content">
+                  <div class="head-course-title row">
+
+
+
+                    <div class="col-lg-4">
+                      <h3 class="title">
+                        <a
+                          href="https://gss-training.com/e-learning/course/opito/offshore-lifeboat-coxswain-initial-training/Q291cnNlVGVtcGxhdGU6Mg==">
+                          OPITO Approved - Offshore Lifeboat Coxswain Initial Training (Twin Fall)
+                        </a>
+                      </h3>
+                    </div>
+
+                    <div class="col-lg-6">
+                      <p></p>
+                      <p>This course is designed to meet the initial training and assessment requirements for Offshore
+                        Lifeboat Coxswains in the oil and gas industry.</p>
+                      <p></p>
+                    </div>
+
+                    <div class="col-lg-2 all-btn all-category d-flex align-items-center">
+                      <a href="https://gss-training.com/e-learning/course/opito/offshore-lifeboat-coxswain-initial-training/Q291cnNlVGVtcGxhdGU6Mg=="
+                        class="btn btn-primary">
+                        <i class="fa-solid fa-eye" aria-hidden="true"></i> View
+                      </a>
+
+
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+
+
+          <div class="col-lg-12 col-md-12 d-flex">
+            <div class="course-box course-design list-course d-flex">
+              <div class="product">
+                <div class="product-content">
+                  <div class="head-course-title row">
+
+
+
+                    <div class="col-lg-4">
+                      <h3 class="title">
+                        <a
+                          href="https://gss-training.com/e-learning/course/opito/rigger-competence-assessment-stage3/Q291cnNlVGVtcGxhdGU6MTc=">
+                          OPITO Approved - Rigger Competence Assessment (Stage 3)
+                        </a>
+                      </h3>
+                    </div>
+
+                    <div class="col-lg-6">
+                      <p>
+                      </p>
+                      <div>
+                        <div>
+                          <p>The target group for Rigger Competence Assessment are personnel that wish to become
+                            OPITO-certified competent riggers - having successfully completed the OPITO Rigger Initial
+                            Training Standard and Rigger Workplace Experience Logbook or possess sufficient and relevant
+                            work experience to be eligible for the OPITO Rigger Competence assessment.</p>
+                          <p>N.B. No training is provided in the assessment. Candidates who feel they require additional
+                            training should contact us to discuss your options.</p>
+                        </div>
+                      </div>
+                      <p></p>
+                    </div>
+
+                    <div class="col-lg-2 all-btn all-category d-flex align-items-center">
+                      <a href="https://gss-training.com/e-learning/course/opito/rigger-competence-assessment-stage3/Q291cnNlVGVtcGxhdGU6MTc="
+                        class="btn btn-primary">
+                        <i class="fa-solid fa-eye" aria-hidden="true"></i> View
+                      </a>
+
+
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+
+
+          <div class="col-lg-12 col-md-12 d-flex">
+            <div class="course-box course-design list-course d-flex">
+              <div class="product">
+                <div class="product-content">
+                  <div class="head-course-title row">
+
+
+
+                    <div class="col-lg-4">
+                      <h3 class="title">
+                        <a
+                          href="https://gss-training.com/e-learning/course/opito/rigger-competence-reassessment-stage4/Q291cnNlVGVtcGxhdGU6MTk=">
+                          OPITO Approved - Rigger Competence Reassessment (Stage 4)
+                        </a>
+                      </h3>
+                    </div>
+
+                    <div class="col-lg-6">
+                      <p></p>
+                      <p>The target group for Rigger Competence Reassessment are personnel that wish to renew their
+                        OPITO Rigger Competence or Rigger Competence Reassessment certificate.</p>
+                      <p>N.B. No training is provided in the assessment. Candidates who feel they require additional
+                        training should contact us to discuss your options.</p>
+                      <p></p>
+                    </div>
+
+                    <div class="col-lg-2 all-btn all-category d-flex align-items-center">
+                      <a href="https://gss-training.com/e-learning/course/opito/rigger-competence-reassessment-stage4/Q291cnNlVGVtcGxhdGU6MTk="
+                        class="btn btn-primary">
+                        <i class="fa-solid fa-eye" aria-hidden="true"></i> View
+                      </a>
+
+
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+
+
+          <div class="col-lg-12 col-md-12 d-flex">
+            <div class="course-box course-design list-course d-flex">
+              <div class="product">
+                <div class="product-content">
+                  <div class="head-course-title row">
+
+
+
+                    <div class="col-lg-4">
+                      <h3 class="title">
+                        <a
+                          href="https://gss-training.com/e-learning/course/stcw/proficiency-in-survival-craft-and-rescue-boats%0A/Q291cnNlVGVtcGxhdGU6MjE=">
+                          STCW 2010 - Proficiency in Survival Craft and Rescue Boats (other than Fast Rescue Boats)
+                          Table A-VI/2-1
+                        </a>
+                      </h3>
+                    </div>
+
+                    <div class="col-lg-6">
+                      <p></p>
+                      <p>This programme is designed
+                        to meet the initial training and
+                        assessment requirements for
+                        STCW Certification of Proficiency
+                        in Survival Craft and Rescue Boats
+                        other than Fast Rescue Boat; STCW
+                        Reg VI/2 para 1 &amp; Sec A-VI/2 para 1-6
+                        (model course 1.23). </p>
+                      <p></p>
+                    </div>
+
+                    <div class="col-lg-2 all-btn all-category d-flex align-items-center">
+                      <a href="https://gss-training.com/e-learning/course/stcw/proficiency-in-survival-craft-and-rescue-boats%0A/Q291cnNlVGVtcGxhdGU6MjE="
+                        class="btn btn-primary">
+                        <i class="fa-solid fa-eye" aria-hidden="true"></i> View
+                      </a>
+
+
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+
+
+          <div class="col-lg-12 col-md-12 d-flex">
+            <div class="course-box course-design list-course d-flex">
+              <div class="product">
+                <div class="product-content">
+                  <div class="head-course-title row">
+
+
+
+                    <div class="col-lg-4">
+                      <h3 class="title">
+                        <a
+                          href="https://gss-training.com/e-learning/course/stcw/updated-proficiency-in-survival-craft-and-rescue-boats%20%0A/Q291cnNlVGVtcGxhdGU6MjI=">
+                          STCW 2010 - Updated Proficiency in Survival Craft and Rescue Boats (other than Fast Rescue
+                          Boats) Table A-VI/2-1
+                        </a>
+                      </h3>
+                    </div>
+
+                    <div class="col-lg-6">
+                      <p></p>
+                      <p>This programme is designed to
+                        update <span id="selection-marker-1" class="redactor-selection-marker"></span>existing seafarers
+                        holding
+                        an STCW Certificate of Proficiency
+                        in Survival Craft and Rescue Boats
+                        other than Fast Rescue Boat;<span id="selection-marker-2"
+                          class="redactor-selection-marker"></span> STCW
+                        Reg VI/2 para 1 &amp; Sec A-VI/2 para 1-6
+                        (model course 1.23).<span id="selection-marker-1" class="redactor-selection-marker"></span></p>
+                      <p></p>
+                    </div>
+
+                    <div class="col-lg-2 all-btn all-category d-flex align-items-center">
+                      <a href="https://gss-training.com/e-learning/course/stcw/updated-proficiency-in-survival-craft-and-rescue-boats%20%0A/Q291cnNlVGVtcGxhdGU6MjI="
+                        class="btn btn-primary">
+                        <i class="fa-solid fa-eye" aria-hidden="true"></i> View
+                      </a>
+
+
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+
+
+          <div class="col-lg-12 col-md-12 d-flex">
+            <div class="course-box course-design list-course d-flex">
+              <div class="product">
+                <div class="product-content">
+                  <div class="head-course-title row">
+
+
+
+                    <div class="col-lg-4">
+                      <h3 class="title">
+                        <a
+                          href="https://gss-training.com/e-learning/course/stcw/proficiency-in-fast-rescue-boats%20%0A/Q291cnNlVGVtcGxhdGU6MjM=">
+                          STCW 2010 - Proficiency in Fast Rescue Boats Table A-VI/2-2
+                        </a>
+                      </h3>
+                    </div>
+
+                    <div class="col-lg-6">
+                      <p></p>
+                      <p>This programme is designed
+                        to meet the initial training and
+                        assessment requirements for STCW
+                        Certification of Proficiency in Fast
+                        Rescue Boats; STCW Reg VI/2 para2
+                        &amp; Sec A-VI/2-2 para 7-10 (model
+                        course 1.24).</p>
+                      <p></p>
+                    </div>
+
+                    <div class="col-lg-2 all-btn all-category d-flex align-items-center">
+                      <a href="https://gss-training.com/e-learning/course/stcw/proficiency-in-fast-rescue-boats%20%0A/Q291cnNlVGVtcGxhdGU6MjM="
+                        class="btn btn-primary">
+                        <i class="fa-solid fa-eye" aria-hidden="true"></i> View
+                      </a>
+
+
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+
+
+          <div class="col-lg-12 col-md-12 d-flex">
+            <div class="course-box course-design list-course d-flex">
+              <div class="product">
+                <div class="product-content">
+                  <div class="head-course-title row">
+
+
+
+                    <div class="col-lg-4">
+                      <h3 class="title">
+                        <a
+                          href="https://gss-training.com/e-learning/course/stcw/updated-proficiency-in-fast-rescue-boats%20%0A/Q291cnNlVGVtcGxhdGU6MjQ=">
+                          STCW 2010 - Updated Proficiency in Fast Rescue Boats Table A-VI/2-2
+                        </a>
+                      </h3>
+                    </div>
+
+                    <div class="col-lg-6">
+                      <p></p>
+                      <p>This programme is designed to
+                        update <span id="selection-marker-1" class="redactor-selection-marker"></span>existing seafarers
+                        holding
+                        an STCW Certificate of Proficiency
+                        in Fast Rescue Boats<span id="selection-marker-2" class="redactor-selection-marker"></span>;
+                        STCW Reg VI/2
+                        para2 &amp; Sec A-VI/2-2 para 7-10 (model
+                        course 1.24).<span id="selection-marker-1" class="redactor-selection-marker"></span></p>
+                      <p></p>
+                    </div>
+
+                    <div class="col-lg-2 all-btn all-category d-flex align-items-center">
+                      <a href="https://gss-training.com/e-learning/course/stcw/updated-proficiency-in-fast-rescue-boats%20%0A/Q291cnNlVGVtcGxhdGU6MjQ="
+                        class="btn btn-primary">
+                        <i class="fa-solid fa-eye" aria-hidden="true"></i> View
+                      </a>
+
+
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+
+
+          <div class="col-lg-12 col-md-12 d-flex">
+            <div class="course-box course-design list-course d-flex">
+              <div class="product">
+                <div class="product-content">
+                  <div class="head-course-title row">
+
+
+
+                    <div class="col-lg-4">
+                      <h3 class="title">
+                        <a
+                          href="https://gss-training.com/e-learning/course/opito/basic-h2s-training/Q291cnNlVGVtcGxhdGU6MzE=">
+                          OPITO Approved - Basic H2S Training
+                        </a>
+                      </h3>
+                    </div>
+
+                    <div class="col-lg-6">
+                      <p></p>
+                      <p>This course is for personnel that
+                        are, or could be, working in an
+                        environment that could become
+                        contaminated by H2S gas.</p>
+                      <p></p>
+                    </div>
+
+                    <div class="col-lg-2 all-btn all-category d-flex align-items-center">
+                      <a href="https://gss-training.com/e-learning/course/opito/basic-h2s-training/Q291cnNlVGVtcGxhdGU6MzE="
+                        class="btn btn-primary">
+                        <i class="fa-solid fa-eye" aria-hidden="true"></i> View
+                      </a>
+
+
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+
+
+          <div class="col-lg-12 col-md-12 d-flex">
+            <div class="course-box course-design list-course d-flex">
+              <div class="product">
+                <div class="product-content">
+                  <div class="head-course-title row">
+
+
+
+                    <div class="col-lg-4">
+                      <h3 class="title">
+                        <a
+                          href="https://gss-training.com/e-learning/course/opito/banksman-and-slinger-initial-training/Q291cnNlVGVtcGxhdGU6MzU=">
+                          OPITO Approved - Banksman and Slinger Initial Training
+                        </a>
+                      </h3>
+                    </div>
+
+                    <div class="col-lg-6">
+                      <p></p>
+                      <p>The target group for Banksman and Slinger Initial Training Standard is personnel wishing to
+                        become competent in the Banksman &amp; Slinger role in the energy industry.</p>
+                      <p></p>
+                    </div>
+
+                    <div class="col-lg-2 all-btn all-category d-flex align-items-center">
+                      <a href="https://gss-training.com/e-learning/course/opito/banksman-and-slinger-initial-training/Q291cnNlVGVtcGxhdGU6MzU="
+                        class="btn btn-primary">
+                        <i class="fa-solid fa-eye" aria-hidden="true"></i> View
+                      </a>
+
+
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+
+
+          <div class="col-lg-12 col-md-12 d-flex">
+            <div class="course-box course-design list-course d-flex">
+              <div class="product">
+                <div class="product-content">
+                  <div class="head-course-title row">
+
+
+
+                    <div class="col-lg-4">
+                      <h3 class="title">
+                        <a
+                          href="https://gss-training.com/e-learning/course/leea/lifting-and-slinging/Q291cnNlVGVtcGxhdGU6NDM=">
+                          LEEA Accredited - Lifting and Slinging
+                        </a>
+                      </h3>
+                    </div>
+
+                    <div class="col-lg-6">
+                      <p></p>
+                      <p>The LEEA Accredited Lifting and Slinging training is personnel who are required by their
+                        employer to undertake the duties of a Slinger and Signaller for lifting operations.</p>
+                      <p>This course is an entry level course suitable for those looking to enter a career as a
+                        Slinger/Signaller or Rigger in the construction Industry.</p>
+                      <p>NB. The term Slinger / Rigger are commonly interchanged for jobs in the Middle East and this
+                        training is focussed on lifting operations involving cranes, not portable lifting equipment.</p>
+                      <p></p>
+                    </div>
+
+                    <div class="col-lg-2 all-btn all-category d-flex align-items-center">
+                      <a href="https://gss-training.com/e-learning/course/leea/lifting-and-slinging/Q291cnNlVGVtcGxhdGU6NDM="
+                        class="btn btn-primary">
+                        <i class="fa-solid fa-eye" aria-hidden="true"></i> View
+                      </a>
+
+
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+
+
+          <div class="col-lg-12 col-md-12 d-flex">
+            <div class="course-box course-design list-course d-flex">
+              <div class="product">
+                <div class="product-content">
+                  <div class="head-course-title row">
+
+
+
+                    <div class="col-lg-4">
+                      <h3 class="title">
+                        <a
+                          href="https://gss-training.com/e-learning/course/leea/appointed-person-lifting-operations%0A/Q291cnNlVGVtcGxhdGU6NDQ=">
+                          LEEA Accredited - Appointed Person Lifting Operations
+                        </a>
+                      </h3>
+                    </div>
+
+                    <div class="col-lg-6">
+                      <p></p>
+                      <p>Designed for professionals responsible for the planning, management, and execution of lifting
+                        operations.</p>
+                      <p>The <strong>LEEA Accredited Appointed Person Training Course </strong>equips personnel with
+                        knowledge, understanding and skills to enable them to plan and manage safe lifting operations,
+                        ensuring compliance with industry standards.</p>
+                      <p></p>
+                    </div>
+
+                    <div class="col-lg-2 all-btn all-category d-flex align-items-center">
+                      <a href="https://gss-training.com/e-learning/course/leea/appointed-person-lifting-operations%0A/Q291cnNlVGVtcGxhdGU6NDQ="
+                        class="btn btn-primary">
+                        <i class="fa-solid fa-eye" aria-hidden="true"></i> View
+                      </a>
+
+
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+
+
+          <div class="col-lg-12 col-md-12 d-flex">
+            <div class="course-box course-design list-course d-flex">
+              <div class="product">
+                <div class="product-content">
+                  <div class="head-course-title row">
+
+
+
+                    <div class="col-lg-4">
+                      <h3 class="title">
+                        <a
+                          href="https://gss-training.com/e-learning/course/leea/crane-lift-supervisor%0A/Q291cnNlVGVtcGxhdGU6Njg=">
+                          LEEA Accredited - Crane / Lift Supervisor
+                        </a>
+                      </h3>
+                    </div>
+
+                    <div class="col-lg-6">
+                      <p></p>
+                      <p>The LEEA Accredited Crane
+                        Supervisor / Lift Supervisor training
+                        is personnel who are required to
+                        undertake the duties of an Crane
+                        / Lift Supervisor during lifting
+                        operations.</p>
+                      <p></p>
+                    </div>
+
+                    <div class="col-lg-2 all-btn all-category d-flex align-items-center">
+                      <a href="https://gss-training.com/e-learning/course/leea/crane-lift-supervisor%0A/Q291cnNlVGVtcGxhdGU6Njg="
+                        class="btn btn-primary">
+                        <i class="fa-solid fa-eye" aria-hidden="true"></i> View
+                      </a>
+
+
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+
+
+          <div class="col-lg-12 col-md-12 d-flex">
+            <div class="course-box course-design list-course d-flex">
+              <div class="product">
+                <div class="product-content">
+                  <div class="head-course-title row">
+
+
+
+                    <div class="col-lg-4">
+                      <h3 class="title">
+                        <a
+                          href="https://gss-training.com/e-learning/course/leea/appointed-person-lifting-operations-competency-assessment%0A/Q291cnNlVGVtcGxhdGU6Njk=">
+                          LEEA Accredited - Appointed Person Lifting Operations Competency Assessment
+                        </a>
+                      </h3>
+                    </div>
+
+                    <div class="col-lg-6">
+                      <p></p>
+                      <p>The LEEA Accredited Appointed
+                        Person training is for personnel that
+                        wish to renew their existing LEEA
+                        Appointed Person qualification, or
+                        convert their existing Appointed
+                        Person Training to a LEEA
+                        Accredited qualification.</p>
+                      <p></p>
+                    </div>
+
+                    <div class="col-lg-2 all-btn all-category d-flex align-items-center">
+                      <a href="https://gss-training.com/e-learning/course/leea/appointed-person-lifting-operations-competency-assessment%0A/Q291cnNlVGVtcGxhdGU6Njk="
+                        class="btn btn-primary">
+                        <i class="fa-solid fa-eye" aria-hidden="true"></i> View
+                      </a>
+
+
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+
+
+          <div class="col-lg-12 col-md-12 d-flex">
+            <div class="course-box course-design list-course d-flex">
+              <div class="product">
+                <div class="product-content">
+                  <div class="head-course-title row">
+
+
+
+                    <div class="col-lg-4">
+                      <h3 class="title">
+                        <a
+                          href="https://gss-training.com/e-learning/course/opito/banksman-and-slinger-competence-assessment/Q291cnNlVGVtcGxhdGU6NzI=">
+                          OPITO Approved - Banksman and Slinger Competence Assessment
+                        </a>
+                      </h3>
+                    </div>
+
+                    <div class="col-lg-6">
+                      <p></p>
+                      <p>The target group for Banksman and
+                        Slinger Competence Assessment
+                        are personnel that wish to become
+                        OPITO-certified competent
+                        banksman and slingers - having
+                        successfully completed the OPITO
+                        Banksman and Slinger Initial
+                        Training Standard and Banksman
+                        and Slinger Workplace Experience
+                        Logbook or possess sufficient
+                        and relevant work experience
+                        to be eligible for the OPITO
+                        Banksman and slinger Competence
+                        assessment.</p>
+                      <p></p>
+                    </div>
+
+                    <div class="col-lg-2 all-btn all-category d-flex align-items-center">
+                      <a href="https://gss-training.com/e-learning/course/opito/banksman-and-slinger-competence-assessment/Q291cnNlVGVtcGxhdGU6NzI="
+                        class="btn btn-primary">
+                        <i class="fa-solid fa-eye" aria-hidden="true"></i> View
+                      </a>
+
+
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+
+
+          <div class="col-lg-12 col-md-12 d-flex">
+            <div class="course-box course-design list-course d-flex">
+              <div class="product">
+                <div class="product-content">
+                  <div class="head-course-title row">
+
+
+
+                    <div class="col-lg-4">
+                      <h3 class="title">
+                        <a
+                          href="https://gss-training.com/e-learning/course/opito/banksman-and-slinger-competence-reassessment/Q291cnNlVGVtcGxhdGU6NzM=">
+                          OPITO Approved - Banksman and Slinger Competence Reassessment
+                        </a>
+                      </h3>
+                    </div>
+
+                    <div class="col-lg-6">
+                      <p></p>
+                      <p>The target group for Banksman and Slinger Competence Reassessment
+                        are personnel that wish to renew their OPITO Banksman and Slinger
+                        Competence or Banksman and Slinger Competence Reassessment certificate.</p>
+                      <p></p>
+                    </div>
+
+                    <div class="col-lg-2 all-btn all-category d-flex align-items-center">
+                      <a href="https://gss-training.com/e-learning/course/opito/banksman-and-slinger-competence-reassessment/Q291cnNlVGVtcGxhdGU6NzM="
+                        class="btn btn-primary">
+                        <i class="fa-solid fa-eye" aria-hidden="true"></i> View
+                      </a>
+
+
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+
+
+          <div class="col-lg-12 col-md-12 d-flex">
+            <div class="course-box course-design list-course d-flex">
+              <div class="product">
+                <div class="product-content">
+                  <div class="head-course-title row">
+
+
+
+                    <div class="col-lg-4">
+                      <h3 class="title">
+                        <a
+                          href="https://gss-training.com/e-learning/course/leea/offshore-crane-operator-stage1-introductory-training/Q291cnNlVGVtcGxhdGU6NzQ=">
+                          LEEA Accredited - Offshore Crane Operator Stage 1 (Introductory) Training
+                        </a>
+                      </h3>
+                    </div>
+
+                    <div class="col-lg-6">
+                      <p></p>
+                      <p>The LEEA Accredited Offshore Crane Operator (Introductory) Training is a 5-day course, and is
+                        intended for personnel who have little or no crane operating experience and wish to gain
+                        theoretical and practical knowledge of offshore crane operations. </p>
+                      <p></p>
+                    </div>
+
+                    <div class="col-lg-2 all-btn all-category d-flex align-items-center">
+                      <a href="https://gss-training.com/e-learning/course/leea/offshore-crane-operator-stage1-introductory-training/Q291cnNlVGVtcGxhdGU6NzQ="
+                        class="btn btn-primary">
+                        <i class="fa-solid fa-eye" aria-hidden="true"></i> View
+                      </a>
+
+
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+
+
+          <div class="col-lg-12 col-md-12 d-flex">
+            <div class="course-box course-design list-course d-flex">
+              <div class="product">
+                <div class="product-content">
+                  <div class="head-course-title row">
+
+
+
+                    <div class="col-lg-4">
+                      <h3 class="title">
+                        <a
+                          href="https://gss-training.com/e-learning/course/leea/offshore-crane-operator-stage2-advanced-training/Q291cnNlVGVtcGxhdGU6NzU=">
+                          LEEA Accredited - Offshore Crane Operator Stage 2 (Advanced) Training
+                        </a>
+                      </h3>
+                    </div>
+
+                    <div class="col-lg-6">
+                      <p></p>
+                      <p>The LEEA Accredited Offshore Crane Operator (Advanced) Training is a 5-day course, and is for
+                        individuals who
+                        have successfully completed the
+                        LEEA OCO Stage 1 Training or, hold existing Mobile Crane Operator Training certification and
+                        wish to progress to the next stage
+                        which is a more advanced training
+                        programme using an offshore pedestal crane. </p>
+                      <p></p>
+                    </div>
+
+                    <div class="col-lg-2 all-btn all-category d-flex align-items-center">
+                      <a href="https://gss-training.com/e-learning/course/leea/offshore-crane-operator-stage2-advanced-training/Q291cnNlVGVtcGxhdGU6NzU="
+                        class="btn btn-primary">
+                        <i class="fa-solid fa-eye" aria-hidden="true"></i> View
+                      </a>
+
+
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+
+
+          <div class="col-lg-12 col-md-12 d-flex">
+            <div class="course-box course-design list-course d-flex">
+              <div class="product">
+                <div class="product-content">
+                  <div class="head-course-title row">
+
+
+
+                    <div class="col-lg-4">
+                      <h3 class="title">
+                        <a
+                          href="https://gss-training.com/e-learning/course/opito/offshore-crane-operator-stage3-competence-assessment-fixed-structures%20/Q291cnNlVGVtcGxhdGU6NzY=">
+                          OPITO Approved - Offshore Crane Operator Stage 3 Competence Assessment [Fixed Structures]
+                        </a>
+                      </h3>
+                    </div>
+
+                    <div class="col-lg-6">
+                      <p></p>
+                      <p>The OPITO-approved Offshore Crane Operator Stage 3 Competence Assessment is a 1-day workplace
+                        assessment conducted at the client site. The assessment is intended for crane operators that
+                        wish to become OPITO-approved Stage 3 offshore crane operators, and hold no previous Stage 3
+                        assessment certification. </p>
+                      <p>For individuals holding existing OPITO or industry-recognized non-OPITO Stage 3 certification,
+                        such as Sparrows, Enermech, ABS, BV etc. you may be eligible for reassessment. Speak with one of
+                        our learning advisors before booking. </p>
+                      <p><br></p>
+                      <p></p>
+                    </div>
+
+                    <div class="col-lg-2 all-btn all-category d-flex align-items-center">
+                      <a href="https://gss-training.com/e-learning/course/opito/offshore-crane-operator-stage3-competence-assessment-fixed-structures%20/Q291cnNlVGVtcGxhdGU6NzY="
+                        class="btn btn-primary">
+                        <i class="fa-solid fa-eye" aria-hidden="true"></i> View
+                      </a>
+
+
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+
+
+          <div class="col-lg-12 col-md-12 d-flex">
+            <div class="course-box course-design list-course d-flex">
+              <div class="product">
+                <div class="product-content">
+                  <div class="head-course-title row">
+
+
+
+                    <div class="col-lg-4">
+                      <h3 class="title">
+                        <a
+                          href="https://gss-training.com/e-learning/course/ecitb/international-mji-hand-torque-bolted-connection-techniques-imji-01-10%0A/Q291cnNlVGVtcGxhdGU6OTA=">
+                          ECITB International MJI: Hand Torque Bolted Connection Techniques (IMJI 10 &amp; 11)
+                        </a>
+                      </h3>
+                    </div>
+
+                    <div class="col-lg-6">
+                      <p></p>
+                      <p>ECITB Mechanical Joint Integrity IMJI 01 and 10 concentrates on the skilled performance
+                        expected when working with hand-torqued bolted and clamp connection techniques. </p>
+                      <p></p>
+                    </div>
+
+                    <div class="col-lg-2 all-btn all-category d-flex align-items-center">
+                      <a href="https://gss-training.com/e-learning/course/ecitb/international-mji-hand-torque-bolted-connection-techniques-imji-01-10%0A/Q291cnNlVGVtcGxhdGU6OTA="
+                        class="btn btn-primary">
+                        <i class="fa-solid fa-eye" aria-hidden="true"></i> View
+                      </a>
+
+
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+
+
+          <div class="col-lg-12 col-md-12 d-flex">
+            <div class="course-box course-design list-course d-flex">
+              <div class="product">
+                <div class="product-content">
+                  <div class="head-course-title row">
+
+
+
+                    <div class="col-lg-4">
+                      <h3 class="title">
+                        <a
+                          href="https://gss-training.com/e-learning/course/ecitb/international-mji-hydraulically-tension-bolted-connection-techniques-imji-18%0A/Q291cnNlVGVtcGxhdGU6OTE=">
+                          ECITB International MJI: Hydraulically Tension Bolted Connection Techniques (IMJI 18)
+                        </a>
+                      </h3>
+                    </div>
+
+                    <div class="col-lg-6">
+                      <p></p>
+                      <p>ECITB Mechanical Joint Integrity IMJI18 concentrates on the skilled performance expected when
+                        working hydraulic tension bolted connections.</p>
+                      <p></p>
+                    </div>
+
+                    <div class="col-lg-2 all-btn all-category d-flex align-items-center">
+                      <a href="https://gss-training.com/e-learning/course/ecitb/international-mji-hydraulically-tension-bolted-connection-techniques-imji-18%0A/Q291cnNlVGVtcGxhdGU6OTE="
+                        class="btn btn-primary">
+                        <i class="fa-solid fa-eye" aria-hidden="true"></i> View
+                      </a>
+
+
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+
+
+          <div class="col-lg-12 col-md-12 d-flex">
+            <div class="course-box course-design list-course d-flex">
+              <div class="product">
+                <div class="product-content">
+                  <div class="head-course-title row">
+
+
+
+                    <div class="col-lg-4">
+                      <h3 class="title">
+                        <a
+                          href="https://gss-training.com/e-learning/course/ecitb/international-mji-hand-torque-hydraulically-torque-and-tension-bolted-connection-techniques-imji-10-20%0A/Q291cnNlVGVtcGxhdGU6OTM=">
+                          ECITB International MJI: Hand Torque, Hydraulically Torque and Tension Bolted Connection
+                          Techniques (IMJI 10-20)
+                        </a>
+                      </h3>
+                    </div>
+
+                    <div class="col-lg-6">
+                      <p></p>
+                      <p>ECITB Mechanical Joint Integrity IMJI10-20 course is a comprehensive course that concentrates
+                        on the skills to perform various MJI techniques using a range of equipment.</p>
+                      <p>Learners will gain the skills required to dismantle, inspect, prepare, assemble, and tighten
+                        flanged and clamped connector pipe joints and bolted connections using hand torque, hydraulic
+                        torque equipment, and hydraulic tension equipment.</p>
+                      <p></p>
+                    </div>
+
+                    <div class="col-lg-2 all-btn all-category d-flex align-items-center">
+                      <a href="https://gss-training.com/e-learning/course/ecitb/international-mji-hand-torque-hydraulically-torque-and-tension-bolted-connection-techniques-imji-10-20%0A/Q291cnNlVGVtcGxhdGU6OTM="
+                        class="btn btn-primary">
+                        <i class="fa-solid fa-eye" aria-hidden="true"></i> View
+                      </a>
+
+
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+
+
+          <div class="col-lg-12 col-md-12 d-flex">
+            <div class="course-box course-design list-course d-flex">
+              <div class="product">
+                <div class="product-content">
+                  <div class="head-course-title row">
+
+
+
+                    <div class="col-lg-4">
+                      <h3 class="title">
+                        <a
+                          href="https://gss-training.com/e-learning/course/leea/rigging-loft-management-and-equipment-inspection%0A/Q291cnNlVGVtcGxhdGU6OTQ=">
+                          LEEA Accredited - Rigging Loft Management &amp; Equipment Inspection
+                        </a>
+                      </h3>
+                    </div>
+
+                    <div class="col-lg-6">
+                      <p></p>
+                      <p>This course is designed for
+                        individuals who will manage the
+                        site rigging loft as a Rigging Loft
+                        Controller.
+                        This course is not designed for
+                        individuals wishing to become
+                        Lifting Equipment Examiners or
+                        Inspectors. Personnel wishing to
+                        obtain such qualifications should
+                        visit
+                        <a href="http://www.leeaint.com">www.leeaint.com</a> for more
+                        information..
+                      </p>
+                      <p></p>
+                    </div>
+
+                    <div class="col-lg-2 all-btn all-category d-flex align-items-center">
+                      <a href="https://gss-training.com/e-learning/course/leea/rigging-loft-management-and-equipment-inspection%0A/Q291cnNlVGVtcGxhdGU6OTQ="
+                        class="btn btn-primary">
+                        <i class="fa-solid fa-eye" aria-hidden="true"></i> View
+                      </a>
+
+
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+
+
+          <div class="col-lg-12 col-md-12 d-flex">
+            <div class="course-box course-design list-course d-flex">
+              <div class="product">
+                <div class="product-content">
+                  <div class="head-course-title row">
+
+
+
+                    <div class="col-lg-4">
+                      <h3 class="title">
+                        <a
+                          href="https://gss-training.com/e-learning/course/opito/loler-competent-person-competence-assessment/Q291cnNlVGVtcGxhdGU6OTU=">
+                          OPITO Approved - LOLER Competent Person Competence Assessment
+                        </a>
+                      </h3>
+                    </div>
+
+                    <div class="col-lg-6">
+                      <p></p>
+                      <p>This assessment is for personnel who have been recommended to take on the LCP role by their
+                        sponsoring company and are required to be assessed (or re-assessed) against the competence
+                        assessment criteria for LOLER Competent Person.</p>
+                      <p>N.B. No training is provided during this assessment. Candidates who require training, should
+                        consider the OPITO Approved Lift planning Training.</p>
+                      <p></p>
+                    </div>
+
+                    <div class="col-lg-2 all-btn all-category d-flex align-items-center">
+                      <a href="https://gss-training.com/e-learning/course/opito/loler-competent-person-competence-assessment/Q291cnNlVGVtcGxhdGU6OTU="
+                        class="btn btn-primary">
+                        <i class="fa-solid fa-eye" aria-hidden="true"></i> View
+                      </a>
+
+
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+
+
+
+
+
+
+          <div class="col-lg-12 col-md-12 d-flex">
+            <div class="course-box course-design list-course d-flex">
+              <div class="product">
+                <div class="product-content">
+                  <div class="head-course-title row">
+
+
+
+                    <div class="col-lg-4">
+                      <h3 class="title">
+                        <a
+                          href="https://gss-training.com/e-learning/course/opito/lift-planning-training/Q291cnNlVGVtcGxhdGU6OTc=">
+                          OPITO Approved Lift Planning Training
+                        </a>
+                      </h3>
+                    </div>
+
+                    <div class="col-lg-6">
+                      <p></p>
+                      <p>This course is for learners who are required to participate and/or assist in the planning of
+                        mechanical lifting operations.</p>
+                      <p>N.B This course is not for those who are looking for training in the planning of lifting
+                        operations with cranes.</p>
+                      <p></p>
+                    </div>
+
+                    <div class="col-lg-2 all-btn all-category d-flex align-items-center">
+                      <a href="https://gss-training.com/e-learning/course/opito/lift-planning-training/Q291cnNlVGVtcGxhdGU6OTc="
+                        class="btn btn-primary">
+                        <i class="fa-solid fa-eye" aria-hidden="true"></i> View
+                      </a>
+
+
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+
+
+          <div class="col-lg-12 col-md-12 d-flex">
+            <div class="course-box course-design list-course d-flex">
+              <div class="product">
+                <div class="product-content">
+                  <div class="head-course-title row">
+
+
+
+                    <div class="col-lg-4">
+                      <h3 class="title">
+                        <a
+                          href="https://gss-training.com/e-learning/course/compex/gas-and-vapours-ex01-ex04%0A/Q291cnNlVGVtcGxhdGU6MTA3">
+                          CompEx -Gas and Vapours (Ex01 - Ex04)
+                        </a>
+                      </h3>
+                    </div>
+
+                    <div class="col-lg-6">
+                      <p></p>
+                      <p>The CompEx Ex01-Ex04 Gas and Vapours qualifications have been developed for electrical and
+                        instrument technicians working in hazardous locations where gases and vapours can form explosive
+                        atmospheres.<br></p>
+                      <p></p>
+                    </div>
+
+                    <div class="col-lg-2 all-btn all-category d-flex align-items-center">
+                      <a href="https://gss-training.com/e-learning/course/compex/gas-and-vapours-ex01-ex04%0A/Q291cnNlVGVtcGxhdGU6MTA3"
+                        class="btn btn-primary">
+                        <i class="fa-solid fa-eye" aria-hidden="true"></i> View
+                      </a>
+
+
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+
+
+          <div class="col-lg-12 col-md-12 d-flex">
+            <div class="course-box course-design list-course d-flex">
+              <div class="product">
+                <div class="product-content">
+                  <div class="head-course-title row">
+
+
+
+                    <div class="col-lg-4">
+                      <h3 class="title">
+                        <a
+                          href="https://gss-training.com/e-learning/course/opito/offshore-crane-operator-stage3-competence-reassessment-fixed-structures-simulator/Q291cnNlVGVtcGxhdGU6MTEy">
+                          OPITO Approved - Offshore Crane Operator Stage 3 Competence Reassessment [Fixed Structures] -
+                          Simulator
+                        </a>
+                      </h3>
+                    </div>
+
+                    <div class="col-lg-6">
+                      <p></p>
+                      <p>The OPITO Stage 3 Offshore Crane Operator Competence Reassessment is a 1-day course intended
+                        for offshore crane operators that wish to revalidate their OPITO approved OCO Stage 3
+                        certificate or industry recognised Stage 3 Operator Certificate. The reassessment is conducted
+                        on a state of the art simulator. <br></p>
+                      <p>Existing Stage 3 OCO operators with Sparrows, Enermech, ABS, BV certification are eligible to
+                        attend. Other certificates maybe acceptable, please speak with one of our Learning Advisors
+                        before booking.</p>
+                      <p></p>
+                    </div>
+
+                    <div class="col-lg-2 all-btn all-category d-flex align-items-center">
+                      <a href="https://gss-training.com/e-learning/course/opito/offshore-crane-operator-stage3-competence-reassessment-fixed-structures-simulator/Q291cnNlVGVtcGxhdGU6MTEy"
+                        class="btn btn-primary">
+                        <i class="fa-solid fa-eye" aria-hidden="true"></i> View
+                      </a>
+
+
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+
+
+          <div class="col-lg-12 col-md-12 d-flex">
+            <div class="course-box course-design list-course d-flex">
+              <div class="product">
+                <div class="product-content">
+                  <div class="head-course-title row">
+
+
+
+                    <div class="col-lg-4">
+                      <h3 class="title">
+                        <a
+                          href="https://gss-training.com/e-learning/course/ecitb/small-bore-tubing-assemble-and-install-small-bore-tubing-with-cone-and-threaded-medium-and-high-pressure-course-sbt03%0A/Q291cnNlVGVtcGxhdGU6MTEz">
+                          ECITB - Small Bore Tubing: Assemble and Install Small Bore Tubing with Cone and Threaded
+                          Medium and High Pressure Course (SBT03)
+                        </a>
+                      </h3>
+                    </div>
+
+                    <div class="col-lg-6">
+                      <p></p>
+                      <p>This two (2) day, small bore tubing, cone and threaded
+                        medium and high pressure course
+                        is aimed at learners with no previous
+                        small bore tubing training. </p>
+                      <p></p>
+                    </div>
+
+                    <div class="col-lg-2 all-btn all-category d-flex align-items-center">
+                      <a href="https://gss-training.com/e-learning/course/ecitb/small-bore-tubing-assemble-and-install-small-bore-tubing-with-cone-and-threaded-medium-and-high-pressure-course-sbt03%0A/Q291cnNlVGVtcGxhdGU6MTEz"
+                        class="btn btn-primary">
+                        <i class="fa-solid fa-eye" aria-hidden="true"></i> View
+                      </a>
+
+
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+
+
+          <div class="col-lg-12 col-md-12 d-flex">
+            <div class="course-box course-design list-course d-flex">
+              <div class="product">
+                <div class="product-content">
+                  <div class="head-course-title row">
+
+
+
+                    <div class="col-lg-4">
+                      <h3 class="title">
+                        <a
+                          href="https://gss-training.com/e-learning/course/leea/offshore-crane-operator-stage3-assessment-reassessment%0A/Q291cnNlVGVtcGxhdGU6MTIy">
+                          LEEA Accredited - Offshore Crane Operator Stage 3 Assessment / Reassessment
+                        </a>
+                      </h3>
+                    </div>
+
+                    <div class="col-lg-6">
+                      <p></p>
+                      <p>This course is intended for personnel
+                        who wish to become LEEA
+                        Accredited Stage 3 offshore crane
+                        operators or renew their existing
+                        Stage 3 Assessment qualifications.</p>
+                      <p></p>
+                    </div>
+
+                    <div class="col-lg-2 all-btn all-category d-flex align-items-center">
+                      <a href="https://gss-training.com/e-learning/course/leea/offshore-crane-operator-stage3-assessment-reassessment%0A/Q291cnNlVGVtcGxhdGU6MTIy"
+                        class="btn btn-primary">
+                        <i class="fa-solid fa-eye" aria-hidden="true"></i> View
+                      </a>
+
+
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+
+
+          <div class="col-lg-12 col-md-12 d-flex">
+            <div class="course-box course-design list-course d-flex">
+              <div class="product">
+                <div class="product-content">
+                  <div class="head-course-title row">
+
+
+
+                    <div class="col-lg-4">
+                      <h3 class="title">
+                        <a
+                          href="https://gss-training.com/e-learning/course/leea/offshore-crane-operator-stage3-assessment-reassessment-simulator/Q291cnNlVGVtcGxhdGU6MTIz">
+                          LEEA Accredited - Offshore Crane Operator Stage 3 Assessment / Reassessment (Simulator)
+                        </a>
+                      </h3>
+                    </div>
+
+                    <div class="col-lg-6">
+                      <p></p>
+                      <p>This assessment is intended for
+                        personnel who wish to become
+                        LEEA Accredited Stage 3 offshore
+                        crane operators or renew their
+                        existing Stage 3 Assessment
+                        qualifications.</p>
+                      <p></p>
+                    </div>
+
+                    <div class="col-lg-2 all-btn all-category d-flex align-items-center">
+                      <a href="https://gss-training.com/e-learning/course/leea/offshore-crane-operator-stage3-assessment-reassessment-simulator/Q291cnNlVGVtcGxhdGU6MTIz"
+                        class="btn btn-primary">
+                        <i class="fa-solid fa-eye" aria-hidden="true"></i> View
+                      </a>
+
+
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+
+
+          <div class="col-lg-12 col-md-12 d-flex">
+            <div class="course-box course-design list-course d-flex">
+              <div class="product">
+                <div class="product-content">
+                  <div class="head-course-title row">
+
+
+
+                    <div class="col-lg-4">
+                      <h3 class="title">
+                        <a
+                          href="https://gss-training.com/courses/opito/competence-assessor-training/Q291cnNlVGVtcGxhdGU6MTI1">
+                          OPITO Approved - Assessor Initial Training
+                        </a>
+                      </h3>
+                    </div>
+
+                    <div class="col-lg-6">
+                      <p></p>
+                      <p>This online self-paced training course has been developed by GSS Training for individuals who
+                        are designated to perform the
+                        role of Assessor within their organisation.<br></p>
+                      <p></p>
+                    </div>
+
+                    <div class="col-lg-2 all-btn all-category d-flex align-items-center">
+                      <a href="https://gss-training.com/courses/opito/competence-assessor-training/Q291cnNlVGVtcGxhdGU6MTI1"
+                        class="btn btn-primary">
+                        <i class="fa-solid fa-eye" aria-hidden="true"></i> View
+                      </a>
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+
+
+          <div class="col-lg-12 col-md-12 d-flex">
+            <div class="course-box course-design list-course d-flex">
+              <div class="product">
+                <div class="product-content">
+                  <div class="head-course-title row">
+
+
+
+                    <div class="col-lg-4">
+                      <h3 class="title">
+                        <a
+                          href="https://gss-training.com/e-learning/course/opito/offshore-crane-operator-stage3-competence-assessment-floating-structures/Q291cnNlVGVtcGxhdGU6MTI2">
+                          OPITO Approved - Offshore Crane Operator Stage 3 Competence Assessment [Floating Structures]
+                        </a>
+                      </h3>
+                    </div>
+
+                    <div class="col-lg-6">
+                      <p></p>
+                      <p>The OPITO-approved Offshore Crane Operator Stage 3 Competence Assessment is a 1-day workplace
+                        assessment conducted at the client site. The assessment is intended for crane operators that
+                        wish to become OPITO-approved Stage 3 offshore crane operators, and hold no previous Stage 3
+                        assessment certification.</p>
+                      <p>For individuals holding existing OPITO or industry-recognized non-OPITO Stage 3 certification,
+                        such as Sparrows, Enermech, ABS, BV etc. you may be eligible for reassessment. Speak with one of
+                        our learning advisors before booking.</p>
+                      <p></p>
+                    </div>
+
+                    <div class="col-lg-2 all-btn all-category d-flex align-items-center">
+                      <a href="https://gss-training.com/e-learning/course/opito/offshore-crane-operator-stage3-competence-assessment-floating-structures/Q291cnNlVGVtcGxhdGU6MTI2"
+                        class="btn btn-primary">
+                        <i class="fa-solid fa-eye" aria-hidden="true"></i> View
+                      </a>
+
+
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+
+
+          <div class="col-lg-12 col-md-12 d-flex">
+            <div class="course-box course-design list-course d-flex">
+              <div class="product">
+                <div class="product-content">
+                  <div class="head-course-title row">
+
+
+
+                    <div class="col-lg-4">
+                      <h3 class="title">
+                        <a
+                          href="https://gss-training.com/e-learning/course/opito/offshore-crane-operator-stage3-competence-assessment-vessel-subsea-lifting/Q291cnNlVGVtcGxhdGU6MTI3">
+                          OPITO Approved - Offshore Crane Operator Stage 3 Competence Assessment [Vessel Subsea Lifting]
+                        </a>
+                      </h3>
+                    </div>
+
+                    <div class="col-lg-6">
+                      <p></p>
+                      <p>The OPITO-approved Offshore Crane Operator Stage 3 Competence Assessment is a 1-day workplace
+                        assessment conducted at the client site. The assessment is intended for crane operators that
+                        wish to become OPITO-approved Stage 3 offshore crane operators, and hold no previous Stage 3
+                        assessment certification.</p>
+                      <p>For individuals holding existing OPITO or industry-recognized non-OPITO Stage 3 certification,
+                        such as Sparrows, Enermech, ABS, BV etc. you may be eligible for reassessment. Speak with one of
+                        our learning advisors before booking.</p>
+                      <p></p>
+                    </div>
+
+                    <div class="col-lg-2 all-btn all-category d-flex align-items-center">
+                      <a href="https://gss-training.com/e-learning/course/opito/offshore-crane-operator-stage3-competence-assessment-vessel-subsea-lifting/Q291cnNlVGVtcGxhdGU6MTI3"
+                        class="btn btn-primary">
+                        <i class="fa-solid fa-eye" aria-hidden="true"></i> View
+                      </a>
+
+
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+
+
+          <div class="col-lg-12 col-md-12 d-flex">
+            <div class="course-box course-design list-course d-flex">
+              <div class="product">
+                <div class="product-content">
+                  <div class="head-course-title row">
+
+
+
+                    <div class="col-lg-4">
+                      <h3 class="title">
+                        <a
+                          href="https://gss-training.com/e-learning/course/opito/offshore-crane-operator-stage3-competence-reassessment-floating-structures-simulator%0A/Q291cnNlVGVtcGxhdGU6MTI4">
+                          OPITO Approved - Offshore Crane Operator Stage 3 Competence Reassessment [Floating Structures]
+                          - Simulator
+                        </a>
+                      </h3>
+                    </div>
+
+                    <div class="col-lg-6">
+                      <p></p>
+                      <p>The OPITO Stage 3 Offshore Crane Operator Competence Reassessment is a 1-day course intended
+                        for offshore crane operators that wish to revalidate their OPITO approved OCO Stage 3
+                        certificate or industry recognised Stage 3 Operator Certificate. The reassessment is conducted
+                        on a state of the art simulator.</p>
+                      <p>Existing Stage 3 OCO operators with Sparrows, Enermech, ABS, BV certification are eligible to
+                        attend. Other certificates maybe acceptable, please speak with one of our Learning Advisors
+                        before booking.</p>
+                      <p></p>
+                    </div>
+
+                    <div class="col-lg-2 all-btn all-category d-flex align-items-center">
+                      <a href="https://gss-training.com/e-learning/course/opito/offshore-crane-operator-stage3-competence-reassessment-floating-structures-simulator%0A/Q291cnNlVGVtcGxhdGU6MTI4"
+                        class="btn btn-primary">
+                        <i class="fa-solid fa-eye" aria-hidden="true"></i> View
+                      </a>
+
+
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+
+
+          <div class="col-lg-12 col-md-12 d-flex">
+            <div class="course-box course-design list-course d-flex">
+              <div class="product">
+                <div class="product-content">
+                  <div class="head-course-title row">
+
+
+
+                    <div class="col-lg-4">
+                      <h3 class="title">
+                        <a
+                          href="https://gss-training.com/e-learning/course/opito/offshore-crane-operator-stage3-competence-reassessment-vessel-subsea-lifting-simulator/Q291cnNlVGVtcGxhdGU6MTI5">
+                          OPITO Approved - Offshore Crane Operator Stage 3 Competence Reassessment [Vessel Subsea
+                          Lifting] - Simulator
+                        </a>
+                      </h3>
+                    </div>
+
+                    <div class="col-lg-6">
+                      <p></p>
+                      <p>The OPITO Stage 3 Offshore Crane Operator Competence Reassessment is a 1-day course intended
+                        for offshore crane operators that wish to revalidate their OPITO approved OCO Stage 3
+                        certificate or industry recognised Stage 3 Operator Certificate. The reassessment is conducted
+                        on a state of the art simulator.</p>
+                      <p>Existing Stage 3 OCO operators with Sparrows, Enermech, ABS, BV certification are eligible to
+                        attend. Other certificates maybe acceptable, please speak with one of our Learning Advisors
+                        before booking.</p>
+                      <p></p>
+                    </div>
+
+                    <div class="col-lg-2 all-btn all-category d-flex align-items-center">
+                      <a href="https://gss-training.com/e-learning/course/opito/offshore-crane-operator-stage3-competence-reassessment-vessel-subsea-lifting-simulator/Q291cnNlVGVtcGxhdGU6MTI5"
+                        class="btn btn-primary">
+                        <i class="fa-solid fa-eye" aria-hidden="true"></i> View
+                      </a>
+
+
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+
+
+          <div class="col-lg-12 col-md-12 d-flex">
+            <div class="course-box course-design list-course d-flex">
+              <div class="product">
+                <div class="product-content">
+                  <div class="head-course-title row">
+
+
+
+                    <div class="col-lg-4">
+                      <h3 class="title">
+                        <a
+                          href="https://gss-training.com/e-learning/course/ecitb/small-bore-tubing-assemble-and-install-small-bore-tubing-with-twin-ferrule-mechanical-grip-fittings-course-sbt01/Q291cnNlVGVtcGxhdGU6MTMz">
+                          ECITB - Small Bore Tubing: Assemble and Install Small Bore Tubing with Twin Ferrule Mechanical
+                          Grip Fittings Course (SBT01)
+                        </a>
+                      </h3>
+                    </div>
+
+                    <div class="col-lg-6">
+                      <p></p>
+                      <p>This two (2) day, small bore tubing, twin ferrule mechanical grip fittings course is aimed at
+                        learners with no previous small bore tubing training.</p>
+                      <p></p>
+                    </div>
+
+                    <div class="col-lg-2 all-btn all-category d-flex align-items-center">
+                      <a href="https://gss-training.com/e-learning/course/ecitb/small-bore-tubing-assemble-and-install-small-bore-tubing-with-twin-ferrule-mechanical-grip-fittings-course-sbt01/Q291cnNlVGVtcGxhdGU6MTMz"
+                        class="btn btn-primary">
+                        <i class="fa-solid fa-eye" aria-hidden="true"></i> View
+                      </a>
+
+
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+
+
+          <div class="col-lg-12 col-md-12 d-flex">
+            <div class="course-box course-design list-course d-flex">
+              <div class="product">
+                <div class="product-content">
+                  <div class="head-course-title row">
+
+
+
+                    <div class="col-lg-4">
+                      <h3 class="title">
+                        <a
+                          href="https://gss-training.com/e-learning/course/ecitb/imji-technical-test-dismantle-assemble-and-hand-torque-flanged-joints-timji10%0A/Q291cnNlVGVtcGxhdGU6MTM1">
+                          ECITB IMJI Technical Test: Dismantle, Assemble and Hand Torque Flanged Joints (TIMJI10)
+                        </a>
+                      </h3>
+                    </div>
+
+                    <div class="col-lg-6">
+                      <p></p>
+                      <p>Candidates will be tested in the dismantling, assembly, and hand torquing of flanged joints to
+                        validate competence. </p>
+                      <p><br></p>
+                      <p></p>
+                    </div>
+
+                    <div class="col-lg-2 all-btn all-category d-flex align-items-center">
+                      <a href="https://gss-training.com/e-learning/course/ecitb/imji-technical-test-dismantle-assemble-and-hand-torque-flanged-joints-timji10%0A/Q291cnNlVGVtcGxhdGU6MTM1"
+                        class="btn btn-primary">
+                        <i class="fa-solid fa-eye" aria-hidden="true"></i> View
+                      </a>
+
+
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+
+
+          <div class="col-lg-12 col-md-12 d-flex">
+            <div class="course-box course-design list-course d-flex">
+              <div class="product">
+                <div class="product-content">
+                  <div class="head-course-title row">
+
+
+
+                    <div class="col-lg-4">
+                      <h3 class="title">
+                        <a
+                          href="https://gss-training.com/e-learning/course/ecitb/imji-technical-test-dismantle-assemble-and-tension-bolted-connections-timji18%0A/Q291cnNlVGVtcGxhdGU6MTM2">
+                          ECITB IMJI Technical Test: Dismantle, Assemble and Tension Bolted Connections (TIMJI18)
+                        </a>
+                      </h3>
+                    </div>
+
+                    <div class="col-lg-6">
+                      <p></p>
+                      <p>Candidates will be tested in the dismantling, assembly, and tensioning bolted connections to
+                        validate competence.</p>
+                      <p></p>
+                    </div>
+
+                    <div class="col-lg-2 all-btn all-category d-flex align-items-center">
+                      <a href="https://gss-training.com/e-learning/course/ecitb/imji-technical-test-dismantle-assemble-and-tension-bolted-connections-timji18%0A/Q291cnNlVGVtcGxhdGU6MTM2"
+                        class="btn btn-primary">
+                        <i class="fa-solid fa-eye" aria-hidden="true"></i> View
+                      </a>
+
+
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+
+
+          <div class="col-lg-12 col-md-12 d-flex">
+            <div class="course-box course-design list-course d-flex">
+              <div class="product">
+                <div class="product-content">
+                  <div class="head-course-title row">
+
+
+
+                    <div class="col-lg-4">
+                      <h3 class="title">
+                        <a
+                          href="https://gss-training.com/e-learning/course/ecitb/imji-technical-test-dismantle-assemble-and-hydraulically-torque-flanged-joints-timji19%0A/Q291cnNlVGVtcGxhdGU6MTM3">
+                          ECITB IMJI Technical Test: Dismantle, Assemble and Hydraulically Torque Flanged Joints
+                          (TIMJI19)
+                        </a>
+                      </h3>
+                    </div>
+
+                    <div class="col-lg-6">
+                      <p></p>
+                      <p>Candidates will be tested in the dismantling, assembly, and hydraulic torquing of flanged
+                        joints to validate competence.</p>
+                      <p></p>
+                    </div>
+
+                    <div class="col-lg-2 all-btn all-category d-flex align-items-center">
+                      <a href="https://gss-training.com/e-learning/course/ecitb/imji-technical-test-dismantle-assemble-and-hydraulically-torque-flanged-joints-timji19%0A/Q291cnNlVGVtcGxhdGU6MTM3"
+                        class="btn btn-primary">
+                        <i class="fa-solid fa-eye" aria-hidden="true"></i> View
+                      </a>
+
+
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+
+
+          <div class="col-lg-12 col-md-12 d-flex">
+            <div class="course-box course-design list-course d-flex">
+              <div class="product">
+                <div class="product-content">
+                  <div class="head-course-title row">
+
+
+
+                    <div class="col-lg-4">
+                      <h3 class="title">
+                        <a
+                          href="https://gss-training.com/e-learning/course/leea/offshore-crane-inspection%0A/Q291cnNlVGVtcGxhdGU6MTM4">
+                          LEEA Accredited - Rigging &amp; Lifting Stage 3 Assessment/Reassessment
+                        </a>
+                      </h3>
+                    </div>
+
+                    <div class="col-lg-6">
+                      <p></p>
+                      <p>The target group for Rigger &amp; Lifting Stage 3
+                        Assessment are personnel that
+                        wish to become LEEA Accredited
+                        competent riggers - having
+                        successfully completed the Rigger
+                        Initial Training or possess sufficient
+                        and relevant work experience to be
+                        eligible for the Rigger assessment. </p>
+                      <p>N.B. No training is provided in the
+                        assessment. Candidates who feel
+                        they require additional training
+                        should contact us to discuss your
+                        options.</p>
+                      <p></p>
+                    </div>
+
+                    <div class="col-lg-2 all-btn all-category d-flex align-items-center">
+                      <a href="https://gss-training.com/e-learning/course/leea/offshore-crane-inspection%0A/Q291cnNlVGVtcGxhdGU6MTM4"
+                        class="btn btn-primary">
+                        <i class="fa-solid fa-eye" aria-hidden="true"></i> View
+                      </a>
+
+
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+
+
+          <div class="col-lg-12 col-md-12 d-flex">
+            <div class="course-box course-design list-course d-flex">
+              <div class="product">
+                <div class="product-content">
+                  <div class="head-course-title row">
+
+
+
+                    <div class="col-lg-4">
+                      <h3 class="title">
+                        <a
+                          href="https://gss-training.com/e-learning/course/leea/rigging-and-lifting-training%0A/Q291cnNlVGVtcGxhdGU6MTM5">
+                          LEEA Accredited - Rigging &amp; Lifting Training
+                        </a>
+                      </h3>
+                    </div>
+
+                    <div class="col-lg-6">
+                      <p></p>
+                      <p>The LEEA Accredited Rigging
+                        and Lifting Training course is for
+                        personnel who have had little or
+                        no training and/or experience in
+                        rigging and lifting operations and
+                        wish to gain an Industry-recognised
+                        introductory certificate in rigging
+                        and lifting operations, to enable
+                        them to start employment as a
+                        mechanical rigger.</p>
+                      <p></p>
+                    </div>
+
+                    <div class="col-lg-2 all-btn all-category d-flex align-items-center">
+                      <a href="https://gss-training.com/e-learning/course/leea/rigging-and-lifting-training%0A/Q291cnNlVGVtcGxhdGU6MTM5"
+                        class="btn btn-primary">
+                        <i class="fa-solid fa-eye" aria-hidden="true"></i> View
+                      </a>
+
+
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+
+
+          <div class="col-lg-12 col-md-12 d-flex">
+            <div class="course-box course-design list-course d-flex">
+              <div class="product">
+                <div class="product-content">
+                  <div class="head-course-title row">
+
+
+
+                    <div class="col-lg-4">
+                      <h3 class="title">
+                        <a
+                          href="https://gss-training.com/e-learning/course/ecitb/technical-test-installing-and-assembling-sbt-assemblies-twin-ferrule-tsbt01%0A/Q291cnNlVGVtcGxhdGU6MTQx">
+                          ECITB - Technical Test: Installing and Assembling SBT Assemblies - Twin Ferrule (TSBT01)
+                        </a>
+                      </h3>
+                    </div>
+
+                    <div class="col-lg-6">
+                      <p></p>
+                      <p>The candidate has to successfully use the appropriate tools, equipment and materials to plan,
+                        prepare, fabricate, assemble and install a small bore tubing assembly as per the specified
+                        drawing and within set tolerances.</p>
+                      <p></p>
+                    </div>
+
+                    <div class="col-lg-2 all-btn all-category d-flex align-items-center">
+                      <a href="https://gss-training.com/e-learning/course/ecitb/technical-test-installing-and-assembling-sbt-assemblies-twin-ferrule-tsbt01%0A/Q291cnNlVGVtcGxhdGU6MTQx"
+                        class="btn btn-primary">
+                        <i class="fa-solid fa-eye" aria-hidden="true"></i> View
+                      </a>
+
+
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+
+
+          <div class="col-lg-12 col-md-12 d-flex">
+            <div class="course-box course-design list-course d-flex">
+              <div class="product">
+                <div class="product-content">
+                  <div class="head-course-title row">
+
+
+
+                    <div class="col-lg-4">
+                      <h3 class="title">
+                        <a
+                          href="https://gss-training.com/e-learning/course/ecitb/disassemble-and-reinstalling-small-bore-tubing-assemblies-twin-ferrule-tsbt02%0A/Q291cnNlVGVtcGxhdGU6MTQy">
+                          ECITB - Disassemble and Reinstalling Small Bore Tubing Assemblies - Twin Ferrule (TSBT02)
+                        </a>
+                      </h3>
+                    </div>
+
+                    <div class="col-lg-6">
+                      <p></p>
+                      <p>The candidate has to successfully dismantle, identify faults and defects on small bore tubing
+                        assemblies. Then reinstall small bore tubing assemblies using the appropriate tools, equipment
+                        and materials as per the specified drawing and specification sheet within set tolerances.</p>
+                      <p></p>
+                    </div>
+
+                    <div class="col-lg-2 all-btn all-category d-flex align-items-center">
+                      <a href="https://gss-training.com/e-learning/course/ecitb/disassemble-and-reinstalling-small-bore-tubing-assemblies-twin-ferrule-tsbt02%0A/Q291cnNlVGVtcGxhdGU6MTQy"
+                        class="btn btn-primary">
+                        <i class="fa-solid fa-eye" aria-hidden="true"></i> View
+                      </a>
+
+
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+
+
+          <div class="col-lg-12 col-md-12 d-flex">
+            <div class="course-box course-design list-course d-flex">
+              <div class="product">
+                <div class="product-content">
+                  <div class="head-course-title row">
+
+
+
+                    <div class="col-lg-4">
+                      <h3 class="title">
+                        <a
+                          href="https://gss-training.com/e-learning/course/ecitb/assemble-and-install-small-bore-tubing-assemblies-cone-and-thread-tsbt03%0A/Q291cnNlVGVtcGxhdGU6MTQz">
+                          ECITB - Assemble and Install Small Bore Tubing Assemblies - Cone and Thread (TSBT03)
+                        </a>
+                      </h3>
+                    </div>
+
+                    <div class="col-lg-6">
+                      <p></p>
+                      <p>The candidate has to successfully use the appropriate tools, equipment and materials to plan,
+                        prepare, fabricate, assemble and install a small bore tubing assembly as per the specified
+                        drawing and within set tolerances.</p>
+                      <p></p>
+                    </div>
+
+                    <div class="col-lg-2 all-btn all-category d-flex align-items-center">
+                      <a href="https://gss-training.com/e-learning/course/ecitb/assemble-and-install-small-bore-tubing-assemblies-cone-and-thread-tsbt03%0A/Q291cnNlVGVtcGxhdGU6MTQz"
+                        class="btn btn-primary">
+                        <i class="fa-solid fa-eye" aria-hidden="true"></i> View
+                      </a>
+
+
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+
+
+          <div class="col-lg-12 col-md-12 d-flex">
+            <div class="course-box course-design list-course d-flex">
+              <div class="product">
+                <div class="product-content">
+                  <div class="head-course-title row">
+
+
+
+                    <div class="col-lg-4">
+                      <h3 class="title">
+                        <a
+                          href="https://gss-training.com/e-learning/course/ecitb/technical-test-hydrotest-sbt-assemblies-tsbt04%0A/Q291cnNlVGVtcGxhdGU6MTQ0">
+                          ECITB - Technical Test: Hydrotest SBT Assemblies (TSBT04)
+                        </a>
+                      </h3>
+                    </div>
+
+                    <div class="col-lg-6">
+                      <p></p>
+                      <p>This course is coming in 2023. Contact our booking team for more information. </p>
+                      <p></p>
+                    </div>
+
+                    <div class="col-lg-2 all-btn all-category d-flex align-items-center">
+                      <a href="https://gss-training.com/e-learning/course/ecitb/technical-test-hydrotest-sbt-assemblies-tsbt04%0A/Q291cnNlVGVtcGxhdGU6MTQ0"
+                        class="btn btn-primary">
+                        <i class="fa-solid fa-eye" aria-hidden="true"></i> View
+                      </a>
+
+
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+
+
+          <div class="col-lg-12 col-md-12 d-flex">
+            <div class="course-box course-design list-course d-flex">
+              <div class="product">
+                <div class="product-content">
+                  <div class="head-course-title row">
+
+
+
+                    <div class="col-lg-4">
+                      <h3 class="title">
+                        <a
+                          href="https://gss-training.com/e-learning/course/ecitb/small-bore-tubing-assemble-and-install-small-bore-tubing-with-cone-and-threaded-medium-and-high-pressure-module-sbt02/Q291cnNlVGVtcGxhdGU6MTQ1">
+                          ECITB - Small Bore Tubing: Assemble and Install Small Bore Tubing with Cone and Threaded;
+                          Medium and High Pressure Module (SBT02)
+                        </a>
+                      </h3>
+                    </div>
+
+                    <div class="col-lg-6">
+                      <p></p>
+                      <p>This module is designed as an add-on to SBT01, enabling delegates to gain training in both twin
+                        ferrule (SBT01) and Cone and Threaded Fittings (SBT02). </p>
+                      <p>This 1-day module can only be completed by learners who hold an ECITB SBT01 approved course
+                        certificate taken in the previous six months or have a valid TSBT01 technical test certificate.
+                      </p>
+                      <p></p>
+                    </div>
+
+                    <div class="col-lg-2 all-btn all-category d-flex align-items-center">
+                      <a href="https://gss-training.com/e-learning/course/ecitb/small-bore-tubing-assemble-and-install-small-bore-tubing-with-cone-and-threaded-medium-and-high-pressure-module-sbt02/Q291cnNlVGVtcGxhdGU6MTQ1"
+                        class="btn btn-primary">
+                        <i class="fa-solid fa-eye" aria-hidden="true"></i> View
+                      </a>
+
+
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+
+
+          <div class="col-lg-12 col-md-12 d-flex">
+            <div class="course-box course-design list-course d-flex">
+              <div class="product">
+                <div class="product-content">
+                  <div class="head-course-title row">
+
+
+
+                    <div class="col-lg-4">
+                      <h3 class="title">
+                        <a
+                          href="https://gss-training.com/e-learning/course/ecitb/international-mji-hydraulically-torqued-bolted-connection-techniques-module-imji-19-20%0A/Q291cnNlVGVtcGxhdGU6MTUz">
+                          ECITB International MJI: Hydraulically Torqued Bolted Connection Techniques Module (IMJI 19
+                          &amp; 20)
+                        </a>
+                      </h3>
+                    </div>
+
+                    <div class="col-lg-6">
+                      <p></p>
+                      <p>ECITB Mechanical Joint Integrity IMJI19 &amp; 20 module concentrates on the skilled performance
+                        expected when working with hydraulically torqued bolted connections of flanged and clamp
+                        connector pipe joints.</p>
+                      <p></p>
+                    </div>
+
+                    <div class="col-lg-2 all-btn all-category d-flex align-items-center">
+                      <a href="https://gss-training.com/e-learning/course/ecitb/international-mji-hydraulically-torqued-bolted-connection-techniques-module-imji-19-20%0A/Q291cnNlVGVtcGxhdGU6MTUz"
+                        class="btn btn-primary">
+                        <i class="fa-solid fa-eye" aria-hidden="true"></i> View
+                      </a>
+
+
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+
+
+          <div class="col-lg-12 col-md-12 d-flex">
+            <div class="course-box course-design list-course d-flex">
+              <div class="product">
+                <div class="product-content">
+                  <div class="head-course-title row">
+
+
+
+                    <div class="col-lg-4">
+                      <h3 class="title">
+                        <a
+                          href="https://gss-training.com/e-learning/course/ecitb/imji-technical-test-dismantle-assemble-and-hand-torque-clamp-connectors-timji11%0A/Q291cnNlVGVtcGxhdGU6MTU0">
+                          ECITB IMJI Technical Test: Dismantle, Assemble and Hand Torque Clamp Connectors (TIMJI11)
+                        </a>
+                      </h3>
+                    </div>
+
+                    <div class="col-lg-6">
+                      <p></p>
+                      <p>Candidates will be tested in the dismantling, assembly, and hand torquing of clamp connectors
+                        to validate competence.</p>
+                      <p></p>
+                    </div>
+
+                    <div class="col-lg-2 all-btn all-category d-flex align-items-center">
+                      <a href="https://gss-training.com/e-learning/course/ecitb/imji-technical-test-dismantle-assemble-and-hand-torque-clamp-connectors-timji11%0A/Q291cnNlVGVtcGxhdGU6MTU0"
+                        class="btn btn-primary">
+                        <i class="fa-solid fa-eye" aria-hidden="true"></i> View
+                      </a>
+
+
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+
+
+          <div class="col-lg-12 col-md-12 d-flex">
+            <div class="course-box course-design list-course d-flex">
+              <div class="product">
+                <div class="product-content">
+                  <div class="head-course-title row">
+
+
+
+                    <div class="col-lg-4">
+                      <h3 class="title">
+                        <a
+                          href="https://gss-training.com/e-learning/course/ecitb/imji-technical-test-dismantle-assemble-and-hydraulically-torque-clamp-connectors-timji20%0A/Q291cnNlVGVtcGxhdGU6MTU1">
+                          ECITB IMJI Technical Test: Dismantle, Assemble and Hydraulically Torque Clamp Connectors
+                          (TIMJI20)
+                        </a>
+                      </h3>
+                    </div>
+
+                    <div class="col-lg-6">
+                      <p></p>
+                      <p>Candidates will be tested in the dismantling, assembly, and hand torquing of clamp connectors
+                        to validate competence.</p>
+                      <p></p>
+                    </div>
+
+                    <div class="col-lg-2 all-btn all-category d-flex align-items-center">
+                      <a href="https://gss-training.com/e-learning/course/ecitb/imji-technical-test-dismantle-assemble-and-hydraulically-torque-clamp-connectors-timji20%0A/Q291cnNlVGVtcGxhdGU6MTU1"
+                        class="btn btn-primary">
+                        <i class="fa-solid fa-eye" aria-hidden="true"></i> View
+                      </a>
+
+
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+
+
+<style>
+  :root {
+  --brand-dark-blue: #0C334A;
+  --brand-green: #75D547;
+  --brand-green-hover: #62b83b;
+  --light-bg: #f8f9fa;
+}
+
+/* ===== Page Background ===== */
+body {
+  background-color: var(--light-bg);
+  font-family: 'Poppins', sans-serif;
+}
+
+/* ===== Course Box Styling ===== */
+.course-box {
+  background-color: #fff;
+  border: 1px solid #e6e6e6;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+  transition: all 0.3s ease;
+  margin-bottom: 25px;
+  padding: 25px 30px;
+  width: 100%;
+}
+
+.course-box:hover {
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  transform: translateY(-5px);
+}
+
+/* ===== Course Title ===== */
+.title a {
+  color: var(--brand-dark-blue);
+  font-weight: 600;
+  font-size: 1.1rem;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.title a:hover {
+  color: var(--brand-green);
+}
+
+/* ===== Description ===== */
+.head-course-title p {
+  color: #555;
+  margin-bottom: 0;
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+/* ===== View Button ===== */
+.all-btn .btn-primary {
+  background-color: transparent;
+  color: var(--brand-green);
+  border: 2px solid var(--brand-green);
+  border-radius: 50px;
+  padding: 8px 18px;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  transition: all 0.3s ease;
+  text-decoration: none;
+}
+
+.all-btn .btn-primary i {
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+/* Button hover effect */
+.all-btn .btn-primary:hover {
+  background-color: var(--brand-green);
+  color: #fff;
+}
+
+.all-btn .btn-primary:hover i {
+  transform: scale(1.2);
+  color: #fff;
+}
+
+/* ===== Responsive Design ===== */
+@media (max-width: 992px) {
+  .head-course-title {
+    flex-direction: column;
+  }
+
+  .col-lg-4,
+  .col-lg-6,
+  .col-lg-2 {
+    width: 100%;
+    text-align: left !important;
+    margin-bottom: 10px;
+  }
+
+  .all-btn {
+    justify-content: flex-start !important;
+  }
+}
+</style>
+
+
+
+
+
+
+<!-- Roles section -->
+<div class="container py-5">
+  <div class="text-center mb-5">
+    <h2 class="card-title fw-bold section-title" style="color: #0C334A;">
+      Find Courses <span style="color: #75D547">by Your Role</span>
+    </h2>
+    <h6 class="card-subtitle mt-3 text-body-secondary section-subtitle">
+      Specialized training paths for your career.
+    </h6>
+  </div>
+
+  <div class="row g-4">
+    <div class="col-12 col-md-6 col-lg-4" data-aos="flip-up" data-aos-delay="60">
+      <div class="role-card h-100">
+        <div class="role-icon-wrap"><i class="fa-solid fa-anchor role-icon" aria-hidden="true"></i></div>
+        <p class="role-text">Roustabout</p>
+      </div>
+    </div>
+
+    <div class="col-12 col-md-6 col-lg-4" data-aos="zoom-in" data-aos-delay="90">
+      <div class="role-card h-100">
+        <div class="role-icon-wrap"><i class="fa-solid fa-person-hiking role-icon" aria-hidden="true"></i></div>
+        <p class="role-text">Rigger</p>
+      </div>
+    </div>
+
+    <!-- Offshore Crane Operator: changed to a clearer icon (warehouse/crane alternative) -->
+    <div class="col-12 col-md-6 col-lg-4" data-aos="flip-down" data-aos-delay="120">
+      <div class="role-card h-100">
+        <div class="role-icon-wrap"><i class="fa-solid fa-industry role-icon" aria-hidden="true"></i></div>
+        <p class="role-text">Offshore Crane Operator</p>
+      </div>
+    </div>
+
+    <div class="col-12 col-md-6 col-lg-4" data-aos="flip-up" data-aos-delay="150">
+      <div class="role-card h-100">
+        <div class="role-icon-wrap"><i class="fa-solid fa-screwdriver-wrench role-icon" aria-hidden="true"></i></div>
+        <p class="role-text">Bolt Technician</p>
+      </div>
+    </div>
+
+    <div class="col-12 col-md-6 col-lg-4" data-aos="zoom-in" data-aos-delay="180">
+      <div class="role-card h-100">
+        <div class="role-icon-wrap"><i class="fa-solid fa-tower-cell role-icon" aria-hidden="true"></i></div>
+        <p class="role-text">Scaffolder</p>
+      </div>
+    </div>
+
+    <div class="col-12 col-md-6 col-lg-4" data-aos="flip-down" data-aos-delay="210">
+      <div class="role-card h-100">
+        <div class="role-icon-wrap"><i class="fa-solid fa-user-shield role-icon" aria-hidden="true"></i></div>
+        <p class="role-text">Health and Safety Officer</p>
+      </div>
+    </div>
+
+    <div class="col-12 col-md-6 col-lg-4" data-aos="flip-up" data-aos-delay="240">
+      <div class="role-card h-100">
+        <div class="role-icon-wrap"><i class="fa-solid fa-microchip role-icon" aria-hidden="true"></i></div>
+        <p class="role-text">Instrumentation Technician</p>
+      </div>
+    </div>
+
+    <div class="col-12 col-md-6 col-lg-4" data-aos="zoom-in" data-aos-delay="270">
+      <div class="role-card h-100">
+        <div class="role-icon-wrap"><i class="fa-solid fa-wind role-icon" aria-hidden="true"></i></div>
+        <p class="role-text">Wind Turbine Technician</p>
+      </div>
+    </div>
+
+    <div class="col-12 col-md-6 col-lg-4" data-aos="flip-down" data-aos-delay="300">
+      <div class="role-card h-100">
+        <div class="role-icon-wrap"><i class="fa-solid fa-person-falling role-icon" aria-hidden="true"></i></div>
+        <p class="role-text">Rope Access Technician</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- CTA -->
+<div class="container-fluid mt-5 mb-5">
+  <div class="card rounded-4 pt-5 pb-5 border-0" style="background: rgba(95, 151, 170,0.08);">
+    <div class="container text-center">
+      <h2 class="card-title fw-bold" style="color: #0C334A;">Ready to Enhance Your Skills?</h2>
+      <h6 class="card-subtitle mt-3 mb-4 text-body-secondary">Browse our full catalog or contact us for tailored
+        training solutions.</h6>
+      <a href="/contact" class="btn enrollBtn1 active" aria-label="Inquire About Courses">
+        Inquire About Courses
+      </a>
+    </div>
+  </div>
+</div>
+
+<!-- Styles -->
+<style>
+  /* Page background */
+  body {
+    background-color: #f8fbff;
+  }
+
+  .btn.enrollBtn1:hover {
+    background: rgba(0, 106, 255, 0.8);
+    color: #ffffff;
+  }
+
+  /* Hero */
+  .hero-card {
+    position: relative;
+  }
+
+  .gradient-overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(180deg, rgba(12, 51, 74, 0.45) 0%, rgba(117, 213, 71, 0.06) 80%);
+    pointer-events: none;
+  }
+
+  .hero-caption {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+    z-index: 2;
+    padding: 1.5rem;
+  }
+
+  .hero-title {
+    font-size: clamp(1.5rem, 1rem + 3.5vw, 3.2rem);
+    letter-spacing: .015em;
+  }
+
+  /* Section Title */
+  .section-title {
+    font-size: clamp(1.75rem, 0.8571rem + 2.8571vw, 2.6rem);
+    font-weight: 700;
+  }
+
+  .section-subtitle {
+    font-size: clamp(0.9rem, 0.5rem + 1vw, 1.05rem);
+    color: #586573;
+  }
+
+  /* Course cards */
+  .course-card {
+    border-radius: 15px;
+    background: #fff;
+    box-shadow: 0 6px 18px rgba(6, 24, 42, 0.06);
+    text-align: center;
+    padding: 28px 18px;
+    transition: transform .35s cubic-bezier(.2, .9, .3, 1), box-shadow .35s, background-color .25s;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-bottom: 4px solid transparent;
+  }
+
+  .course-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 18px 40px rgba(7, 26, 58, 0.12);
+    border-bottom-color: #75D547;
+    background-color: #ecf9ea;
+    /* light green background on hover */
+  }
+
+  .course-card .img-wrap {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    min-height: 110px;
+  }
+
+  .course-card img {
+    max-height: 120px;
+    width: auto;
+    object-fit: contain;
+    display: block;
+  }
+
+  .course-title {
+    color: #0C334A;
+    font-weight: 700;
+    font-size: 1.02rem;
+    margin-top: 12px;
+  }
+
+  /* Role cards */
+  .role-card {
+    background-color: #fff;
+    border-radius: 15px;
+    box-shadow: 0 6px 18px rgba(6, 24, 42, 0.06);
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    transition: transform .28s ease, box-shadow .28s ease, border-left-color .28s ease, background-color .28s ease;
+    height: 100%;
+    border-left: 6px solid rgba(26, 158, 219, 0);
+  }
+
+  .role-card:hover {
+    transform: translateX(6px);
+    box-shadow: 0 20px 36px rgba(7, 26, 58, 0.10);
+    border-left-color: #75D547;
+    background-color: #fbfffb;
+  }
+
+  .role-icon-wrap {
+    width: 60px;
+    height: 60px;
+    border-radius: 12px;
+    display: grid;
+    place-items: center;
+    background: linear-gradient(180deg, rgba(26, 158, 219, 0.08), rgba(117, 213, 71, 0.03));
+  }
+
+  .role-icon {
+    color: #0C334A;
+    font-size: 1.5rem;
+  }
+
+  .role-text {
+    color: #0C334A;
+    font-weight: 700;
+    font-size: 1.02rem;
+    margin: 0;
+  }
+
+  /* CTA */
+  .enrollBtn1 {
+    background-color: #75D547;
+    color: #0C334A;
+    border: 1px solid #0C334A;
+    font-weight: 700;
+    padding: 12px 28px;
+    border-radius: 0.6rem;
+    transition: transform .18s ease, box-shadow .18s ease;
+  }
+
+  .enrollBtn1:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 26px rgba(22, 92, 22, 0.08);
+  }
+
+  /* Responsive tweaks */
+  @media (max-width: 768px) {
+    .hero-caption {
+      padding: 1rem;
+    }
+
+    .hero-title {
+      font-size: 1.8rem;
+    }
+
+    .course-card .img-wrap {
+      min-height: 90px;
+    }
+  }
+</style>
+
+
+<!-- all courses  -->
+<style>
+  .course-icon {
+    /* This light blue color closely matches the icon in the image */
+    color: #5c9ded;
+  }
+
+  .list-group-item {
+    /* Adds a bit more breathing room */
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
+
+  .course-title {
+    font-weight: 500;
+    /* A slightly softer bold */
+    color: #212529;
+    /* Dark text for title */
+  }
+
+  .course-subtitle {
+    font-size: 0.9rem;
+    /* Small subtitle */
+  }
+</style>
+
+<!-- Scripts -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.bundle.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+<script>
+  // Initialize AOS with friendly defaults: animations run once and are smooth
+  document.addEventListener('DOMContentLoaded', function () {
+    AOS.init({
+      duration: 700,
+      once: true,
+      easing: 'ease-out-cubic',
+      // disable: 'mobile' // optional: enable if you want to disable on smaller screens
+    });
+  });
+</script>
+
 {% endblock %}
