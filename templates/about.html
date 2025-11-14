@@ -1046,44 +1046,52 @@
     <div class="row g-4">
 
         <!-- Canada -->
-        <a href="/contact" class="col-md-3 col-sm-6"  data-aos="fade-down" data-aos-delay="0">
-            <div class="hub-card">
-                <img src="https://img.freepik.com/premium-photo/canadian-national-flag-overlay-false-creek-downtown-vancouver-british-columbia-canada_645882-7889.jpg?semt=ais_hybrid&w=740&q=80"
-                    class="img-fluid rounded" alt="Canada - Moraine Lake">
-                <h5 class="mt-2 fw-semibold">Canada</h5>
-                <p class="text-muted mb-0">XYZ, Canada</p>
-            </div>
-        </a>
+        <div class="col-lg-3 col-md-4 col-sm-6 col-6" data-aos="fade-down" data-aos-delay="0">
+            <a href="/contact" class="hub-link">
+                <div class="hub-card">
+                    <img src="https://img.freepik.com/premium-photo/canadian-national-flag-overlay-false-creek-downtown-vancouver-british-columbia-canada_645882-7889.jpg?semt=ais_hybrid&w=740&q=80"
+                        class="img-fluid hub-img rounded" alt="Canada">
+                    <h5 class="mt-2 fw-semibold">Canada</h5>
+                    <p class="text-muted mb-0">XYZ, Canada</p>
+                </div>
+            </a>
+        </div>
 
         <!-- UK -->
-        <a href="/contact" class="col-md-3 col-sm-6" data-aos="fade-down" data-aos-delay="200">
-            <div class="hub-card">
-                <img src="https://images.unsplash.com/photo-1505761671935-60b3a7427bad?w=800" class="img-fluid rounded"
-                    alt="London UK">
-                <h5 class="mt-2 fw-semibold">UK</h5>
-                <p class="text-muted mb-0">London, England</p>
-            </div>
-        </a>
+        <div class="col-lg-3 col-md-4 col-sm-6 col-6" data-aos="fade-down" data-aos-delay="200">
+            <a href="/contact" class="hub-link">
+                <div class="hub-card">
+                    <img src="https://images.unsplash.com/photo-1505761671935-60b3a7427bad?w=800"
+                        class="img-fluid hub-img rounded" alt="UK">
+                    <h5 class="mt-2 fw-semibold">UK</h5>
+                    <p class="text-muted mb-0">London, England</p>
+                </div>
+            </a>
+        </div>
 
         <!-- Qatar -->
-        <a href="/contact" class="col-md-3 col-sm-6"  data-aos="fade-down" data-aos-delay="400">
-            <div class="hub-card">
-                <img src="https://skift.com/wp-content/uploads/2025/01/raffles-doha-luxury-hotel-accor.jpg"
-                    class="img-fluid rounded" alt="Doha Qatar">
-                <h5 class="mt-2 fw-semibold">Qatar</h5>
-                <p class="text-muted mb-0">Doha, Qatar</p>
-            </div>
-        </a>
+        <div class="col-lg-3 col-md-4 col-sm-6 col-6" data-aos="fade-down" data-aos-delay="400">
+            <a href="/contact" class="hub-link">
+                <div class="hub-card">
+                    <img src="https://skift.com/wp-content/uploads/2025/01/raffles-doha-luxury-hotel-accor.jpg"
+                        class="img-fluid hub-img rounded" alt="Qatar">
+                    <h5 class="mt-2 fw-semibold">Qatar</h5>
+                    <p class="text-muted mb-0">Doha, Qatar</p>
+                </div>
+            </a>
+        </div>
 
         <!-- India -->
-        <a href="/contact" class="col-md-3 col-sm-6"  data-aos="fade-down" data-aos-delay="600">
-            <div class="hub-card">
-                <img src="https://t3.ftcdn.net/jpg/02/65/64/24/360_F_265642486_IXw9DQVzjTfAzT8xMtTBXBvYD8Who6Fw.jpg"
-                    class="img-fluid rounded" alt="Red Fort India">
-                <h5 class="mt-2 fw-semibold">India</h5>
-                <p class="text-muted mb-0">Cochin, India</p>
-            </div>
-        </a>
+        <div class="col-lg-3 col-md-4 col-sm-6 col-6" data-aos="fade-down" data-aos-delay="600">
+            <a href="/contact" class="hub-link">
+                <div class="hub-card">
+                    <img src="https://t3.ftcdn.net/jpg/02/65/64/24/360_F_265642486_IXw9DQVzjTfAzT8xMtTBXBvYD8Who6Fw.jpg"
+                        class="img-fluid hub-img rounded" alt="India">
+                    <h5 class="mt-2 fw-semibold">India</h5>
+                    <p class="text-muted mb-0">Cochin, India</p>
+                </div>
+            </a>
+        </div>
 
     </div>
 </section>
@@ -1091,20 +1099,36 @@
 
 
 <style>
-    #our-hubs img {
+    /* Ensure image height adjusts on mobile */
+    #our-hubs .hub-img {
         height: 190px;
+        width: 100%;
         object-fit: cover;
     }
 
+    @media (max-width: 576px) {
+        #our-hubs .hub-img {
+            height: 150px;   /* shorter height on mobile */
+        }
+    }
+
+    /* Remove underline + make full card clickable */
+    .hub-link {
+        text-decoration: none;
+        color: inherit;
+        display: block;
+    }
+
+    /* Hover animation */
     #our-hubs .hub-card {
         transition: 0.3s ease-in-out;
-        cursor: pointer;
     }
 
     #our-hubs .hub-card:hover {
-        transform: translateY(-5px);
+        transform: translateY(-6px);
     }
 </style>
+
 
 
 
