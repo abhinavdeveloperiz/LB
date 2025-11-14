@@ -974,6 +974,71 @@
 
 
 
+<section class="container py-5">
+    <div class="row align-items-center">
+
+        <!-- LEFT COLUMN (3 Boxes) -->
+        <div class="col-md-6">
+
+            <div class="d-flex justify-content-between gap-5">
+
+                <!-- Box 1 -->
+                <div class="partner-logo d-flex flex-column align-items-center justify-content-center">
+                    <img src="" class="partner-logo mb-2" alt="empty logo">
+                </div>
+
+                <!-- Box 2 - HALEYS -->
+                <div class="partner-logo d-flex flex-column align-items-center justify-content-center">
+                    <img src="https://haleysgroup.com/wp-content/uploads/2024/01/logo.png" class="partner-logo mb-2" alt="empty logo">
+                </div>
+
+                <!-- Box 3 -->
+                <div class="partner-logo d-flex flex-column align-items-center justify-content-center">
+                    <img src="" class="partner-logo mb-2" alt="empty logo">
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- RIGHT COLUMN (Content) -->
+        <div class="col-md-6 mt-4 mt-md-0">
+            <h2 class="fw-bold">Our Strategic<br>Partners</h2>
+
+            <p class="mt-3 text-justify">
+                <strong>Lloyds Bureau</strong><br>
+                At our esteemed global partners amplify our capabilities, allowing us 
+                to deliver superior quality and advanced technologies. These alliances 
+                enable us to tackle a broader range of projects with precision, driving 
+                growth and regional expansion. Together, we set new standards in 
+                engineering support services for the energy industry.
+            </p>
+        </div>
+
+    </div>
+</section>
+
+
+<style>
+ 
+
+    .partner-logo {
+        width: 130px;
+        height: auto;
+        object-fit: contain;
+    }
+
+    /* adjust spacing on mobile */
+    @media (max-width: 768px) {
+        .partner-box {
+            width: 100px;
+            height: 100px;
+        }
+    }
+</style>
+
+
+
 
 <section class="container py-5" id="our-hubs">
     <h2 class="mb-4" data-aos="fade-down">Our hubs</h2>
@@ -1040,5 +1105,93 @@
         transform: translateY(-5px);
     }
 </style>
+
+
+
+
+
+
+
+
+
+<section class="py-5">
+    <h2 class="text-center mb-4">Our Clients</h2>
+
+    <div class="client-slider">
+        <div class="client-track">
+
+            <!-- Repeat 7 logos -->
+            <img src="/static/icons/3dlogo.png" alt="client logo">
+            <img src="/static/icons/3dlogo.png" alt="client logo">
+            <img src="/static/icons/3dlogo.png" alt="client logo">
+            <img src="/static/icons/3dlogo.png" alt="client logo">
+            <img src="/static/icons/3dlogo.png" alt="client logo">
+            <img src="/static/icons/3dlogo.png" alt="client logo">
+            <img src="/static/icons/3dlogo.png" alt="client logo">
+
+            <!-- Duplicate for smooth seamless loop -->
+            <img src="/static/icons/3dlogo.png" alt="client logo">
+            <img src="/static/icons/3dlogo.png" alt="client logo">
+            <img src="/static/icons/3dlogo.png" alt="client logo">
+            <img src="/static/icons/3dlogo.png" alt="client logo">
+            <img src="/static/icons/3dlogo.png" alt="client logo">
+            <img src="/static/icons/3dlogo.png" alt="client logo">
+            <img src="/static/icons/3dlogo.png" alt="client logo">
+
+        </div>
+    </div>
+</section>
+
+
+<style>
+    .client-slider {
+        overflow: hidden;
+        width: 100%;
+        position: relative;
+    }
+
+    .client-track {
+        display: flex;
+        width: calc(200px * 14); /* 14 images (7 repeated twice) */
+        animation: scroll-left 25s linear infinite;
+    }
+
+    .client-track img {
+        width: 180px;
+        height: auto;
+        margin: 0 30px;
+        filter: grayscale(20%);
+        opacity: 0.9;
+        transition: 0.3s ease;
+    }
+
+    .client-track img:hover {
+        filter: grayscale(0%);
+        opacity: 1;
+        transform: scale(1.05);
+    }
+
+    @keyframes scroll-left {
+        0% {
+            transform: translateX(0);
+        }
+        100% {
+            transform: translateX(-50%);
+        }
+    }
+
+    @media (max-width: 768px) {
+        .client-track img {
+            width: 120px;
+            margin: 0 15px;
+        }
+    }
+</style>
+
+
+
+
+
+
 
 {% endblock %}
