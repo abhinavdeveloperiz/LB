@@ -1,188 +1,1044 @@
 {% extends 'base.html' %}
-{% block title %}
-  About | L B Certifications Pvt. Ltd
-{% endblock %}
-
+{% block title %}About | L B Certifications Pvt. Ltd{% endblock %}
 {% block content %}
-  <section class="otherSections mt-5 mb-5">
-    <div class="card border-0">
-      <div class="background-image" style="background-image: url('static/images/4131.jpg'); height: 40vh;"></div>
-      <div class="gradient-overlay"></div>
-      <div class="carousel-caption d-md-block">
-        <h1 class="fw-light lh-lg">ABOUT US</h1>
-        <nav class="text-center d-flex justify-content-center align-items-center" style="--bs-breadcrumb-divider: url('data:image/svg+xml,%3Csvg xmlns=\'http://www.w3.org/2000/svg\' width=\'8\' height=\'8\'%3E%3Cpath d=\'M2.5 0L1 1.5 3.5 4 1 6.5 2.5 8l4-4-4-4z\' fill=\'%23ffffff\'/%3E%3C/svg%3E') ;" aria-label="breadcrumb">
-          <ol class="breadcrumb">
-            <li class="breadcrumb-item">
-              <a href="/" class="noLink">Home</a>
-            </li>
-            <li class="breadcrumb-item active text-white" aria-current="page">About</li>
-          </ol>
-        </nav>
-      </div>
-    </div>
-  </section>
 
-  <section class="mt-5">
-    <div class="container-fluid">
-      <div class="card rounded-4 pt-5 pb-5 border-0">
-        <div class="container">
-          <div class="row row-cols-1 row-cols-md-2 g-2">
-            <div class="col-md-4 d-flex justify-content-center align-items-center">
-              <img src="static/images/lloyods-bureau-logo.png" class="card-img-top" alt="..." />
+<style>
+    /* Background Section */
+    .about-section {
+        position: relative;
+        min-height: 65vh;
+        background: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRmAQVBPb4Q_tnH9fWciz3w8q4k5M4OWmG9TneTJ4l-l5tmpHUF8r68HoyGDl-L_1dEtvo&usqp=CAU") center/cover no-repeat;
+
+        /* 🔥 Fix for navbar overlap */
+        padding-top: 120px;
+
+        padding-bottom: 80px;
+        display: flex;
+        align-items: center;
+        color: white;
+    }
+
+    /* Blur overlay */
+    .overlay-blur {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        backdrop-filter: blur(8px);
+        background: rgba(0, 0, 0, 0.40);
+        z-index: 1;
+    }
+
+    /* Ensure readable content above blur */
+    .about-section .container {
+        position: relative;
+        z-index: 2;
+    }
+
+    /* Left Text */
+    .text-content h2 {
+        font-size: 40px;
+        font-weight: 700;
+        margin-bottom: 20px;
+        color: #fff;
+    }
+
+    .text-content p {
+        font-size: 17px;
+        line-height: 1.8;
+        color: #efefef;
+        margin-bottom: 18px;
+    }
+
+    /* Accordion glass effect */
+    .accordion-item {
+        background: rgba(255, 255, 255, 0.18) !important;
+        backdrop-filter: blur(10px);
+        border-radius: 12px;
+        overflow: hidden;
+        margin-bottom: 14px;
+        border: none;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    }
+
+    .accordion-button {
+        background: rgba(255, 255, 255, 0.15);
+        color: #fff;
+        font-weight: 600;
+        padding: 15px 20px;
+    }
+
+    .accordion-button:not(.collapsed) {
+        background: rgba(108, 197, 124, 0.35);
+        color: #fff;
+    }
+
+    .accordion-body {
+        color: #fff;
+        padding: 20px;
+    }
+
+    /* Icons */
+    .accordion-button i {
+        font-size: 18px;
+        color: #6CC57C;
+    }
+
+    /* Responsive Fixes */
+    @media (max-width: 991px) {
+        .text-content h2 {
+            font-size: 34px;
+        }
+
+        .about-section {
+            padding-top: 140px;
+            /* extra for mobile nav */
+            padding-bottom: 60px;
+            text-align: center;
+        }
+    }
+
+    @media (max-width: 768px) {
+        .text-content h2 {
+            font-size: 30px;
+        }
+
+        .text-content p {
+            font-size: 15px;
+        }
+    }
+
+    @media (max-width: 576px) {
+        .text-content h2 {
+            font-size: 28px;
+        }
+
+        .accordion-button {
+            font-size: 15px;
+        }
+    }
+</style>
+
+<!-- ABOUT SECTION -->
+<section class="about-section">
+    <div class="overlay-blur"></div>
+
+    <div class="container">
+        <div class="row g-5 align-items-center">
+
+            <!-- LEFT CONTENT -->
+            <div class="col-md-6 text-content text-justify" data-aos="slide-right" data-aos-delay="100">
+                <h2>Who we are</h2>
+
+                <p>
+                    We are an energy technology company. We understand the demands on energy—what it takes to
+                    produce it, how we use it, why it’s essential to reduce its impact, and where we can
+                    innovate to achieve a sustainable balance.
+                </p>
+
+                <p>
+                    For over a hundred years, we have partnered with our customers, reducing emissions,
+                    innovating new technologies, maximizing productivity, and driving cleaner energy
+                    solutions through continuous improvement and digital optimization.
+                </p>
             </div>
-            <div class="col-md-8">
-              <div class="card bg-transparent border-0">
-                <div class="card-body">
-                  <h2 class="card-title fw-bold" style="font-size: clamp(1.75rem, 0.8571rem + 2.8571vw, 3rem); color: #0C334A;">About <span style="color: #75D457">Us</span></h2>
-                  <h1 class="card-title fw-bold mt-3" style="color: #0C334A;">Welcome to LB Certifications Pvt. Ltd</h1>
-                  <p class="card-text mt-3 lh-lg" style="">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+
+            <!-- RIGHT CONTENT: ACCORDION -->
+            <div class="col-md-6">
+                <div class="accordion" id="aboutAccordion">
+
+                    <!-- Item 1 -->
+                    <div class="accordion-item" data-aos="slide-right">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#item1">
+                                <i class="bi bi-gear me-2"></i> Industry Expertise
+                            </button>
+                        </h2>
+                        <div id="item1" class="accordion-collapse collapse" data-bs-parent="#aboutAccordion">
+                            <div class="accordion-body">
+                                Full text goes here…
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Item 2 -->
+                    <div class="accordion-item" data-aos="slide-left">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#item2">
+                                <i class="bi bi-shield-check me-2"></i> Beyond Compliance
+                            </button>
+                        </h2>
+                        <div id="item2" class="accordion-collapse collapse" data-bs-parent="#aboutAccordion">
+                            <div class="accordion-body">
+                                Full text goes here…
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Item 3 -->
+                    <div class="accordion-item" data-aos="slide-right">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#item3">
+                                <i class="bi bi-stars me-2"></i> Unyielding Quality Standards
+                            </button>
+                        </h2>
+                        <div id="item3" class="accordion-collapse collapse" data-bs-parent="#aboutAccordion">
+                            <div class="accordion-body">
+                                Full text goes here…
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Item 4 -->
+                    <div class="accordion-item" data-aos="slide-left">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#item4">
+                                <i class="bi bi-people me-2"></i> Your Global Partner
+                            </button>
+                        </h2>
+                        <div id="item4" class="accordion-collapse collapse" data-bs-parent="#aboutAccordion">
+                            <div class="accordion-body">
+                                Full text goes here…
+                            </div>
+                        </div>
+                    </div>
+
                 </div>
-              </div>
             </div>
-          </div>
-          <div class="accordion mt-3" id="accordionExample">
-            <div class="accordion-item">
-              <h2 class="accordion-header"><button class="accordion-button fst-italic" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">OUR MISSION</button></h2>
-              <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
-                <div class="accordion-body">
-                  <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
-                </div>
-              </div>
-            </div>
-            <div class="accordion-item">
-              <h2 class="accordion-header"><button class="accordion-button collapsed fst-italic" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">OUR VISION</button></h2>
-              <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-                <div class="accordion-body">
-                  <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
-                </div>
-              </div>
-            </div>
-            <div class="accordion-item">
-              <h2 class="accordion-header"><button class="accordion-button collapsed fst-italic" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">OUR VALUES</button></h2>
-              <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-                <div class="accordion-body">
-                  <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
-                </div>
-              </div>
-            </div>
-          </div>
+
         </div>
-      </div>
     </div>
-  </section>
+</section>
 
-  <section class="mt-5">
-    <div class="container-fluid">
-      <div class="card rounded-4 pt-5 pb-5 border-0">
-        <div class="container">
-          <h2 class="card-title fw-bold" style="font-size: clamp(1.75rem, 0.8571rem + 2.8571vw, 3rem); color: #0C334A;">Our <span style="color: #75D457">Commitment</span></h2>
-          <h6 class="card-subtitle mt-3 mb-5 text-body-secondary">Quality, Safety, and Integrity</h6>
 
-          <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
-            <li class="nav-item mx-1" role="presentation">
-              <button class="btn enrollBtn1" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home" aria-selected="true">QUALITY</button>
-            </li>
-            <li class="nav-item mx-1" role="presentation">
-              <button class="btn enrollBtn1" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile" aria-selected="false">SAFETY</button>
-            </li>
-            <li class="nav-item mx-1" role="presentation">
-              <button class="btn enrollBtn1" id="pills-contact-tab" data-bs-toggle="pill" data-bs-target="#pills-contact" type="button" role="tab" aria-controls="pills-contact" aria-selected="false">INTEGRITY</button>
-            </li>
-          </ul>
-          <div class="tab-content" id="pills-tabContent">
-            <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab" tabindex="0">
-              <h5 class="card-title fw-light mt-3">Quality Policy</h5>
-              <p class="card-text mt-3 lh-lg" style="">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries,</p>
+
+
+<style>
+    .section-wrapper {
+        padding-top: 130px;
+        /* Fix for navbar overlap */
+        padding-bottom: 80px;
+    }
+
+    /* LEFT MENU */
+    .left-menu .list-group-item {
+        padding: 16px 18px;
+        font-size: 16px;
+        font-weight: 600;
+        cursor: pointer;
+        border: none;
+        border-left: 4px solid transparent;
+    }
+
+    .left-menu .active-tab {
+        color: #1a9137;
+        border-left: 4px solid #1a9137;
+        background: #f3faf4;
+    }
+
+    /* Expand/Collapse text */
+    .toggle-text {
+        float: right;
+        font-weight: 500;
+        color: #1a9137;
+    }
+
+    /* RIGHT CONTENT BOX */
+    .content-box {
+        background: #fff;
+        border-radius: 12px;
+        padding: 30px;
+        border: 1px solid #eee;
+        min-height: 350px;
+    }
+
+    /* Featured cards */
+    .feature-card {
+        display: flex;
+        gap: 20px;
+        padding-bottom: 20px;
+        border-bottom: 1px solid #eaeaea;
+        margin-bottom: 20px;
+    }
+
+    .feature-card img {
+        width: 180px;
+        border-radius: 10px;
+    }
+
+    .feature-card h5 {
+        font-weight: 700;
+    }
+
+    .feature-card a {
+        color: #1a9137;
+        font-weight: 600;
+        text-decoration: none;
+    }
+
+    @media(max-width: 768px) {
+        .feature-card {
+            flex-direction: column;
+            text-align: center;
+        }
+
+        .feature-card img {
+            width: 100%;
+        }
+    }
+</style>
+
+
+<section class="section-wrapper container">
+
+    <h2 class="fw-bold mb-3">What we do</h2>
+    <p class="mb-5 text-muted" style="max-width: 800px;">
+        We develop and deploy advanced technologies to serve energy and industrial companies with efficient,
+        reliable and cleaner solutions. Our technologies are transforming how industries work today.
+    </p>
+
+    <div class="row g-5">
+
+        <!-- LEFT MENU -->
+        <div class="col-md-4">
+            <div class="list-group left-menu">
+
+                <a class="list-group-item active-tab" data-target="tab1">
+                    Oilfield Services & Equipment
+                    <span class="toggle-text">Collapse</span>
+                </a>
+
+                <a class="list-group-item" data-target="tab2">
+                    Liquefied Natural Gas (LNG)
+                    <span class="toggle-text">Expand</span>
+                </a>
+
+                <a class="list-group-item" data-target="tab3">
+                    Industrial Technology
+                    <span class="toggle-text">Expand</span>
+                </a>
+
+                <a class="list-group-item" data-target="tab4">
+                    Energy Transition
+                    <span class="toggle-text">Expand</span>
+                </a>
+
+                <a class="list-group-item" data-target="tab5">
+                    Industrial Solutions
+                    <span class="toggle-text">Expand</span>
+                </a>
+
+                <a class="list-group-item" data-target="tab6">
+                    Remote Operations
+                    <span class="toggle-text">Expand</span>
+                </a>
+
             </div>
-            <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab" tabindex="0">
-              <h5 class="card-title fw-light mt-3">HSE Policy</h5>
-              <p class="card-text mt-3 lh-lg" style="">Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.</p>
-            </div>
-            <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab" tabindex="0">
-              <h5 class="card-title fw-light mt-3">Confidentiality & Impartiality Statement</h5>
-              <p class="card-text mt-3 lh-lg" style="">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are</p>
-            </div>
-          </div>
         </div>
-      </div>
-    </div>
-  </section>
 
-  <div class="container-fluid mt-5 mb-5">
-    <div class="card rounded-4 pt-5 pb-5 border-0" style="background: rgba(95, 151, 170,0.2);">
-      <div class="container-fluid">
-        <div class="row row-cols-1 row-cols-md-2 g-0 p-5">
-          <div class="col-md-3 d-flex justify-content-center align-items-center">
-            <div class="card bg-transparent border-0">
-              <div class="card-body">
-                <h3 class="card-title">Internationally</h3>
-                <h4 class="card-subtitle mb-2 text-body-secondary">Accredited By</h4>
-              </div>
+        <!-- RIGHT CONTENT -->
+        <div class="col-md-8">
+
+            <!-- TAB 1 -->
+            <div id="tab1" class="content-box tab-content-box">
+                <h3>Oilfield services & equipment</h3>
+                <p>
+                    Our advanced technology and services help you operate efficiently and safely, giving you
+                    digital optimization and automation capabilities that reduce risks and drive operational excellence.
+                </p>
+
+                <h6 class="mt-4 mb-3 text-muted">— Featured</h6>
+
+                <!-- Feature item 1 -->
+                <div class="feature-card">
+                    <img src="https://static.vecteezy.com/system/resources/previews/017/603/639/non_2x/renewable-green-energy-icon-clean-alternative-energy-power-technology-concept-icon-with-electrical-energy-glow-effect-lightning-spark-or-electric-discharge-effects-background-illustration-vector.jpg"
+                        alt="">
+                    <div>
+                        <h5>Multisense Vector Power & Dynamics Mapping System</h5>
+                        <p class="text-muted">More accurate drilling improvements with data from the field.</p>
+                        <a href="/services">READ MORE ></a>
+                    </div>
+                </div>
+
+                <!-- Feature item 2 -->
+                <div class="feature-card">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT-jaZi6J-roTiRE0fnpBMs9x9kvoVEqQ3rzQ&s"
+                        alt="">
+                    <div>
+                        <h5>Production Enhancement</h5>
+                        <p class="text-muted">Improve productivity with precision intervention tools.</p>
+                        <a href="/services">READ MORE ></a>
+                    </div>
+                </div>
+
             </div>
-          </div>
-          <div class="col-md-9">
-            <div class="card rounded-4" style="border: 1px solid #0C334A;">
-              <div class="owl-carousel owl-theme carousel-1">
-                <div class="item p-3">
-                  <div class="card rounded-4 mt-2 mb-2" style="border: 1px solid #75D457;">
-                    <img src="static/images/9.webp" class="card-img-top rounded-4 p-3" alt="..." />
-                  </div>
-                </div>
-                <div class="item p-3">
-                  <div class="card rounded-4 mt-2 mb-2" style="border: 1px solid #75D457;">
-                    <img src="static/images/9.webp" class="card-img-top rounded-4 p-3" alt="..." />
-                  </div>
-                </div>
-                <div class="item p-3">
-                  <div class="card rounded-4 mt-2 mb-2" style="border: 1px solid #75D457;">
-                    <img src="static/images/9.webp" class="card-img-top rounded-4 p-3" alt="..." />
-                  </div>
-                </div>
-                <div class="item p-3">
-                  <div class="card rounded-4 mt-2 mb-2" style="border: 1px solid #75D457;">
-                    <img src="static/images/9.webp" class="card-img-top rounded-4 p-3" alt="..." />
-                  </div>
-                </div>
-                <div class="item p-3">
-                  <div class="card rounded-4 mt-2 mb-2" style="border: 1px solid #75D457;">
-                    <img src="static/images/9.webp" class="card-img-top rounded-4 p-3" alt="..." />
-                  </div>
-                </div>
-              </div>
+
+            <!-- TAB 2 -->
+            <div id="tab2" class="content-box tab-content-box d-none">
+                <h3>Liquefied Natural Gas (LNG)</h3>
+                <p>
+                    Complete LNG solutions including compression, power, digital monitoring, and reliable execution.
+                </p>
+
+                <h6 class="mt-4 mb-3 text-muted">— Related Solutions</h6>
+
+                <ul>
+                    <li>LNG Compression Systems</li>
+                    <li>Modular LNG Plants</li>
+                    <li>Energy-efficient Turbomachinery</li>
+                </ul>
             </div>
-          </div>
+
+            <!-- TAB 3 -->
+            <div id="tab3" class="content-box tab-content-box d-none">
+                <h3>Industrial Technology</h3>
+                <p>
+                    Our industrial technology business provides non-invasive inspection, measurement, and industrial
+                    scanning solutions.
+                </p>
+
+                <h6 class="mt-4 mb-3 text-muted">— Featured</h6>
+
+                <ul>
+                    <li>Digital Inspection</li>
+                    <li>Ultrasound Technology</li>
+                    <li>Pipeline Integrity Tools</li>
+                </ul>
+            </div>
+
+            <!-- TAB 4 -->
+            <div id="tab4" class="content-box tab-content-box d-none">
+                <h3>Energy Transition</h3>
+                <p>
+                    Supporting sustainable energy with carbon capture, hydrogen technologies, and geothermal expansion.
+                </p>
+
+                <h6 class="mt-3">— Key Focus Areas</h6>
+                <ul>
+                    <li>Carbon Capture Utilization & Storage (CCUS)</li>
+                    <li>Hydrogen Production & Compression</li>
+                    <li>Geothermal Drilling</li>
+                </ul>
+            </div>
+
+            <!-- TAB 5 -->
+            <div id="tab5" class="content-box tab-content-box d-none">
+                <h3>Industrial Solutions</h3>
+                <p>
+                    Complete automation systems, control systems, and remote diagnostics for industrial users.
+                </p>
+            </div>
+
+            <!-- TAB 6 -->
+            <div id="tab6" class="content-box tab-content-box d-none">
+                <h3>Remote Operations</h3>
+                <p>
+                    Digital-driven remote operations and monitoring technologies to boost efficiency.
+                </p>
+            </div>
+
         </div>
-      </div>
     </div>
-  </div>
+</section>
 
-  <section class="mb-5">
-    <div class="container-fluid">
-      <div class="card rounded-4 pt-5 pb-5 border-0">
-        <div class="container">
-          <h2 class="card-title fw-bold" style="font-size: clamp(1.75rem, 0.8571rem + 2.8571vw, 3rem); color: #0C334A;">Our <span style="color: #75D457">Clients</span></h2>
-          <h6 class="card-subtitle mt-3 mb-5 text-body-secondary" style="font-size: clamp(0.9375rem, 0.5469rem + 1.25vw, 1.25rem);">Trusted by Industry Leaders Worldwide</h6>
+<script>
+    /* TAB SWITCHING */
+    document.querySelectorAll('.left-menu .list-group-item').forEach(item => {
+        item.addEventListener('click', function () {
 
-          <div class="owl-carousel owl-theme carousel-3">
-            <div class="item p-3">
-              <div class="card" style="border-radius: 10px; border: 1px solid #0C334A; box-shadow: 5px 5px #75D457;">
-                <div class="clientImage" style="background-image: url('static/images/5.webp');"></div>
-                <div class="card-body">
-                  <h6 class="card-subtitle text-body-secondary text-center">CLIENT NAME</h6>
-                </div>
-              </div>
+            // remove active class
+            document.querySelectorAll('.left-menu .list-group-item').forEach(i => {
+                i.classList.remove('active-tab');
+                i.querySelector('.toggle-text').innerHTML = "Expand";
+            });
+
+            // add active to clicked
+            this.classList.add('active-tab');
+            this.querySelector('.toggle-text').innerHTML = "Collapse";
+
+            // show correct tab content
+            const target = this.getAttribute('data-target');
+
+            document.querySelectorAll('.tab-content-box').forEach(tab => {
+                tab.classList.add("d-none");
+            });
+
+            document.getElementById(target).classList.remove("d-none");
+        });
+    });
+</script>
+
+
+
+
+
+
+
+<section class="quality-section py-5">
+    <div class="container-fluid px-5">
+        <div class="row align-items-center">
+
+            <!-- LEFT SIDE IMAGE -->
+            <div class="col-md-5 mb-4 mb-md-0" data-aos="flip-right">
+                <img src="https://media.licdn.com/dms/image/v2/D4E12AQGcMtsvYhUyIw/article-cover_image-shrink_720_1280/article-cover_image-shrink_720_1280/0/1685363510980?e=2147483647&v=beta&t=O3mpe_P9Q4dNQcpugVIv86fn94TAfJjuKNXwMvfm_JQ"
+                    class="img-fluid rounded shadow-lg left-quality-img">
             </div>
-            <div class="item p-3">
-              <div class="card" style="border-radius: 10px; border: 1px solid #0C334A; box-shadow: 5px 5px #75D457;">
-                <div class="clientImage" style="background-image: url('static/images/5.webp');"></div>
-                <div class="card-body">
-                  <h6 class="card-subtitle text-body-secondary text-center">CLIENT NAME</h6>
-                </div>
-              </div>
+
+            <!-- RIGHT TEXT -->
+            <div class="col-md-7 text-white ps-md-5 position-relative">
+
+                <!-- QUOTE BACKGROUND -->
+                <img src="/static/images/double-quotes.png" class="quote-bg">
+
+                <h2 class="fw-bold mb-4">Our Quality Statement</h2>
+
+                <p class="quality-text text-justify">
+                    “At HALEYS, we set the standard for excellence in every facet of our operations.
+                    We are dedicated to continuous improvement, utilizing cutting-edge technology,
+                    and adhering to the highest industry standards. Our unwavering commitment to
+                    quality drives us to deliver precision-engineered steel structures and a comprehensive
+                    range of services, including structural design analysis, inspection, testing, repair,
+                    and rental, all supported by competent resources and well-defined practices.
+                    Our pursuit of excellence ensures the safety, satisfaction, and success of our valued
+                    clients, as we forge a sustainable future together.”
+                </p>
+
             </div>
-          </div>
+
         </div>
-      </div>
     </div>
-  </section>
+</section>
+
+
+<style>
+    /* MAIN BG */
+    .quality-section {
+        background-color: #0e4850;
+        padding-top: 80px;
+        padding-bottom: 80px;
+    }
+
+    /* LEFT IMAGE */
+    .left-quality-img {
+        width: 100%;
+        border-radius: 10px;
+        object-fit: cover;
+        height: 480px;
+    }
+
+    /* RIGHT SIDE QUOTE BACKGROUND */
+    .quote-bg {
+        position: absolute;
+        top: -10px;
+        right: 40px;
+        width: 180px;
+        opacity: 0.06;
+        /* Soft transparency */
+        z-index: 1;
+        pointer-events: none;
+    }
+
+    /* TEXT CONTENT */
+    .quality-text {
+        font-size: 18px;
+        line-height: 1.7;
+        opacity: 0.9;
+        position: relative;
+        z-index: 3;
+        max-width: 95%;
+    }
+
+    h2 {
+        position: relative;
+        z-index: 3;
+    }
+
+    /* RESPONSIVE */
+    @media (max-width: 768px) {
+        .left-quality-img {
+            height: 300px;
+        }
+
+        .quote-bg {
+            width: 120px;
+            top: -20px;
+            right: 10px;
+        }
+
+        .quality-text {
+            font-size: 16px;
+        }
+    }
+</style>
+
+
+
+<section class="py-5 bg-white">
+    <div class="container">
+        <div class="row align-items-start gy-4">
+
+            <!-- LEFT TEXT -->
+            <div class="col-lg-6">
+                <h2 class="fw-semibold mb-4">Our Impartiality Statement</h2>
+
+                <p class="text-secondary mb-3 text-justify">
+                    "At HALEYS, we are fully committed to upholding the principles of impartiality in all
+                    aspects of our operations. We recognize the significance of impartiality in the context of
+                    our product offerings, services, and management standards. To this end, we have established
+                    and maintain processes that ensure unbiased, objective, and fair treatment of all stakeholders,
+                    including clients, employees, suppliers, and regulatory authorities."
+                </p>
+
+                <p class="text-secondary mb-3 text-justify">
+                    Our dedication to impartiality is deeply rooted in our core values of 'We Care, Communicate
+                    Boldly, and Collaborate Generously.' We adhere to a strict code of conduct, which includes
+                    measures to prevent any conflicts of interest and any actions that could compromise the integrity
+                    of our services or decisions.
+                </p>
+
+                <p class="text-secondary text-justify">
+                    We continuously monitor and assess our practices to identify and mitigate potential sources of
+                    bias or partiality, ensuring that our clients can have complete confidence in the quality, fairness,
+                    and reliability of our products and services. We are committed to maintaining transparency,
+                    openness, and integrity in all our interactions, fostering trust among all stakeholders.
+                </p>
+            </div>
+
+            <!-- RIGHT IMAGE + TEXT OVERLAY -->
+            <div class="col-lg-6 position-relative ">
+
+                <!-- IMAGE -->
+                <img data-aos="flip-right"
+                    src="https://media.istockphoto.com/id/1262389979/photo/industrial-worker-at-factory.jpg?s=612x612&w=0&k=20&c=5CeOOSjItv4YULhDoartE7Hrf_f4KEOGJOfbCp8drNo="
+                    alt="Impartiality Image" class="img-fluid rounded-5 shadow mx-auto  d-flex justify-content-center">
+
+                <!-- TEXT OVERLAY -->
+                <div class="position-absolute bottom-0 start-0 w-100 text-white px-4 py-3"
+                    style="background: rgba(6, 50, 74, 0.9);">
+                    <p class="mb-0">
+                        Impartiality fosters a fair and inclusive environment where everyone's perspectives and
+                        experiences are valued equally.
+                    </p>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<section class="container py-5 border rounded-3" style="background-color: rgb(203, 233, 255);">
+    <div class="container text-center">
+        <h2 class="fw-bold mb-3">Our Commitments</h2>
+        <p class="commitments-text mx-auto text-justify">
+            At Haleys, our commitment to excellence encompasses career growth, learning, DEI, environmental
+            sustainability,
+            social impact, work-life balance and Unrivaled Services. We aspire to be industry leaders in every facet of
+            our
+            operations, forging a sustainable future while setting the benchmark for engineering support services. We
+            cordially
+            invite you to join us on this inspiring journey towards enduring prosperity and well-being for all.
+        </p>
+    </div>
+</section>
+
+
+
+<!-- ===================== HSE Section ===================== -->
+<section class="hse-hero">
+    <div class="overlay"></div>
+
+    <div class="content-wrapper">
+
+        <!-- LEFT: LOGO -->
+        <div class="hse-left" data-aos="flip-right">
+            <img src="/static/icons/3dlogo.png" class="left-logo" alt="3D Logo">
+        </div>
+
+        <!-- RIGHT: TEXT CONTENT -->
+        <div class="hse-right">
+            <img src="" class="zero-harm-logo will replace here" alt="Zero Harm Logo">
+
+            <h2 class="hse-title">We Prioritize Health, Safety and Environment</h2>
+
+            <p class="hse-desc">
+                At HALEYS, we are committed to the highest standards of HSE performance.
+                The well-being of our workforce, the safety of our operations, and the
+                protection of the environment are the foundation of our success.
+            </p>
+
+            <a href="#" class="btn-main">HSE Policy</a>
+        </div>
+
+    </div>
+</section>
+
+
+
+<style>
+    /* ================= HERO SECTION ================ */
+    /* Hide logo on mobile */
+    @media (max-width: 768px) {
+        .left-logo {
+            display: none;
+        }
+    }
+
+    .hse-hero {
+        position: relative;
+        width: 100%;
+        height: 480px;
+        background: url("https://apfecorp.com/wp-content/uploads/2021/01/1.png") no-repeat center center/cover;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        overflow: hidden;
+    }
+
+    /* FULL GRADIENT OVERLAY */
+    .overlay {
+        position: absolute;
+        inset: 0;
+        background: linear-gradient(to right,
+                rgba(0, 40, 70, 0.10),
+                rgba(0, 80, 120, 0.90));
+        z-index: 1;
+    }
+
+    /* CONTENT LAYOUT */
+    .content-wrapper {
+        position: relative;
+        z-index: 2;
+        display: flex;
+        width: 90%;
+        max-width: 1200px;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    /* LEFT SIDE LOGO */
+    .hse-left {
+        width: 40%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .left-logo {
+        width: 150px;
+        filter: drop-shadow(0 0 8px rgba(255, 255, 255, 0.4));
+    }
+
+    /* RIGHT SIDE CONTENT */
+    .hse-right {
+        width: 55%;
+        color: #fff;
+    }
+
+    .zero-harm-logo {
+        width: 150px;
+        margin-bottom: 20px;
+    }
+
+    .hse-title {
+        font-size: 30px;
+        font-weight: 700;
+        margin-bottom: 15px;
+    }
+
+    .hse-desc {
+        font-size: 16px;
+        line-height: 1.7;
+        margin-bottom: 25px;
+        width: 90%;
+    }
+
+    /* BUTTON */
+    .btn-main {
+        background: #fff;
+        color: #003b5c;
+        padding: 12px 22px;
+        border-radius: 6px;
+        text-decoration: none;
+        font-weight: 600;
+        display: inline-block;
+        box-shadow: 0 3px 8px rgba(0, 0, 0, 0.2);
+    }
+
+    /* ============ MOBILE RESPONSIVE ============ */
+    @media (max-width: 768px) {
+
+        .hse-hero {
+            height: auto;
+            padding: 50px 0;
+        }
+
+        .content-wrapper {
+            flex-direction: column;
+            text-align: center;
+        }
+
+        .hse-left,
+        .hse-right {
+            width: 100%;
+            margin-bottom: 30px;
+        }
+
+        .hse-desc {
+            width: 100%;
+        }
+
+        .left-logo {
+            width: 120px;
+        }
+
+        .zero-harm-logo {
+            width: 130px;
+        }
+    }
+</style>
+
+
+
+
+<section class="container py-5" id="explore-more">
+    <h2 class="mb-4">Explore more</h2>
+
+    <div class="row g-4">
+
+        <!-- Card 1 -->
+        <div class="col-md-4" data-aos="zoom-in" data-aos-delay="0">
+            <div class="explore-card">
+                <img src="https://media.istockphoto.com/id/1213499152/photo/sample-online-news-website-on-tablet.jpg?s=612x612&w=0&k=20&c=jvg2lHSshsqccRYpA0I6JMGq-RDKJg1OGqgVBH_Er7Q="
+                    alt="">
+                <p class="mt-2 fw-bold text-danger"></p>
+                <h5 class="card-title">Latest news and blogs</h5>
+
+            </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="col-md-4" data-aos="zoom-in" data-aos-delay="200">
+            <div class="explore-card">
+                <img src="https://media.istockphoto.com/id/2062707205/photo/gold-star-on-a-blue-background-as-a-reward-top-performance-award-winners-cup-achievements.jpg?s=612x612&w=0&k=20&c=6HeaeFYryuuOyPTW8ucQKsUMUi3F8oHvE9CSPVgoV60="
+                    alt="">
+                <h5 class="mt-2 card-title">Our latest awards &amp; recognition</h5>
+            </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="col-md-4" data-aos="zoom-in" data-aos-delay="400">
+            <div class="explore-card">
+                <img src="https://plus.unsplash.com/premium_photo-1661315406324-329dd27ebc34?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8cmVwb3J0fGVufDB8fDB8fHww&fm=jpg&q=60&w=3000"
+                    alt="">
+                <h5 class="mt-2 card-title">Our 2026 annual report</h5>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<!-- ============================
+     SECTION 2: CAREER SECTION
+=============================== -->
+<section class="container py-5" id="careers">
+    <h2 class="mb-4">Be a part of our story</h2>
+
+    <p>
+        Check out our Careers site to learn more about how you can be a part of the team.
+    </p>
+
+
+    <style>
+        .career-img {
+            width: 100%;
+            height: 280px;
+            /* fixed uniform height */
+            object-fit: cover;
+            /* crop to fit nicely */
+            border-radius: 8px;
+        }
+
+        @media (max-width: 768px) {
+            .career-img {
+                height: 220px;
+                /* smaller height for mobile */
+            }
+        }
+    </style>
+
+
+    <div class="row g-4 mt-3">
+
+        <!-- LEFT COLUMN -->
+        <div class="col-md-6" data-aos="zoom-in">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRlUIcOcSR9Zafj3ixp2T4qZueiuE0o9Cu9WA&s"
+                class="career-img" alt="Career Opportunities">
+
+            <h5 class="mt-3 fw-semibold">Career opportunities</h5>
+            <p class="text-muted">
+                Explore our available positions and become part of our growing team.
+            </p>
+        </div>
+
+        <!-- RIGHT COLUMN -->
+        <div class="col-md-6" data-aos="zoom-out">
+
+            <!-- Image 1 -->
+            <img src="https://img.freepik.com/premium-photo/concept-business-growth-profit-development-success-seedling-are-growing-from-rich-soil_117255-1685.jpg?semt=ais_hybrid&w=740&q=80"
+                class="career-img mb-3" alt="Application status">
+
+          
+
+            <h5 class="mt-3 fw-semibold">Application status</h5>
+            <p class="text-muted">
+                Check the current status of your submitted applications easily.
+            </p>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ============================
+     SECTION 3: STRATEGIC PARTNERS
+=============================== -->
+<!-- <section class="partners-section" id="strategic-partners">
+    <div class="container">
+        <h2 class="mb-4">Our Strategic Partners</h2>
+
+        <div class="row g-4 mb-4">
+            <div class="col-md-4">
+                <div class="partner-box">Empty</div>
+            </div>
+            <div class="col-md-4">
+                <div class="partner-box">
+                    <img src="https://via.placeholder.com/120x80" class="partner-logo" alt="">
+                    <div>HALEYS</div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="partner-box">Empty</div>
+            </div>
+        </div>
+
+        <p>
+            Our esteemed global partners amplify our capabilities, allowing us to deliver superior quality and advanced technologies. These alliances enable us to tackle a broader range of projects with precision, driving growth and regional expansion. 
+            Together, we set new standards in engineering support services for the energy industry.
+        </p>
+    </div>
+</section> -->
+
+
+
+
+<style>
+    /* Explore More cards */
+    .explore-card img {
+        width: 100%;
+        height: 420px;
+        object-fit: cover;
+        border-radius: 6px;
+    }
+
+    .explore-card .card-title {
+        font-weight: bold;
+    }
+
+    /* Strategic Partners section */
+    .partners-section {
+        background: #f7f7f7;
+        padding: 50px 0;
+    }
+
+    .partner-box {
+        border: 2px solid #e5e5e5;
+        padding: 30px;
+        text-align: center;
+        border-radius: 4px;
+        background: #fff;
+        font-weight: bold;
+    }
+
+    .partner-logo {
+        max-width: 100px;
+        margin-bottom: 10px;
+    }
+</style>
+
+
+
+
+
+
+<section class="container py-5" id="our-hubs">
+    <h2 class="mb-4" data-aos="fade-down">Our hubs</h2>
+
+    <div class="row g-4">
+
+        <!-- Canada -->
+        <a href="/contact" class="col-md-3 col-sm-6"  data-aos="fade-down" data-aos-delay="0">
+            <div class="hub-card">
+                <img src="https://img.freepik.com/premium-photo/canadian-national-flag-overlay-false-creek-downtown-vancouver-british-columbia-canada_645882-7889.jpg?semt=ais_hybrid&w=740&q=80"
+                    class="img-fluid rounded" alt="Canada - Moraine Lake">
+                <h5 class="mt-2 fw-semibold">Canada</h5>
+                <p class="text-muted mb-0">XYZ, Canada</p>
+            </div>
+        </a>
+
+        <!-- UK -->
+        <a href="/contact" class="col-md-3 col-sm-6" data-aos="fade-down" data-aos-delay="200">
+            <div class="hub-card">
+                <img src="https://images.unsplash.com/photo-1505761671935-60b3a7427bad?w=800" class="img-fluid rounded"
+                    alt="London UK">
+                <h5 class="mt-2 fw-semibold">UK</h5>
+                <p class="text-muted mb-0">London, England</p>
+            </div>
+        </a>
+
+        <!-- Qatar -->
+        <a href="/contact" class="col-md-3 col-sm-6"  data-aos="fade-down" data-aos-delay="400">
+            <div class="hub-card">
+                <img src="https://skift.com/wp-content/uploads/2025/01/raffles-doha-luxury-hotel-accor.jpg"
+                    class="img-fluid rounded" alt="Doha Qatar">
+                <h5 class="mt-2 fw-semibold">Qatar</h5>
+                <p class="text-muted mb-0">Doha, Qatar</p>
+            </div>
+        </a>
+
+        <!-- India -->
+        <a href="/contact" class="col-md-3 col-sm-6"  data-aos="fade-down" data-aos-delay="600">
+            <div class="hub-card">
+                <img src="https://t3.ftcdn.net/jpg/02/65/64/24/360_F_265642486_IXw9DQVzjTfAzT8xMtTBXBvYD8Who6Fw.jpg"
+                    class="img-fluid rounded" alt="Red Fort India">
+                <h5 class="mt-2 fw-semibold">India</h5>
+                <p class="text-muted mb-0">Cochin, India</p>
+            </div>
+        </a>
+
+    </div>
+</section>
+
+
+
+<style>
+    #our-hubs img {
+        height: 190px;
+        object-fit: cover;
+    }
+
+    #our-hubs .hub-card {
+        transition: 0.3s ease-in-out;
+        cursor: pointer;
+    }
+
+    #our-hubs .hub-card:hover {
+        transform: translateY(-5px);
+    }
+</style>
+
 {% endblock %}
