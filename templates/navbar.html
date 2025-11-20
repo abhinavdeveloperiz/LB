@@ -76,22 +76,69 @@
 
       </div>
 
+      <!-- addons------------------------------- -->
+      <style>
+        .customer-hub-wrapper {
+          position: relative;
+          max-width: 320px;
+          display: flex;
+          align-items: center;
+        }
+
+        .hub-icon {
+          position: absolute;
+          left: 12px;
+          font-size: 18px;
+          color: #02A783;
+        }
+
+        .hub-select {
+          width: 100%;
+          padding: 12px 16px 12px 42px;
+          border: none;
+          border-radius: 10px;
+          background: #ffffff;
+          font-size: 15px;
+          appearance: none;
+          outline: none;
+          cursor: pointer;
+        }
+
+       
+      </style>
+
+      <div class="customer-hub-wrapper">
+        <a href="" download="" class="hub-icon">
+          <i class="fa-solid fa-cloud-arrow-down"></i>
+        </a>
+
+        <select id="customerHub" class="hub-select">
+          <option selected disabled>Customer Hub </option>
+          <option>Canada</option>
+          <option>United Kingdom</option>
+          <option>Qatar</option>
+          <option>India</option>
+        </select>
+      </div>
+
+
+
       <!-- Load Lottie Player -->
       <script src="https://unpkg.com/@dotlottie/player-component@2.7.12/dist/dotlottie-player.mjs"
         type="module"></script>
 
-      <!-- Lottie Animation Link Button -->
+      <!-- Lottie Icon -->
+      <a class="nav-link styled-link me-4" href="#our-locations"
+        style="display: flex; align-items: center; justify-content: center; width: 35px; height: 35px;">
+        <dotlottie-player src="https://lottie.host/a0c08b52-c0ba-49f5-878d-02585178a7cc/5dO39dyEu4.lottie"
+          background="transparent" speed="1" style="width: 100%; height: 100%;" direction="1" playMode="normal" loop
+          autoplay>
+        </dotlottie-player>
+      </a>
       <!-- Wrapper with animated border -->
       <div class="animated-border-box d-flex align-items-center gap-3 px-2 py-1">
 
-        <!-- Lottie Icon -->
-        <a class="nav-link styled-link" href="#our-locations"
-          style="display: flex; align-items: center; justify-content: center; width: 35px; height: 35px;">
-          <dotlottie-player src="https://lottie.host/a0c08b52-c0ba-49f5-878d-02585178a7cc/5dO39dyEu4.lottie"
-            background="transparent" speed="1" style="width: 100%; height: 100%;" direction="1" playMode="normal" loop
-            autoplay>
-          </dotlottie-player>
-        </a>
+
 
         <!-- Country Dropdown -->
         <form method="POST" action="/" class="d-flex mb-0">

@@ -151,8 +151,8 @@
                     <!-- Item 1 -->
                     <div class="accordion-item" data-aos="slide-right">
                         <h2 class="accordion-header">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                data-bs-target="#item1">
+                            <button class="accordion-button collapsed hover-accordion" type="button"
+                                data-bs-toggle="collapse" data-bs-target="#item1">
                                 <i class="bi bi-gear me-2"></i> Industry Expertise
                             </button>
                         </h2>
@@ -166,8 +166,8 @@
                     <!-- Item 2 -->
                     <div class="accordion-item" data-aos="slide-left">
                         <h2 class="accordion-header">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                data-bs-target="#item2">
+                            <button class="accordion-button collapsed hover-accordion" type="button"
+                                data-bs-toggle="collapse" data-bs-target="#item2">
                                 <i class="bi bi-shield-check me-2"></i> Beyond Compliance
                             </button>
                         </h2>
@@ -181,8 +181,8 @@
                     <!-- Item 3 -->
                     <div class="accordion-item" data-aos="slide-right">
                         <h2 class="accordion-header">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                data-bs-target="#item3">
+                            <button class="accordion-button collapsed hover-accordion" type="button"
+                                data-bs-toggle="collapse" data-bs-target="#item3">
                                 <i class="bi bi-stars me-2"></i> Unyielding Quality Standards
                             </button>
                         </h2>
@@ -196,8 +196,8 @@
                     <!-- Item 4 -->
                     <div class="accordion-item" data-aos="slide-left">
                         <h2 class="accordion-header">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                data-bs-target="#item4">
+                            <button class="accordion-button collapsed hover-accordion" type="button"
+                                data-bs-toggle="collapse" data-bs-target="#item4">
                                 <i class="bi bi-people me-2"></i> Your Global Partner
                             </button>
                         </h2>
@@ -210,6 +210,29 @@
 
                 </div>
             </div>
+
+            <!-- Hover-to-open JavaScript -->
+            <script>
+                document.querySelectorAll(".hover-accordion").forEach((btn) => {
+                    const targetId = btn.getAttribute("data-bs-target");
+                    const targetEl = document.querySelector(targetId);
+
+                    const bsCollapse = new bootstrap.Collapse(targetEl, {
+                        toggle: false
+                    });
+
+                    // Open on hover over button
+                    btn.addEventListener("mouseenter", () => {
+                        bsCollapse.show();
+                    });
+
+                    // Close when mouse leaves the entire accordion-item
+                    btn.closest(".accordion-item").addEventListener("mouseleave", () => {
+                        bsCollapse.hide();
+                    });
+                });
+            </script>
+
 
         </div>
     </div>
@@ -253,7 +276,6 @@
         background: #fff;
         border-radius: 12px;
         padding: 30px;
-        border: 1px solid #eee;
         min-height: 350px;
     }
 
@@ -647,6 +669,178 @@
     </div>
 </section>
 
+<!-- Updated Haleys Page Design: Table-style layout, all images left, smaller images, w-75 container -->
+
+<style>
+    .section-wrapper {
+        max-width: 900px;
+        margin: 50px auto;
+    }
+
+    .info-card {
+        background: #fff;
+        border-radius: 14px;
+        padding: 25px;
+        margin-bottom: 45px;
+        box-shadow: 0 4px 18px rgba(0, 0, 0, 0.08);
+        display: flex;
+        gap: 25px;
+        align-items: flex-start;
+    }
+
+    .info-card img {
+        width: 260px;
+        height: auto;
+        border-radius: 10px;
+        object-fit: cover;
+    }
+
+    .info-content h2 {
+        font-size: 26px;
+        font-weight: 700;
+        margin-bottom: 10px;
+        color: #333;
+    }
+
+    .info-content p {
+        font-size: 15px;
+        line-height: 1.8;
+        color: #555;
+        margin: 0;
+        text-align: justify;
+    }
+
+    /* Mobile Responsive */
+    @media(max-width: 768px) {
+        .info-card {
+            flex-direction: column;
+            text-align: left;
+        }
+
+        .info-card img {
+            width: 100%;
+        }
+    }
+
+    /* Slide animation */
+    .slide-right {
+        opacity: 0;
+        transform: translateX(60px);
+        transition: all 0.8s ease;
+    }
+
+    .slide-right.visible {
+        opacity: 1;
+        transform: translateX(0);
+    }
+</style>
+
+<div class="section-wrapper">
+
+    <!-- Row 1 -->
+    <div class="info-card slide-right" data-aos="slide-left">
+        <img src="/static/images/112.jpg">
+        <div class="info-content">
+            <h2>Growth and Learning</h2>
+            <p>
+                Haleys recognizes the paramount importance of nurturing talent, fostering continuous learning,
+                and promoting career growth for our employees. Within our dynamic environment, team members have
+                abundant opportunities to hone their skills, expand their knowledge, and advance their careers.
+                We are dedicated to investing in our people, ensuring their professional development aligns
+                seamlessly with our vision for a sustainable future.
+            </p>
+        </div>
+    </div>
+
+    <!-- Row 2 -->
+    <div class="info-card slide-right" data-aos="slide-left">
+        <img src="/static/images/162.jpg">
+        <div class="info-content">
+            <h2>Diversity, Equity, and Inclusion (DEI)</h2>
+            <p>
+                Haleys is unwaveringly committed to cultivating a workplace that embraces diversity, champions
+                equity, and fosters inclusion. We highly value the unique perspectives and backgrounds of our
+                employees, understanding that diverse teams drive innovation and excellence. Actively working to
+                create an inclusive culture where all individuals are treated with fairness and respect,
+                regardless of their background or identity, is a fundamental part of our ethos.
+            </p>
+        </div>
+    </div>
+
+    <!-- Row 3 -->
+    <div class="info-card slide-right" data-aos="slide-left">
+        <img src="/static/images/19222.jpg">
+        <div class="info-content">
+            <h2>Environmental Sustainability</h2>
+            <p>
+                Acknowledging our responsibility to protect and preserve the environment, Haleys is resolutely
+                committed to sustainable practices in our operations. Continuously seeking ways to minimize our
+                environmental footprint, we make responsible choices, employ eco-friendly solutions, and manage
+                resources efficiently, all aimed at contributing positively to environmental sustainability.
+            </p>
+        </div>
+    </div>
+
+    <!-- Row 4 -->
+    <div class="info-card slide-right" data-aos="slide-left">
+        <img src="/static/images/2147838542.jpg">
+        <div class="info-content">
+            <h2>Social Impact</h2>
+            <p>
+                Haleys comprehends that our actions have far-reaching effects, impacting not only our clients but
+                also broader society. We take immense pride in engaging in initiatives that create a positive social
+                impact, whether through community outreach, philanthropy, or projects that benefit society as a
+                whole. Our commitment to social responsibility extends beyond our core operations.
+            </p>
+        </div>
+    </div>
+
+    <!-- Row 5 -->
+    <div class="info-card slide-right" data-aos="slide-left">
+        <img src="/static/images/2148784052.jpg">
+        <div class="info-content">
+            <h2>Work-Life Balance</h2>
+            <p>
+                We deeply understand the significance of work-life balance in the well-being and productivity of our
+                employees. Haleys is dedicated to supporting a healthy equilibrium between work and personal life,
+                providing flexible work arrangements, comprehensive wellness programs, and a nurturing work
+                environment to ensure our team members thrive both professionally and personally.
+            </p>
+        </div>
+    </div>
+
+    <!-- Row 6 -->
+    <div class="info-card slide-right" data-aos="slide-left">
+        <img src="/static/images/2150709932.jpg">
+        <div class="info-content">
+            <h2>Unrivaled Services</h2>
+            <p>
+                Renowned for delivering timely, reliable, and top-quality services, Haleys has earned a global
+                reputation for excellence. Our engineers are known for their transparency and swift responses, while
+                maintaining an impeccable safety record. We take immense pride in offering solutions that
+                consistently delight our clients, with readily accessible maintenance histories and an unwavering
+                focus on safety at work.
+            </p>
+        </div>
+    </div>
+
+</div>
+
+<script>
+    function revealOnScroll() {
+        document.querySelectorAll('.slide-right').forEach(el => {
+            const rect = el.getBoundingClientRect();
+            if (rect.top < window.innerHeight - 100) {
+                el.classList.add('visible');
+            }
+        });
+    }
+
+    window.addEventListener('scroll', revealOnScroll);
+    window.addEventListener('load', revealOnScroll);
+</script>
+
+
 
 
 <!-- ===================== HSE Section ===================== -->
@@ -812,97 +1006,310 @@
 
         <!-- Card 1 -->
         <div class="col-md-4" data-aos="zoom-in" data-aos-delay="0">
-            <div class="explore-card">
+            <div class="explore-card position-relative">
                 <img src="https://media.istockphoto.com/id/1213499152/photo/sample-online-news-website-on-tablet.jpg?s=612x612&w=0&k=20&c=jvg2lHSshsqccRYpA0I6JMGq-RDKJg1OGqgVBH_Er7Q="
-                    alt="">
-                <p class="mt-2 fw-bold text-danger"></p>
-                <h5 class="card-title">Latest news and blogs</h5>
+                    class="w-100 rounded-3" alt="">
 
+                <div class="overlay-text">
+                    <h5 class="card-title">Latest news and blogs</h5>
+                </div>
             </div>
         </div>
 
         <!-- Card 2 -->
         <div class="col-md-4" data-aos="zoom-in" data-aos-delay="200">
-            <div class="explore-card">
+            <div class="explore-card position-relative">
                 <img src="https://media.istockphoto.com/id/2062707205/photo/gold-star-on-a-blue-background-as-a-reward-top-performance-award-winners-cup-achievements.jpg?s=612x612&w=0&k=20&c=6HeaeFYryuuOyPTW8ucQKsUMUi3F8oHvE9CSPVgoV60="
-                    alt="">
-                <h5 class="mt-2 card-title">Our latest awards &amp; recognition</h5>
+                    class="w-100 rounded-3" alt="">
+
+                <div class="overlay-text">
+                    <h5 class="card-title">Our latest awards & recognition</h5>
+                </div>
             </div>
         </div>
 
         <!-- Card 3 -->
         <div class="col-md-4" data-aos="zoom-in" data-aos-delay="400">
-            <div class="explore-card">
+            <div class="explore-card position-relative">
                 <img src="https://plus.unsplash.com/premium_photo-1661315406324-329dd27ebc34?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8cmVwb3J0fGVufDB8fDB8fHww&fm=jpg&q=60&w=3000"
-                    alt="">
-                <h5 class="mt-2 card-title">Our 2026 annual report</h5>
+                    class="w-100 rounded-3" alt="">
+
+                <div class="overlay-text">
+                    <h5 class="card-title">Our 2026 annual report</h5>
+                </div>
             </div>
         </div>
 
     </div>
 </section>
 
-<!-- ============================
-     SECTION 2: CAREER SECTION
-=============================== -->
-<section class="container py-5" id="careers">
-    <h2 class="mb-4">Be a part of our story</h2>
 
-    <p>
-        Check out our Careers site to learn more about how you can be a part of the team.
-    </p>
+<style>
+    .explore-card {
+        overflow: hidden;
+        border-radius: 12px;
+    }
+
+    .explore-card img {
+        transition: 0.4s ease-in-out;
+    }
+
+    .explore-card:hover img {
+        transform: scale(1.07);
+    }
+
+    .overlay-text {
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        padding: 20px;
+        background: linear-gradient(transparent, rgba(0, 0, 0, 0.7));
+        color: white;
+    }
+
+    .overlay-text h5 {
+        margin: 0;
+        font-weight: 600;
+    }
+</style>
 
 
-    <style>
-        .career-img {
-            width: 100%;
-            height: 280px;
-            /* fixed uniform height */
-            object-fit: cover;
-            /* crop to fit nicely */
-            border-radius: 8px;
+
+
+<!-- --------------------------------------new addon  -->
+
+
+<style>
+    /* ---------- GLOBAL LAYOUT ---------- */
+    .threecol-section {
+        padding: 80px 0;
+    }
+
+    .container-max {
+        max-width: 1320px;
+        margin: auto;
+        padding: 0 20px;
+    }
+
+    .threecol-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 40px;
+        align-items: flex-start;
+    }
+
+    /* ---------- LEFT TEXT BLOCK ---------- */
+    .eyebrow {
+        font-size: 14px;
+        letter-spacing: 2px;
+        color: #02A783;
+        font-weight: 600;
+        margin-bottom: 15px;
+        text-transform: uppercase;
+    }
+
+    .section-title {
+        font-size: 42px;
+        font-weight: 700;
+        line-height: 1.2;
+    }
+
+    .section-description {
+        font-size: 18px;
+        color: #555;
+        margin-top: 20px;
+        max-width: 420px;
+    }
+
+    /* ---------- CTA LINK ---------- */
+    .cta-link {
+        color: #02A783;
+        font-weight: 600;
+        display: inline-flex;
+        align-items: center;
+        gap: 6px;
+        margin-top: 20px;
+        font-size: 15px;
+        text-decoration: none;
+    }
+
+    /* ---------- IMAGE CARD ---------- */
+    .image-card {
+        position: relative;
+        overflow: hidden;
+        border-radius: 12px;
+    }
+
+    .image-card img {
+        width: 100%;
+        height: 350px;
+        object-fit: cover;
+        transition: transform .6s ease;
+        display: block;
+    }
+
+    .image-card:hover img {
+        transform: scale(1.04);
+    }
+
+    /* ---------- TEXT OVERLAY ---------- */
+    .card-text {
+        position: absolute;
+        bottom: 25px;
+        left: 25px;
+        right: 25px;
+        color: #fff;
+    }
+
+    .card-text h2 {
+        font-size: 26px;
+        font-weight: 700;
+        margin-bottom: 8px;
+    }
+
+    .card-text a {
+        color: #02A783;
+        font-weight: 600;
+        font-size: 15px;
+    }
+
+    /* ---------- RESPONSIVE RULES ---------- */
+    @media (max-width: 1200px) {
+        .section-title {
+            font-size: 36px;
+        }
+    }
+
+    @media (max-width: 992px) {
+        .threecol-grid {
+            grid-template-columns: 1fr 1fr;
         }
 
-        @media (max-width: 768px) {
-            .career-img {
-                height: 220px;
-                /* smaller height for mobile */
-            }
+        .grid-full {
+            grid-column: span 2;
         }
-    </style>
+
+        .section-title {
+            font-size: 34px;
+        }
+
+        .image-card img {
+            height: 320px;
+        }
+    }
+
+    @media (max-width: 768px) {
+        .threecol-grid {
+            grid-template-columns: 1fr;
+        }
+
+        .grid-full {
+            grid-column: span 1;
+        }
+
+        .threecol-section {
+            padding: 50px 0;
+        }
+
+        .section-title {
+            font-size: 30px;
+        }
+
+        .section-description {
+            max-width: 100%;
+        }
+
+        .image-card img {
+            height: 300px;
+        }
+
+        .card-text h2 {
+            font-size: 22px;
+        }
+    }
+
+    @media (max-width: 480px) {
+        .threecol-section {
+            padding: 40px 0;
+        }
+
+        .image-card img {
+            height: 260px;
+        }
+
+        .card-text {
+            bottom: 15px;
+            left: 15px;
+            right: 15px;
+        }
+
+        .card-text h2 {
+            font-size: 20px;
+        }
+    }
+</style>
 
 
-    <div class="row g-4 mt-3">
+<div class="threecol-section">
+    <div class="container-max">
+        <div class="threecol-grid">
 
-        <!-- LEFT COLUMN -->
-        <div class="col-md-6" data-aos="zoom-in">
-            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRlUIcOcSR9Zafj3ixp2T4qZueiuE0o9Cu9WA&s"
-                class="career-img" alt="Career Opportunities">
+            <!-- LEFT CONTENT -->
+            <div class="grid-full">
+                <span class="eyebrow">CAREERS</span>
+                <h2 class="section-title">Be a part of our story</h2>
+                <p class="section-description">
+                    Check out our Careers site to learn more about how you can be a part of the team.
+                </p>
 
-            <h5 class="mt-3 fw-semibold">Career opportunities</h5>
-            <p class="text-muted">
-                Explore our available positions and become part of our growing team.
-            </p>
+                <a href="#" class="cta-link">
+                    EXPLORE
+                    <svg width="15" height="15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M9.108 5.092l-5.101 5.1a.5.5 0 000 .707l.07.07a.5.5 0
+                        00.71-.002l5.21-5.28v5.1a.5.5 0 00.5.5h.099a.5.5 0
+                        00.5-.504l-.05-6.238v-.048a.5.5 0 00-.5-.5l-6.41-.005a.5.5 0
+                        00-.5.5v.096a.5.5 0 00.5.5l4.972.004z" fill="#02A783"></path>
+                    </svg>
+                </a>
+            </div>
+
+            <!-- IMAGE CARD 1 -->
+            <div>
+                <div class="image-card" data-aos="zoom-in" data-aos-delay="0">
+                    <img src="https://img.freepik.com/premium-photo/concept-business-growth-profit-development-success-seedling-are-growing-from-rich-soil_117255-1685.jpg?semt=ais_hybrid&w=740&q=80"
+                        alt="Career opportunities">
+
+                    <div class="card-text">
+                        <h2>Career opportunities</h2>
+                        <a href="#">LEARN MORE</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- IMAGE CARD 2 -->
+            <div>
+                <div class="image-card" data-aos="zoom-in" data-aos-delay="200">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRlUIcOcSR9Zafj3ixp2T4qZueiuE0o9Cu9WA&s"
+                         alt="Application status">
+
+                    <div class="card-text">
+                        <h2>Application status</h2>
+                        <a href="#">CHECK STATUS</a>
+                    </div>
+                </div>
+            </div>
+
         </div>
-
-        <!-- RIGHT COLUMN -->
-        <div class="col-md-6" data-aos="zoom-out">
-
-            <!-- Image 1 -->
-            <img src="https://img.freepik.com/premium-photo/concept-business-growth-profit-development-success-seedling-are-growing-from-rich-soil_117255-1685.jpg?semt=ais_hybrid&w=740&q=80"
-                class="career-img mb-3" alt="Application status">
-
-          
-
-            <h5 class="mt-3 fw-semibold">Application status</h5>
-            <p class="text-muted">
-                Check the current status of your submitted applications easily.
-            </p>
-        </div>
-
     </div>
+</div>
 
-</section>
+
+
+
+
+
+
+
 
 <!-- ============================
      SECTION 3: STRATEGIC PARTNERS
@@ -989,7 +1396,8 @@
 
                 <!-- Box 2 - HALEYS -->
                 <div class="partner-logo d-flex flex-column align-items-center justify-content-center">
-                    <img src="https://haleysgroup.com/wp-content/uploads/2024/01/logo.png" class="partner-logo mb-2" alt="empty logo">
+                    <img src="https://haleysgroup.com/wp-content/uploads/2024/01/logo.png" class="partner-logo mb-2"
+                        alt="empty logo">
                 </div>
 
                 <!-- Box 3 -->
@@ -1007,10 +1415,10 @@
 
             <p class="mt-3 text-justify">
                 <strong>Lloyds Bureau</strong><br>
-                At our esteemed global partners amplify our capabilities, allowing us 
-                to deliver superior quality and advanced technologies. These alliances 
-                enable us to tackle a broader range of projects with precision, driving 
-                growth and regional expansion. Together, we set new standards in 
+                At our esteemed global partners amplify our capabilities, allowing us
+                to deliver superior quality and advanced technologies. These alliances
+                enable us to tackle a broader range of projects with precision, driving
+                growth and regional expansion. Together, we set new standards in
                 engineering support services for the energy industry.
             </p>
         </div>
@@ -1020,8 +1428,6 @@
 
 
 <style>
- 
-
     .partner-logo {
         width: 130px;
         height: auto;
@@ -1040,55 +1446,87 @@
 
 
 
+
+
 <section class="container py-5" id="our-hubs">
     <h2 class="mb-4" data-aos="fade-down">Our hubs</h2>
 
     <div class="row g-4">
 
         <!-- Canada -->
-        <div class="col-lg-3 col-md-4 col-sm-6 col-6" data-aos="fade-down" data-aos-delay="0">
+        <div class="col-lg-3 col-md-4 col-sm-6 col-6" data-aos="flip-right" data-aos-delay="0">
             <a href="/contact" class="hub-link">
                 <div class="hub-card">
-                    <img src="https://img.freepik.com/premium-photo/canadian-national-flag-overlay-false-creek-downtown-vancouver-british-columbia-canada_645882-7889.jpg?semt=ais_hybrid&w=740&q=80"
-                        class="img-fluid hub-img rounded" alt="Canada">
+                    
+                    <!-- Image Wrapper -->
+                    <div class="img-wrapper">
+                        <img src="https://img.freepik.com/premium-photo/canadian-national-flag-overlay-false-creek-downtown-vancouver-british-columbia-canada_645882-7889.jpg?semt=ais_hybrid&w=740&q=80"
+                             class="img-fluid hub-img rounded" alt="Canada">
+
+                        <!-- Hover Text -->
+                        <div class="hover-text">123 Maple Street, Toronto, Canada</div>
+                    </div>
+
                     <h5 class="mt-2 fw-semibold">Canada</h5>
                     <p class="text-muted mb-0">XYZ, Canada</p>
+
                 </div>
             </a>
         </div>
 
         <!-- UK -->
-        <div class="col-lg-3 col-md-4 col-sm-6 col-6" data-aos="fade-down" data-aos-delay="200">
+        <div class="col-lg-3 col-md-4 col-sm-6 col-6" data-aos="flip-right" data-aos-delay="200">
             <a href="/contact" class="hub-link">
                 <div class="hub-card">
-                    <img src="https://images.unsplash.com/photo-1505761671935-60b3a7427bad?w=800"
-                        class="img-fluid hub-img rounded" alt="UK">
+
+                    <div class="img-wrapper">
+                        <img src="https://images.unsplash.com/photo-1505761671935-60b3a7427bad?w=800"
+                             class="img-fluid hub-img rounded" alt="UK">
+
+                        <div class="hover-text">45 Oxford Street, London, UK</div>
+                    </div>
+
                     <h5 class="mt-2 fw-semibold">UK</h5>
                     <p class="text-muted mb-0">London, England</p>
+
                 </div>
             </a>
         </div>
 
         <!-- Qatar -->
-        <div class="col-lg-3 col-md-4 col-sm-6 col-6" data-aos="fade-down" data-aos-delay="400">
+        <div class="col-lg-3 col-md-4 col-sm-6 col-6" data-aos="flip-right" data-aos-delay="400">
             <a href="/contact" class="hub-link">
                 <div class="hub-card">
-                    <img src="https://skift.com/wp-content/uploads/2025/01/raffles-doha-luxury-hotel-accor.jpg"
-                        class="img-fluid hub-img rounded" alt="Qatar">
+
+                    <div class="img-wrapper">
+                        <img src="https://skift.com/wp-content/uploads/2025/01/raffles-doha-luxury-hotel-accor.jpg"
+                             class="img-fluid hub-img rounded" alt="Qatar">
+
+                        <div class="hover-text">77 Corniche Road, Doha, Qatar</div>
+                    </div>
+
                     <h5 class="mt-2 fw-semibold">Qatar</h5>
                     <p class="text-muted mb-0">Doha, Qatar</p>
+
                 </div>
             </a>
         </div>
 
         <!-- India -->
-        <div class="col-lg-3 col-md-4 col-sm-6 col-6" data-aos="fade-down" data-aos-delay="600">
+        <div class="col-lg-3 col-md-4 col-sm-6 col-6" data-aos="flip-right" data-aos-delay="600">
             <a href="/contact" class="hub-link">
                 <div class="hub-card">
-                    <img src="https://t3.ftcdn.net/jpg/02/65/64/24/360_F_265642486_IXw9DQVzjTfAzT8xMtTBXBvYD8Who6Fw.jpg"
-                        class="img-fluid hub-img rounded" alt="India">
+
+                    <div class="img-wrapper">
+                        <img src="https://t3.ftcdn.net/jpg/02/65/64/24/360_F_265642486_IXw9DQVzjTfAzT8xMtTBXBvYD8Who6Fw.jpg"
+                             class="img-fluid hub-img rounded" alt="India">
+
+                        <div class="hover-text">22 MG Road, Cochin, India</div>
+                    </div>
+
                     <h5 class="mt-2 fw-semibold">India</h5>
                     <p class="text-muted mb-0">Cochin, India</p>
+
                 </div>
             </a>
         </div>
@@ -1099,35 +1537,73 @@
 
 
 <style>
-    /* Ensure image height adjusts on mobile */
+/* IMAGE HEIGHT */
+#our-hubs .hub-img {
+    height: 190px;
+    width: 100%;
+    object-fit: cover;
+}
+
+@media (max-width: 576px) {
     #our-hubs .hub-img {
-        height: 190px;
-        width: 100%;
-        object-fit: cover;
+        height: 150px;
     }
+}
 
-    @media (max-width: 576px) {
-        #our-hubs .hub-img {
-            height: 150px;   /* shorter height on mobile */
-        }
-    }
+/* MAKE CARD CLICKABLE */
+.hub-link {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+}
 
-    /* Remove underline + make full card clickable */
-    .hub-link {
-        text-decoration: none;
-        color: inherit;
-        display: block;
-    }
+/* CARD HOVER LIFT */
+.hub-card {
+    transition: 0.3s ease-in-out;
+}
 
-    /* Hover animation */
-    #our-hubs .hub-card {
-        transition: 0.3s ease-in-out;
-    }
+.hub-card:hover {
+    transform: translateY(-6px);
+}
 
-    #our-hubs .hub-card:hover {
-        transform: translateY(-6px);
-    }
+/* IMAGE WRAPPER FOR HOVER EFFECT */
+.img-wrapper {
+    position: relative;
+    overflow: hidden;
+    border-radius: 8px;
+}
+
+/* HOVER TEXT (HIDDEN INITIALLY) */
+.hover-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgba(0, 0, 0, 0.55);
+    padding: 8px 14px;
+    border-radius: 6px;
+    color: #fff;
+    font-size: 15px;
+    font-weight: 500;
+    text-align: center;
+    opacity: 0;
+    transition: 0.35s ease;
+    width: 90%;
+}
+
+/* SHOW TEXT ONLY WHEN HOVER ON IMAGE */
+.img-wrapper:hover .hover-text {
+    opacity: 1;
+}
+
+/* DARKEN IMAGE SLIGHTLY ON HOVER */
+.img-wrapper:hover img {
+    filter: brightness(0.6);
+    transition: 0.35s ease;
+}
 </style>
+
+
 
 
 
@@ -1176,7 +1652,8 @@
 
     .client-track {
         display: flex;
-        width: calc(200px * 14); /* 14 images (7 repeated twice) */
+        width: calc(200px * 14);
+        /* 14 images (7 repeated twice) */
         animation: scroll-left 25s linear infinite;
     }
 
@@ -1197,6 +1674,7 @@
         0% {
             transform: translateX(0);
         }
+
         100% {
             transform: translateX(-50%);
         }
