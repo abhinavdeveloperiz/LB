@@ -1,123 +1,12 @@
 {% extends 'base.html' %}
 {% block title %}About | L B Certifications Pvt. Ltd{% endblock %}
 {% block content %}
+<link rel="stylesheet" href="/static/css/about.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
-<style>
-    /* Background Section */
-    .about-section {
-        position: relative;
-        min-height: 65vh;
-        background: url("https://esafety.com/wp-content/uploads/2022/10/Fire-Safety-Tips-At-Home-At-Work-1.jpg") center/cover no-repeat;
 
-        padding-top: 120px;
 
-        padding-bottom: 80px;
-        display: flex;
-        align-items: center;
-        color: white;
-    }
-
-    /* Blur overlay */
-    .overlay-blur {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        backdrop-filter: blur(2px);
-        background: rgba(0, 0, 0, 0.40);
-        z-index: 1;
-    }
-
-    /* Ensure readable content above blur */
-    .about-section .container {
-        position: relative;
-        z-index: 2;
-    }
-
-    /* Left Text */
-    .text-content h2 {
-        font-size: 40px;
-        font-weight: 700;
-        margin-bottom: 20px;
-        color: #fff;
-    }
-
-    .text-content p {
-        font-size: 17px;
-        line-height: 1.8;
-        color: #efefef;
-        margin-bottom: 18px;
-    }
-
-    /* Accordion glass effect */
-    .accordion-item {
-        background: rgba(255, 255, 255, 0.18) !important;
-        backdrop-filter: blur(10px);
-        border-radius: 12px;
-        overflow: hidden;
-        margin-bottom: 14px;
-        border: none;
-        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
-    }
-
-    .accordion-button {
-        background: rgba(255, 255, 255, 0.15);
-        color: #fff;
-        font-weight: 600;
-        padding: 15px 20px;
-    }
-
-    .accordion-button:not(.collapsed) {
-        background: rgba(108, 197, 124, 0.35);
-        color: #fff;
-    }
-
-    .accordion-body {
-        color: #fff;
-        padding: 20px;
-    }
-
-    /* Icons */
-    .accordion-button i {
-        font-size: 18px;
-        color: #6CC57C;
-    }
-
-    /* Responsive Fixes */
-    @media (max-width: 991px) {
-        .text-content h2 {
-            font-size: 34px;
-        }
-
-        .about-section {
-            padding-top: 140px;
-            /* extra for mobile nav */
-            padding-bottom: 60px;
-            text-align: center;
-        }
-    }
-
-    @media (max-width: 768px) {
-        .text-content h2 {
-            font-size: 30px;
-        }
-
-        .text-content p {
-            font-size: 15px;
-        }
-    }
-
-    @media (max-width: 576px) {
-        .text-content h2 {
-            font-size: 28px;
-        }
-
-        .accordion-button {
-            font-size: 15px;
-        }
-    }
-</style>
 
 <!-- ABOUT SECTION -->
 <section class="about-section">
@@ -240,87 +129,14 @@
 
 
 
-<style>
-    .section-wrapper {
-        padding-top: 130px;
-        /* Fix for navbar overlap */
-        padding-bottom: 80px;
-    }
 
-    /* LEFT MENU */
-    .left-menu .list-group-item {
-        padding: 16px 18px;
-        font-size: 16px;
-        font-weight: 600;
-        cursor: pointer;
-        border: none;
-        border-left: 4px solid transparent;
-    }
-
-    .left-menu .active-tab {
-        color: #1a9137;
-        border-left: 4px solid #1a9137;
-        background: #f3faf4;
-    }
-
-    /* Expand/Collapse text */
-    .toggle-text {
-        float: right;
-        font-weight: 500;
-        color: #1a9137;
-    }
-
-    /* RIGHT CONTENT BOX */
-    .content-box {
-        background: #fff;
-        border-radius: 12px;
-        padding: 30px;
-        min-height: 350px;
-    }
-
-    /* Featured cards */
-    .feature-card {
-        display: flex;
-        gap: 20px;
-        padding-bottom: 20px;
-        border-bottom: 1px solid #eaeaea;
-        margin-bottom: 20px;
-    }
-
-    .feature-card img {
-        width: 180px;
-        border-radius: 10px;
-    }
-
-    .feature-card h5 {
-        font-weight: 700;
-    }
-
-    .feature-card a {
-        color: #1a9137;
-        font-weight: 600;
-        text-decoration: none;
-    }
-
-    @media(max-width: 768px) {
-        .feature-card {
-            flex-direction: column;
-            text-align: center;
-        }
-
-        .feature-card img {
-            width: 100%;
-        }
-    }
-</style>
-
-
+<!-- expand and collaps  -->
 <section class="section-wrapper container">
 
     <h2 class="fw-bold mb-3">What we do</h2>
     <p class="mb-5 text-muted" style="max-width: 800px;">
         We develop and deploy advanced technologies to serve energy and industrial companies with efficient,
-        reliable and cleaner solutions. Our technologies are transforming how industries work today.
+        reliable, and cleaner solutions. Our innovations are transforming how industries operate today.
     </p>
 
     <div class="row g-5">
@@ -331,32 +147,32 @@
 
                 <a class="list-group-item active-tab" data-target="tab1">
                     Oilfield Services & Equipment
-                    <span class="toggle-text">Collapse</span>
+                    <i class="fa-solid fa-arrow-down menu-icon rotate-right"></i>
                 </a>
 
                 <a class="list-group-item" data-target="tab2">
-                    Liquefied Natural Gas (LNG)
-                    <span class="toggle-text">Expand</span>
+                    Construction
+                    <i class="fa-solid fa-arrow-down menu-icon"></i>
                 </a>
 
                 <a class="list-group-item" data-target="tab3">
-                    Industrial Technology
-                    <span class="toggle-text">Expand</span>
+                    Health & Safety
+                    <i class="fa-solid fa-arrow-down menu-icon"></i>
                 </a>
 
                 <a class="list-group-item" data-target="tab4">
-                    Energy Transition
-                    <span class="toggle-text">Expand</span>
+                    Inspection
+                    <i class="fa-solid fa-arrow-down menu-icon"></i>
                 </a>
 
                 <a class="list-group-item" data-target="tab5">
-                    Industrial Solutions
-                    <span class="toggle-text">Expand</span>
+                    Lifting Operations
+                    <i class="fa-solid fa-arrow-down menu-icon"></i>
                 </a>
 
                 <a class="list-group-item" data-target="tab6">
-                    Remote Operations
-                    <span class="toggle-text">Expand</span>
+                    Oil & Gas
+                    <i class="fa-solid fa-arrow-down menu-icon"></i>
                 </a>
 
             </div>
@@ -365,9 +181,9 @@
         <!-- RIGHT CONTENT -->
         <div class="col-md-8" data-aos="slide-up">
 
-            <!-- TAB 1 -->
+            <!-- TAB 1 (Correct Content) -->
             <div id="tab1" class="content-box tab-content-box">
-                <h3>Oilfield services & equipment</h3>
+                <h3>Oilfield Services & Equipment</h3>
                 <p>
                     Our advanced technology and services help you operate efficiently and safely, giving you
                     digital optimization and automation capabilities that reduce risks and drive operational excellence.
@@ -397,92 +213,141 @@
                     </div>
                 </div>
 
+                <div class="feature-card">
+                    <img src="https://media.istockphoto.com/id/1290864946/photo/e-learning-education-concept-learning-online.jpg?s=612x612&w=0&k=20&c=y1fQ-3wbsvdDaMn-cuHPibcgozOxKQS99mIgz6DFcVA="
+                        alt="">
+                    <div>
+                        <h5>Online Training</h5>
+                        <p class="text-muted">improve knowledge, and empower professionals.</p>
+                        <a href="/services">READ MORE ></a>
+                    </div>
+                </div>
+
+                <div class="feature-card">
+                    <img src="https://media.istockphoto.com/id/1485377791/photo/engineer-team-employee-plan-meeting-plant-staff-worker-safety-technician-group-planning.jpg?s=612x612&w=0&k=20&c=z6ApOiaDonaIYYOXWlkSIjmyWvE91AFU8eKXj_dGlNs="
+                        alt="">
+                    <div>
+                        <h5>Safty Training</h5>
+                        <p class="text-muted">Strengthen workplace safety through comprehensive training.</p>
+                        <a href="/services">READ MORE ></a>
+                    </div>
+                </div>
             </div>
 
-            <!-- TAB 2 -->
+
+
+
+            <!-- TAB 2 - Construction -->
             <div id="tab2" class="content-box tab-content-box d-none">
-                <h3>Liquefied Natural Gas (LNG)</h3>
+                <h3>Construction</h3>
                 <p>
-                    Complete LNG solutions including compression, power, digital monitoring, and reliable execution.
+                    We deliver end-to-end construction solutions for industrial, commercial, and energy-sector
+                    projects. From planning to execution, our teams ensure safe, reliable, and high-quality delivery.
                 </p>
 
-                <h6 class="mt-4 mb-3 text-muted">— Related Solutions</h6>
-
+                <h6 class="mt-4 mb-3 text-muted">— Key Services</h6>
                 <ul>
-                    <li>LNG Compression Systems</li>
-                    <li>Modular LNG Plants</li>
-                    <li>Energy-efficient Turbomachinery</li>
+                    <li>Industrial infrastructure construction</li>
+                    <li>Oil & gas facility development</li>
+                    <li>Pipeline and utility installation</li>
+                    <li>Plant expansion and modernization</li>
+                    <li>Onshore & offshore structural works</li>
                 </ul>
             </div>
 
-            <!-- TAB 3 -->
+            <!-- TAB 3 - Health & Safety -->
             <div id="tab3" class="content-box tab-content-box d-none">
-                <h3>Industrial Technology</h3>
+                <h3>Health & Safety</h3>
                 <p>
-                    Our industrial technology business provides non-invasive inspection, measurement, and industrial
-                    scanning solutions.
+                    We support organizations in maintaining safe, efficient, and compliant workplaces through
+                    internationally certified training, risk management systems, and modern safety technologies.
                 </p>
 
-                <h6 class="mt-4 mb-3 text-muted">— Featured</h6>
-
+                <h6 class="mt-4 mb-3 text-muted">— Our Expertise</h6>
                 <ul>
-                    <li>Digital Inspection</li>
-                    <li>Ultrasound Technology</li>
-                    <li>Pipeline Integrity Tools</li>
+                    <li>HSE compliance consulting (ISO, OSHA standards)</li>
+                    <li>Workplace risk assessment & audits</li>
+                    <li>Emergency response & crisis management</li>
+                    <li>Fire safety training & equipment guidance</li>
+                    <li>Behavior-based safety programs</li>
                 </ul>
             </div>
 
-            <!-- TAB 4 -->
+            <!-- TAB 4 - Inspection -->
             <div id="tab4" class="content-box tab-content-box d-none">
-                <h3>Energy Transition</h3>
+                <h3>Inspection</h3>
                 <p>
-                    Supporting sustainable energy with carbon capture, hydrogen technologies, and geothermal expansion.
+                    Our inspection services ensure equipment reliability, integrity, and compliance with
+                    international standards across critical industries.
                 </p>
 
-                <h6 class="mt-3">— Key Focus Areas</h6>
+                <h6 class="mt-3 text-muted">— Inspection Services Offered</h6>
                 <ul>
-                    <li>Carbon Capture Utilization & Storage (CCUS)</li>
-                    <li>Hydrogen Production & Compression</li>
-                    <li>Geothermal Drilling</li>
+                    <li>Non-Destructive Testing (NDT)</li>
+                    <li>Welding inspection & certification</li>
+                    <li>Pipeline inspection & integrity assessment</li>
+                    <li>Pressure vessel & tank inspection</li>
+                    <li>Third-party verification & quality assurance</li>
                 </ul>
             </div>
 
-            <!-- TAB 5 -->
+            <!-- TAB 5 - Lifting Operations -->
             <div id="tab5" class="content-box tab-content-box d-none">
-                <h3>Industrial Solutions</h3>
+                <h3>Lifting Operations</h3>
                 <p>
-                    Complete automation systems, control systems, and remote diagnostics for industrial users.
+                    We offer safe and certified lifting solutions to support complex industrial and energy projects.
+                    Our services ensure compliance, safety, and operational efficiency.
                 </p>
+
+                <h6 class="mt-3 text-muted">— Solutions We Provide</h6>
+                <ul>
+                    <li>Lifting equipment inspection & certification</li>
+                    <li>Cranes, hoists & lifting gear supply</li>
+                    <li>Lifting plan development & supervision</li>
+                    <li>Rigging services & training programs</li>
+                    <li>Heavy equipment operation support</li>
+                </ul>
             </div>
 
-            <!-- TAB 6 -->
+            <!-- TAB 6 - Oil & Gas -->
             <div id="tab6" class="content-box tab-content-box d-none">
-                <h3>Remote Operations</h3>
+                <h3>Oil & Gas</h3>
                 <p>
-                    Digital-driven remote operations and monitoring technologies to boost efficiency.
+                    We deliver integrated solutions across the upstream, midstream, and downstream oil & gas value
+                    chain — enabling safer, cleaner, and more efficient operations.
                 </p>
+
+                <h6 class="mt-3 text-muted">— Core Capabilities</h6>
+                <ul>
+                    <li>Drilling & well intervention support</li>
+                    <li>Oil & gas facility operations & maintenance</li>
+                    <li>Pipeline construction & integrity management</li>
+                    <li>Production optimization & remote monitoring</li>
+                    <li>Energy transition technologies for the petroleum sector</li>
+                </ul>
             </div>
 
         </div>
     </div>
 </section>
 
+
 <script>
-    /* TAB SWITCHING */
+
     document.querySelectorAll('.left-menu .list-group-item').forEach(item => {
         item.addEventListener('click', function () {
 
-            // remove active class
+            // remove active class + reset icons
             document.querySelectorAll('.left-menu .list-group-item').forEach(i => {
                 i.classList.remove('active-tab');
-                i.querySelector('.toggle-text').innerHTML = "Expand";
+                i.querySelector('.menu-icon').classList.remove('rotate-right');
             });
 
             // add active to clicked
             this.classList.add('active-tab');
-            this.querySelector('.toggle-text').innerHTML = "Collapse";
+            this.querySelector('.menu-icon').classList.add('rotate-right');
 
-            // show correct tab content
+            // show correct tab
             const target = this.getAttribute('data-target');
 
             document.querySelectorAll('.tab-content-box').forEach(tab => {
@@ -498,6 +363,7 @@
 
 
 
+<!-- our quality statement  -->
 
 
 <section class="quality-section py-5">
@@ -506,7 +372,7 @@
 
             <!-- LEFT SIDE IMAGE -->
             <div class="col-md-5 mb-4 mb-md-0" data-aos="flip-right">
-                <img src="https://media.licdn.com/dms/image/v2/D4E12AQGcMtsvYhUyIw/article-cover_image-shrink_720_1280/article-cover_image-shrink_720_1280/0/1685363510980?e=2147483647&v=beta&t=O3mpe_P9Q4dNQcpugVIv86fn94TAfJjuKNXwMvfm_JQ"
+                <img src="https://plus.unsplash.com/premium_photo-1661962457945-5c1aabee6df4?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8ZmlyZSUyMHNhZmV0eXxlbnwwfHwwfHx8MA%3D%3D"
                     class="img-fluid rounded shadow-lg left-quality-img">
             </div>
 
@@ -516,7 +382,57 @@
                 <!-- QUOTE BACKGROUND -->
                 <img src="/static/images/double-quotes.png" class="quote-bg">
 
-                <h2 class="fw-bold mb-4">Our Quality Statement</h2>
+                <h2 class="fw-bold mb-4 animate-bold" id="qualityTitle">Our Quality Statement</h2>
+
+
+
+                <!-- animation css and script  -->
+                <style>
+                    .animate-bold span {
+                        font-weight: 400;
+                        opacity: 0.6;
+                        transition: all 0.3s ease;
+                    }
+
+                    /* When it animates to bold */
+                    .animate-bold span.bold {
+                        font-weight: 700;
+                        opacity: 1;
+                    }
+                </style>
+
+                <script>
+                    document.addEventListener("DOMContentLoaded", () => {
+                        const title = document.getElementById("qualityTitle");
+                        const text = title.innerText;
+
+                        // Wrap characters in spans ONLY once
+                        title.innerHTML = text
+                            .split("")
+                            .map(char => `<span>${char}</span>`)
+                            .join("");
+
+                        const letters = title.querySelectorAll("span");
+
+                        function animateLetters() {
+                            letters.forEach((letter, index) => {
+                                setTimeout(() => {
+                                    letter.classList.add("bold");
+                                }, index * 80);
+                            });
+
+                            // After animation completes, reset and restart
+                            setTimeout(() => {
+                                letters.forEach(letter => letter.classList.remove("bold"));
+                                animateLetters();  // Loop again
+                            }, letters.length * 80 + 500); // small pause
+                        }
+
+                        animateLetters(); // Start animation
+                    });
+                </script>
+
+
 
                 <p class="quality-text text-justify">
                     “At HALEYS, we set the standard for excellence in every facet of our operations.
@@ -536,308 +452,371 @@
 </section>
 
 
-<style>
-    /* MAIN BG */
-    .quality-section {
-        background-color: #0e4850;
-        padding-top: 80px;
-        padding-bottom: 80px;
-    }
-
-    /* LEFT IMAGE */
-    .left-quality-img {
-        width: 100%;
-        border-radius: 10px;
-        object-fit: cover;
-        height: 480px;
-    }
-
-    /* RIGHT SIDE QUOTE BACKGROUND */
-    .quote-bg {
-        position: absolute;
-        top: -10px;
-        right: 40px;
-        width: 180px;
-        opacity: 0.06;
-        /* Soft transparency */
-        z-index: 1;
-        pointer-events: none;
-    }
-
-    /* TEXT CONTENT */
-    .quality-text {
-        font-size: 18px;
-        line-height: 1.7;
-        opacity: 0.9;
-        position: relative;
-        z-index: 3;
-        max-width: 95%;
-    }
-
-    h2 {
-        position: relative;
-        z-index: 3;
-    }
-
-    /* RESPONSIVE */
-    @media (max-width: 768px) {
-        .left-quality-img {
-            height: 300px;
-        }
-
-        .quote-bg {
-            width: 120px;
-            top: -20px;
-            right: 10px;
-        }
-
-        .quality-text {
-            font-size: 16px;
-        }
-    }
-</style>
 
 
+<!-- our impartiality statement  -->
 
-<section class="py-5 bg-white">
+
+<section class="impartiality-section">
     <div class="container">
-        <div class="row align-items-start gy-4">
+        <div class="row gy-4 align-items-start">
 
-            <!-- LEFT TEXT -->
+            <!-- LEFT CONTENT -->
             <div class="col-lg-6">
-                <h2 class="fw-semibold mb-4">Our Impartiality Statement</h2>
+                <h2>Our Impartiality Statement</h2>
 
-                <p class="text-secondary mb-3 text-justify">
-                    "At HALEYS, we are fully committed to upholding the principles of impartiality in all
+                <p>"At HALEYS, we are fully committed to upholding the principles of impartiality in all
                     aspects of our operations. We recognize the significance of impartiality in the context of
                     our product offerings, services, and management standards. To this end, we have established
                     and maintain processes that ensure unbiased, objective, and fair treatment of all stakeholders,
                     including clients, employees, suppliers, and regulatory authorities."
                 </p>
 
-                <p class="text-secondary mb-3 text-justify">
+                <p>
                     Our dedication to impartiality is deeply rooted in our core values of 'We Care, Communicate
                     Boldly, and Collaborate Generously.' We adhere to a strict code of conduct, which includes
                     measures to prevent any conflicts of interest and any actions that could compromise the integrity
                     of our services or decisions.
                 </p>
 
-                <p class="text-secondary text-justify">
+                <p>
                     We continuously monitor and assess our practices to identify and mitigate potential sources of
                     bias or partiality, ensuring that our clients can have complete confidence in the quality, fairness,
-                    and reliability of our products and services. We are committed to maintaining transparency,
-                    openness, and integrity in all our interactions, fostering trust among all stakeholders.
+                    and reliability of our products and services.
                 </p>
             </div>
 
-            <!-- RIGHT IMAGE + TEXT OVERLAY -->
-            <div class="col-lg-6 position-relative ">
+            <!-- RIGHT CONTENT -->
+            <div class="col-lg-6">
 
-                <!-- IMAGE -->
-                <img data-aos="flip-right"
-                    src="https://media.istockphoto.com/id/1262389979/photo/industrial-worker-at-factory.jpg?s=612x612&w=0&k=20&c=5CeOOSjItv4YULhDoartE7Hrf_f4KEOGJOfbCp8drNo="
-                    alt="Impartiality Image" class="img-fluid rounded-5 shadow mx-auto  d-flex justify-content-center">
+                <div class="impartiality-image-box">
+                    <img data-aos="flip-right"
+                        src="https://media.istockphoto.com/id/1262389979/photo/industrial-worker-at-factory.jpg?s=612x612&w=0&k=20&c=5CeOOSjItv4YULhDoartE7Hrf_f4KEOGJOfbCp8drNo="
+                        alt="Impartiality Image">
 
-                <!-- TEXT OVERLAY -->
-                <div class="position-absolute bottom-0 start-0 w-100 text-white px-4 py-3"
-                    style="background: rgba(6, 50, 74, 0.9);">
-                    <p class="mb-0">
-                        Impartiality fosters a fair and inclusive environment where everyone's perspectives and
-                        experiences are valued equally.
-                    </p>
+                    <style>
+                        /* Overlay container */
+                        .impartiality-overlay {
+                            background: rgba(0, 17, 76, 0.75);
+                            color: #fff;
+                            padding: 18px 20px;
+                            border: 1px solid #000;
+                            border-radius: 0;
+                            font-size: 18px;
+                            line-height: 1.5;
+                            display: inline-block;
+                        }
+
+                        /* Make each word separate */
+                        .impartiality-overlay span {
+                            display: inline-block;
+                            margin-right: 4px;
+                            opacity: 0.3;
+                            color: white;
+                            animation: wordFlash 2s linear infinite;
+                        }
+
+                        /* Word highlight animation */
+                        @keyframes wordFlash {
+                            0% {
+                                color: white;
+                                opacity: 10;
+                            }
+
+                            30% {
+                                color: #15ff00;
+                                opacity: 90;
+                            }
+
+                            /* highlight */
+                            60% {
+                                color: white;
+                                opacity: 50;
+                            }
+
+                            100% {
+                                color: white;
+                                opacity: 100;
+                            }
+                        }
+
+                        /* delay each word so they animate one after another */
+                        .impartiality-overlay span:nth-child(1) {
+                            animation-delay: 0s;
+                        }
+
+                        .impartiality-overlay span:nth-child(2) {
+                            animation-delay: 0.2s;
+                        }
+
+                        .impartiality-overlay span:nth-child(3) {
+                            animation-delay: 0.4s;
+                        }
+
+                        .impartiality-overlay span:nth-child(4) {
+                            animation-delay: 0.6s;
+                        }
+
+                        .impartiality-overlay span:nth-child(5) {
+                            animation-delay: 0.8s;
+                        }
+
+                        .impartiality-overlay span:nth-child(6) {
+                            animation-delay: 1s;
+                        }
+
+                        .impartiality-overlay span:nth-child(7) {
+                            animation-delay: 1.2s;
+                        }
+
+                        .impartiality-overlay span:nth-child(8) {
+                            animation-delay: 1.4s;
+                        }
+
+                        .impartiality-overlay span:nth-child(9) {
+                            animation-delay: 1.6s;
+                        }
+
+                        .impartiality-overlay span:nth-child(10) {
+                            animation-delay: 1.8s;
+                        }
+
+                        .impartiality-overlay span:nth-child(11) {
+                            animation-delay: 2s;
+                        }
+
+                        .impartiality-overlay span:nth-child(12) {
+                            animation-delay: 2.2s;
+                        }
+
+                        .impartiality-overlay span:nth-child(13) {
+                            animation-delay: 2.4s;
+                        }
+
+                        .impartiality-overlay span:nth-child(14) {
+                            animation-delay: 2.6s;
+                        }
+
+                        .impartiality-overlay span:nth-child(15) {
+                            animation-delay: 2.8s;
+                        }
+
+                        .impartiality-overlay span:nth-child(16) {
+                            animation-delay: 3s;
+                        }
+                    </style>
+
+                    <div class="impartiality-overlay border border-dark rounded-0 text-center">
+                        <span>Impartiality</span>
+                        <span>fosters</span>
+                        <span>a</span>
+                        <span>fair</span>
+                        <span>and</span>
+                        <span>inclusive</span>
+                        <span>environment</span>
+                        <span>where</span>
+                        <span>everyone's</span>
+                        <span>perspectives</span>
+                        <span>and</span>
+                        <span>experiences</span>
+                        <span>are</span>
+                        <span>valued</span>
+                        <span>equally.</span>
+                    </div>
+
                 </div>
 
             </div>
+
         </div>
     </div>
 </section>
 
 
-<section class="container py-5 border rounded-3" style="background-color: rgb(203, 233, 255);">
+
+
+
+
+<!-- BLUE SECTION -->
+<section class="container py-5 mb-5 border rounded-5 no-bottom-gap" style="background-color: rgb(203, 233, 255);">
     <div class="container text-center">
         <h2 class="fw-bold mb-3">Our Commitments</h2>
         <p class="commitments-text mx-auto text-justify">
             At Haleys, our commitment to excellence encompasses career growth, learning, DEI, environmental
-            sustainability,
-            social impact, work-life balance and Unrivaled Services. We aspire to be industry leaders in every facet of
-            our
-            operations, forging a sustainable future while setting the benchmark for engineering support services. We
-            cordially
-            invite you to join us on this inspiring journey towards enduring prosperity and well-being for all.
+            sustainability, social impact, work-life balance and Unrivaled Services. We aspire to be industry
+            leaders in every facet of our operations, forging a sustainable future while setting the benchmark for
+            engineering support services. We invite you to join us on this inspiring journey towards enduring
+            prosperity and well-being for all.
         </p>
     </div>
 </section>
 
-<!-- Updated Haleys Page Design: Table-style layout, all images left, smaller images, w-75 container -->
 
-<style>
-    .section-wrapper {
-        max-width: 900px;
-        margin: 50px auto;
-    }
 
-    .info-card {
-        background: #fff;
-        border-radius: 14px;
-        padding: 25px;
-        margin-bottom: 45px;
-        box-shadow: 0 4px 18px rgba(0, 0, 0, 0.08);
-        display: flex;
-        gap: 25px;
-        align-items: flex-start;
-    }
 
-    .info-card img {
-        width: 260px;
-        height: auto;
-        border-radius: 10px;
-        object-fit: cover;
-    }
 
-    .info-content h2 {
-        font-size: 26px;
-        font-weight: 700;
-        margin-bottom: 10px;
-        color: #333;
-    }
+<!-- Swiper CSS -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 
-    .info-content p {
-        font-size: 15px;
-        line-height: 1.8;
-        color: #555;
-        margin: 0;
-        text-align: justify;
-    }
+<!-- Swiper JS -->
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
-    /* Mobile Responsive */
-    @media(max-width: 768px) {
-        .info-card {
-            flex-direction: column;
-            text-align: left;
-        }
 
-        .info-card img {
-            width: 100%;
-        }
-    }
 
-    /* Slide animation */
-    .slide-right {
-        opacity: 0;
-        transform: translateX(60px);
-        transition: all 0.8s ease;
-    }
+<div class="swiper mySwiper">
+    <div class="container swiper-wrapper mb-5">
 
-    .slide-right.visible {
-        opacity: 1;
-        transform: translateX(0);
-    }
-</style>
-
-<div class="section-wrapper">
-
-    <!-- Row 1 -->
-    <div class="info-card slide-right" data-aos="slide-left">
-        <img src="/static/images/112.jpg">
-        <div class="info-content">
-            <h2>Growth and Learning</h2>
-            <p>
-                Haleys recognizes the paramount importance of nurturing talent, fostering continuous learning,
-                and promoting career growth for our employees. Within our dynamic environment, team members have
-                abundant opportunities to hone their skills, expand their knowledge, and advance their careers.
-                We are dedicated to investing in our people, ensuring their professional development aligns
-                seamlessly with our vision for a sustainable future.
-            </p>
+        <!-- Slide 1 -->
+        <div class="swiper-slide">
+            <div class="info-card">
+                <img src="/static/images/112.jpg">
+                <div class="info-content">
+                    <h2>Growth and Learning</h2>
+                    <p>Haleys recognizes the paramount importance of nurturing talent, fostering continuous learning,
+                        and promoting career growth for our employees. Within our dynamic environment, team members have
+                        abundant opportunities to hone their skills, expand their knowledge, and advance their careers.
+                        We are dedicated to investing in our people, ensuring their professional development aligns
+                        seamlessly with our vision for a sustainable future.</p>
+                </div>
+            </div>
         </div>
+
+        <!-- Slide 2 -->
+        <div class="swiper-slide">
+            <div class="info-card">
+                <img src="/static/images/162.jpg">
+                <div class="info-content">
+                    <h2>Diversity, Equity, and Inclusion (DEI)</h2>
+                    <p>Haleys is unwaveringly committed to cultivating a workplace that embraces diversity, champions
+                        equity, and fosters inclusion. We highly value the unique perspectives and backgrounds of our
+                        employees, understanding that diverse teams drive innovation and excellence.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Slide 3 -->
+        <div class="swiper-slide">
+            <div class="info-card">
+                <img src="/static/images/19222.jpg">
+                <div class="info-content">
+                    <h2>Environmental Sustainability</h2>
+                    <p>Acknowledging our responsibility to protect and preserve the environment, Haleys is resolutely
+                        committed to sustainable practices in our operations. Continuously seeking ways to minimize our
+                        environmental footprint, we make responsible choices, employ eco-friendly solutions, and manage
+                        resources efficiently, all aimed at contributing positively to environmental sustainability.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Slide 4 -->
+        <div class="swiper-slide">
+            <div class="info-card">
+                <img src="/static/images/2147838542.jpg">
+                <div class="info-content">
+                    <h2>Social Impact</h2>
+                    <p>Haleys comprehends that our actions have far-reaching effects, impacting not only our clients but
+                        also broader society. We take immense pride in engaging in initiatives that create a positive
+                        social impact, whether through community outreach, philanthropy, or projects that benefit
+                        society as a whole. Our commitment to social responsibility extends beyond our core operations.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Slide 5 -->
+        <div class="swiper-slide">
+            <div class="info-card">
+                <img src="/static/images/2148784052.jpg">
+                <div class="info-content">
+                    <h2>Work-Life Balance</h2>
+                    <p>We deeply understand the significance of work-life balance in the well-being and productivity of
+                        our employees. Haleys is dedicated to supporting a healthy equilibrium between work and personal
+                        life, providing flexible work arrangements, comprehensive wellness programs, and a nurturing
+                        work environment to ensure our team members thrive both professionally and personally.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Slide 6 -->
+        <div class="swiper-slide">
+            <div class="info-card">
+                <img src="/static/images/2150709932.jpg">
+                <div class="info-content">
+                    <h2>Unrivaled Services</h2>
+                    <p>Renowned for delivering timely, reliable, and top-quality services, Haleys has earned a global
+                        reputation for excellence. Our engineers are known for their transparency and swift responses,
+                        while maintaining an impeccable safety record. We take immense pride in offering solutions that
+                        consistently delight our clients, with readily accessible maintenance histories and an
+                        unwavering focus on safety at work.
+                    </p>
+                </div>
+            </div>
+        </div>
+
     </div>
 
-    <!-- Row 2 -->
-    <div class="info-card slide-right" data-aos="slide-left">
-        <img src="/static/images/162.jpg">
-        <div class="info-content">
-            <h2>Diversity, Equity, and Inclusion (DEI)</h2>
-            <p>
-                Haleys is unwaveringly committed to cultivating a workplace that embraces diversity, champions
-                equity, and fosters inclusion. We highly value the unique perspectives and backgrounds of our
-                employees, understanding that diverse teams drive innovation and excellence. Actively working to
-                create an inclusive culture where all individuals are treated with fairness and respect,
-                regardless of their background or identity, is a fundamental part of our ethos.
-            </p>
-        </div>
-    </div>
+    <!-- Pagination Dots -->
+    <div class="swiper-pagination"></div>
 
-    <!-- Row 3 -->
-    <div class="info-card slide-right" data-aos="slide-left">
-        <img src="/static/images/19222.jpg">
-        <div class="info-content">
-            <h2>Environmental Sustainability</h2>
-            <p>
-                Acknowledging our responsibility to protect and preserve the environment, Haleys is resolutely
-                committed to sustainable practices in our operations. Continuously seeking ways to minimize our
-                environmental footprint, we make responsible choices, employ eco-friendly solutions, and manage
-                resources efficiently, all aimed at contributing positively to environmental sustainability.
-            </p>
-        </div>
-    </div>
-
-    <!-- Row 4 -->
-    <div class="info-card slide-right" data-aos="slide-left">
-        <img src="/static/images/2147838542.jpg">
-        <div class="info-content">
-            <h2>Social Impact</h2>
-            <p>
-                Haleys comprehends that our actions have far-reaching effects, impacting not only our clients but
-                also broader society. We take immense pride in engaging in initiatives that create a positive social
-                impact, whether through community outreach, philanthropy, or projects that benefit society as a
-                whole. Our commitment to social responsibility extends beyond our core operations.
-            </p>
-        </div>
-    </div>
-
-    <!-- Row 5 -->
-    <div class="info-card slide-right" data-aos="slide-left">
-        <img src="/static/images/2148784052.jpg">
-        <div class="info-content">
-            <h2>Work-Life Balance</h2>
-            <p>
-                We deeply understand the significance of work-life balance in the well-being and productivity of our
-                employees. Haleys is dedicated to supporting a healthy equilibrium between work and personal life,
-                providing flexible work arrangements, comprehensive wellness programs, and a nurturing work
-                environment to ensure our team members thrive both professionally and personally.
-            </p>
-        </div>
-    </div>
-
-    <!-- Row 6 -->
-    <div class="info-card slide-right" data-aos="slide-left">
-        <img src="/static/images/2150709932.jpg">
-        <div class="info-content">
-            <h2>Unrivaled Services</h2>
-            <p>
-                Renowned for delivering timely, reliable, and top-quality services, Haleys has earned a global
-                reputation for excellence. Our engineers are known for their transparency and swift responses, while
-                maintaining an impeccable safety record. We take immense pride in offering solutions that
-                consistently delight our clients, with readily accessible maintenance histories and an unwavering
-                focus on safety at work.
-            </p>
-        </div>
-    </div>
+    <!-- Nav Arrows -->
 
 </div>
 
-<script>
-    function revealOnScroll() {
-        document.querySelectorAll('.slide-right').forEach(el => {
-            const rect = el.getBoundingClientRect();
-            if (rect.top < window.innerHeight - 100) {
-                el.classList.add('visible');
-            }
-        });
-    }
 
-    window.addEventListener('scroll', revealOnScroll);
-    window.addEventListener('load', revealOnScroll);
+<script>
+    var swiper = new Swiper(".mySwiper", {
+        slidesPerView: 1,
+        spaceBetween: 30,
+        loop: true,
+        autoplay: {
+            delay: 3000,
+        },
+        pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+        },
+        navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+        },
+        breakpoints: {
+            768: {
+                slidesPerView: 1.2,
+            },
+            1024: {
+                slidesPerView: 2,
+            },
+            1400: {
+                slidesPerView: 2.2,
+            }
+        }
+    });
 </script>
+
+
+
+
+<!-- new section here  -->
+
+<section class="values-section">
+    <div class="container">
+
+        <!-- Heading -->
+        <h2 class="values-title">Our Values</h2>
+
+        <!-- GIF Background Section -->
+        <div class="values-gif-box">
+            <p class="gif-overlay-text">
+                LLOYDS BUREAU is built on a foundation of core values that guide our actions
+            </p>
+        </div>
+
+        <!-- Blue Description Text -->
+
+
+    </div>
+</section>
+
 
 
 
@@ -922,7 +901,7 @@
     }
 
     .left-logo {
-        width: 150px;
+        width: 300px;
         filter: drop-shadow(0 0 8px rgba(255, 255, 255, 0.4));
     }
 
@@ -1009,8 +988,9 @@
                 <img src="https://media.istockphoto.com/id/1213499152/photo/sample-online-news-website-on-tablet.jpg?s=612x612&w=0&k=20&c=jvg2lHSshsqccRYpA0I6JMGq-RDKJg1OGqgVBH_Er7Q="
                     class="w-100 rounded-3" alt="">
 
-                <div class="overlay-text">
+                <div class="overlay-text d-flex justify-content-between align-items-end">
                     <h5 class="card-title">Latest news and blogs</h5>
+                    <a href="/news-blogs" class="learn-btn">Learn more</a>
                 </div>
             </div>
         </div>
@@ -1021,8 +1001,9 @@
                 <img src="https://media.istockphoto.com/id/2062707205/photo/gold-star-on-a-blue-background-as-a-reward-top-performance-award-winners-cup-achievements.jpg?s=612x612&w=0&k=20&c=6HeaeFYryuuOyPTW8ucQKsUMUi3F8oHvE9CSPVgoV60="
                     class="w-100 rounded-3" alt="">
 
-                <div class="overlay-text">
+                <div class="overlay-text d-flex justify-content-between align-items-end">
                     <h5 class="card-title">Our latest awards & recognition</h5>
+                    <a href="/news-blogs" class="learn-btn">Learn more</a>
                 </div>
             </div>
         </div>
@@ -1033,8 +1014,9 @@
                 <img src="https://plus.unsplash.com/premium_photo-1661315406324-329dd27ebc34?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8cmVwb3J0fGVufDB8fDB8fHww&fm=jpg&q=60&w=3000"
                     class="w-100 rounded-3" alt="">
 
-                <div class="overlay-text">
+                <div class="overlay-text d-flex justify-content-between align-items-end">
                     <h5 class="card-title">Our 2026 annual report</h5>
+                    <a href="/news-blogs" class="learn-btn">Learn more</a>
                 </div>
             </div>
         </div>
@@ -1042,14 +1024,18 @@
     </div>
 </section>
 
-
 <style>
     .explore-card {
         overflow: hidden;
         border-radius: 12px;
+        position: relative;
     }
 
     .explore-card img {
+        width: 100%;
+        height: 260px;
+        object-fit: cover;
+        border-radius: 12px;
         transition: 0.4s ease-in-out;
     }
 
@@ -1057,20 +1043,65 @@
         transform: scale(1.07);
     }
 
+    /* Bottom overlay */
     .overlay-text {
         position: absolute;
         bottom: 0;
+        left: 0;
         width: 100%;
-        padding: 20px;
-        background: linear-gradient(transparent, rgba(0, 0, 0, 0.7));
+        padding: 16px 20px;
+
+        background: linear-gradient(to top,
+                rgba(0, 0, 0, 0.8),
+                rgba(0, 0, 0, 0));
+
         color: white;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
     }
 
     .overlay-text h5 {
         margin: 0;
         font-weight: 600;
+        max-width: 70%;
+    }
+
+    /* Learn more button */
+    .learn-btn {
+        padding: 6px 14px;
+        border: 1px solid white;
+        color: white;
+        border-radius: 30px;
+        text-decoration: none;
+        font-size: 0.85rem;
+        transition: 0.3s;
+        white-space: nowrap;
+        backdrop-filter: blur(3px);
+    }
+
+    .learn-btn:hover {
+        background: white;
+        color: black;
+    }
+
+    /* Responsive */
+    @media (max-width: 768px) {
+        .explore-card img {
+            height: 220px;
+        }
+
+        .overlay-text h5 {
+            font-size: 1rem;
+        }
+
+        .learn-btn {
+            padding: 5px 12px;
+            font-size: 0.8rem;
+        }
     }
 </style>
+
 
 
 
@@ -1078,175 +1109,8 @@
 <!-- --------------------------------------new addon  -->
 
 
-<style>
-    /* ---------- GLOBAL LAYOUT ---------- */
-    .threecol-section {
-        padding: 80px 0;
-    }
 
-    .container-max {
-        max-width: 1320px;
-        margin: auto;
-        padding: 0 20px;
-    }
 
-    .threecol-grid {
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        gap: 40px;
-        align-items: flex-start;
-    }
-
-    /* ---------- LEFT TEXT BLOCK ---------- */
-    .eyebrow {
-        font-size: 14px;
-        letter-spacing: 2px;
-        color: #02A783;
-        font-weight: 600;
-        margin-bottom: 15px;
-        text-transform: uppercase;
-    }
-
-    .section-title {
-        font-size: 42px;
-        font-weight: 700;
-        line-height: 1.2;
-    }
-
-    .section-description {
-        font-size: 18px;
-        color: #555;
-        margin-top: 20px;
-        max-width: 420px;
-    }
-
-    /* ---------- CTA LINK ---------- */
-    .cta-link {
-        color: #02A783;
-        font-weight: 600;
-        display: inline-flex;
-        align-items: center;
-        gap: 6px;
-        margin-top: 20px;
-        font-size: 15px;
-        text-decoration: none;
-    }
-
-    /* ---------- IMAGE CARD ---------- */
-    .image-card {
-        position: relative;
-        overflow: hidden;
-        border-radius: 12px;
-    }
-
-    .image-card img {
-        width: 100%;
-        height: 350px;
-        object-fit: cover;
-        transition: transform .6s ease;
-        display: block;
-    }
-
-    .image-card:hover img {
-        transform: scale(1.04);
-    }
-
-    /* ---------- TEXT OVERLAY ---------- */
-    .card-text {
-        position: absolute;
-        bottom: 25px;
-        left: 25px;
-        right: 25px;
-        color: #fff;
-    }
-
-    .card-text h2 {
-        font-size: 26px;
-        font-weight: 700;
-        margin-bottom: 8px;
-    }
-
-    .card-text a {
-        color: #02A783;
-        font-weight: 600;
-        font-size: 15px;
-    }
-
-    /* ---------- RESPONSIVE RULES ---------- */
-    @media (max-width: 1200px) {
-        .section-title {
-            font-size: 36px;
-        }
-    }
-
-    @media (max-width: 992px) {
-        .threecol-grid {
-            grid-template-columns: 1fr 1fr;
-        }
-
-        .grid-full {
-            grid-column: span 2;
-        }
-
-        .section-title {
-            font-size: 34px;
-        }
-
-        .image-card img {
-            height: 320px;
-        }
-    }
-
-    @media (max-width: 768px) {
-        .threecol-grid {
-            grid-template-columns: 1fr;
-        }
-
-        .grid-full {
-            grid-column: span 1;
-        }
-
-        .threecol-section {
-            padding: 50px 0;
-        }
-
-        .section-title {
-            font-size: 30px;
-        }
-
-        .section-description {
-            max-width: 100%;
-        }
-
-        .image-card img {
-            height: 300px;
-        }
-
-        .card-text h2 {
-            font-size: 22px;
-        }
-    }
-
-    @media (max-width: 480px) {
-        .threecol-section {
-            padding: 40px 0;
-        }
-
-        .image-card img {
-            height: 260px;
-        }
-
-        .card-text {
-            bottom: 15px;
-            left: 15px;
-            right: 15px;
-        }
-
-        .card-text h2 {
-            font-size: 20px;
-        }
-    }
-</style>
 
 
 <div class="threecol-section">
@@ -1289,10 +1153,10 @@
             <div>
                 <div class="image-card" data-aos="zoom-in" data-aos-delay="200">
                     <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRlUIcOcSR9Zafj3ixp2T4qZueiuE0o9Cu9WA&s"
-                         alt="Application status">
+                        alt="Application status">
 
                     <div class="card-text">
-                        <h2>Application status</h2>
+                        <h2>Application <br> status</h2>
                         <a href="#">CHECK STATUS</a>
                     </div>
                 </div>
@@ -1301,6 +1165,7 @@
         </div>
     </div>
 </div>
+
 
 
 
@@ -1456,11 +1321,11 @@
         <div class="col-lg-3 col-md-4 col-sm-6 col-6" data-aos="flip-right" data-aos-delay="0">
             <a href="/contact" class="hub-link">
                 <div class="hub-card">
-                    
+
                     <!-- Image Wrapper -->
                     <div class="img-wrapper">
                         <img src="https://img.freepik.com/premium-photo/canadian-national-flag-overlay-false-creek-downtown-vancouver-british-columbia-canada_645882-7889.jpg?semt=ais_hybrid&w=740&q=80"
-                             class="img-fluid hub-img rounded" alt="Canada">
+                            class="img-fluid hub-img rounded" alt="Canada">
 
                         <!-- Hover Text -->
                         <div class="hover-text">123 Maple Street, Toronto, Canada</div>
@@ -1480,7 +1345,7 @@
 
                     <div class="img-wrapper">
                         <img src="https://images.unsplash.com/photo-1505761671935-60b3a7427bad?w=800"
-                             class="img-fluid hub-img rounded" alt="UK">
+                            class="img-fluid hub-img rounded" alt="UK">
 
                         <div class="hover-text">45 Oxford Street, London, UK</div>
                     </div>
@@ -1499,7 +1364,7 @@
 
                     <div class="img-wrapper">
                         <img src="https://skift.com/wp-content/uploads/2025/01/raffles-doha-luxury-hotel-accor.jpg"
-                             class="img-fluid hub-img rounded" alt="Qatar">
+                            class="img-fluid hub-img rounded" alt="Qatar">
 
                         <div class="hover-text">77 Corniche Road, Doha, Qatar</div>
                     </div>
@@ -1518,7 +1383,7 @@
 
                     <div class="img-wrapper">
                         <img src="https://t3.ftcdn.net/jpg/02/65/64/24/360_F_265642486_IXw9DQVzjTfAzT8xMtTBXBvYD8Who6Fw.jpg"
-                             class="img-fluid hub-img rounded" alt="India">
+                            class="img-fluid hub-img rounded" alt="India">
 
                         <div class="hover-text">22 MG Road, Cochin, India</div>
                     </div>
@@ -1536,70 +1401,70 @@
 
 
 <style>
-/* IMAGE HEIGHT */
-#our-hubs .hub-img {
-    height: 190px;
-    width: 100%;
-    object-fit: cover;
-}
-
-@media (max-width: 576px) {
+    /* IMAGE HEIGHT */
     #our-hubs .hub-img {
-        height: 150px;
+        height: 190px;
+        width: 100%;
+        object-fit: cover;
     }
-}
 
-/* MAKE CARD CLICKABLE */
-.hub-link {
-    text-decoration: none;
-    color: inherit;
-    display: block;
-}
+    @media (max-width: 576px) {
+        #our-hubs .hub-img {
+            height: 150px;
+        }
+    }
 
-/* CARD HOVER LIFT */
-.hub-card {
-    transition: 0.3s ease-in-out;
-}
+    /* MAKE CARD CLICKABLE */
+    .hub-link {
+        text-decoration: none;
+        color: inherit;
+        display: block;
+    }
 
-.hub-card:hover {
-    transform: translateY(-6px);
-}
+    /* CARD HOVER LIFT */
+    .hub-card {
+        transition: 0.3s ease-in-out;
+    }
 
-/* IMAGE WRAPPER FOR HOVER EFFECT */
-.img-wrapper {
-    position: relative;
-    overflow: hidden;
-    border-radius: 8px;
-}
+    .hub-card:hover {
+        transform: translateY(-6px);
+    }
 
-/* HOVER TEXT (HIDDEN INITIALLY) */
-.hover-text {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background: rgba(0, 0, 0, 0.55);
-    padding: 8px 14px;
-    border-radius: 6px;
-    color: #fff;
-    font-size: 15px;
-    font-weight: 500;
-    text-align: center;
-    opacity: 0;
-    transition: 0.35s ease;
-    width: 90%;
-}
+    /* IMAGE WRAPPER FOR HOVER EFFECT */
+    .img-wrapper {
+        position: relative;
+        overflow: hidden;
+        border-radius: 8px;
+    }
 
-/* SHOW TEXT ONLY WHEN HOVER ON IMAGE */
-.img-wrapper:hover .hover-text {
-    opacity: 1;
-}
+    /* HOVER TEXT (HIDDEN INITIALLY) */
+    .hover-text {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background: rgba(0, 0, 0, 0.55);
+        padding: 8px 14px;
+        border-radius: 6px;
+        color: #fff;
+        font-size: 15px;
+        font-weight: 500;
+        text-align: center;
+        opacity: 0;
+        transition: 0.35s ease;
+        width: 90%;
+    }
 
-/* DARKEN IMAGE SLIGHTLY ON HOVER */
-.img-wrapper:hover img {
-    filter: brightness(0.6);
-    transition: 0.35s ease;
-}
+    /* SHOW TEXT ONLY WHEN HOVER ON IMAGE */
+    .img-wrapper:hover .hover-text {
+        opacity: 1;
+    }
+
+    /* DARKEN IMAGE SLIGHTLY ON HOVER */
+    .img-wrapper:hover img {
+        filter: brightness(0.6);
+        transition: 0.35s ease;
+    }
 </style>
 
 

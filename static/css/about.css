@@ -1,0 +1,658 @@
+/* Background Section */
+.about-section {
+  position: relative;
+  min-height: 65vh;
+  background: url("https://esafety.com/wp-content/uploads/2022/10/Fire-Safety-Tips-At-Home-At-Work-1.jpg")
+    center/cover no-repeat;
+
+  padding-top: 120px;
+
+  padding-bottom: 80px;
+  display: flex;
+  align-items: center;
+  color: white;
+}
+
+/* Blur overlay */
+.overlay-blur {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  backdrop-filter: blur(2px);
+  background: rgba(0, 0, 0, 0.4);
+  z-index: 1;
+}
+
+/* Ensure readable content above blur */
+.about-section .container {
+  position: relative;
+  z-index: 2;
+}
+
+/* Left Text */
+.text-content h2 {
+  font-size: 40px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  color: #fff;
+}
+
+.text-content p {
+  font-size: 17px;
+  line-height: 1.8;
+  color: #efefef;
+  margin-bottom: 18px;
+}
+
+/* Accordion glass effect */
+.accordion-item {
+  background: rgba(255, 255, 255, 0.18) !important;
+  backdrop-filter: blur(10px);
+  border-radius: 12px;
+  overflow: hidden;
+  margin-bottom: 14px;
+  border: none;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.accordion-button {
+  background: rgba(255, 255, 255, 0.15);
+  color: #fff;
+  font-weight: 600;
+  padding: 15px 20px;
+}
+
+.accordion-button:not(.collapsed) {
+  background: rgba(108, 197, 124, 0.35);
+  color: #fff;
+}
+
+.accordion-body {
+  color: #fff;
+  padding: 20px;
+}
+
+/* Icons */
+.accordion-button i {
+  font-size: 18px;
+  color: #6cc57c;
+}
+
+/* Responsive Fixes */
+@media (max-width: 991px) {
+  .text-content h2 {
+    font-size: 34px;
+  }
+
+  .about-section {
+    padding-top: 140px;
+    /* extra for mobile nav */
+    padding-bottom: 60px;
+    text-align: center;
+  }
+}
+
+@media (max-width: 768px) {
+  .text-content h2 {
+    font-size: 30px;
+  }
+
+  .text-content p {
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 576px) {
+  .text-content h2 {
+    font-size: 28px;
+  }
+
+  .accordion-button {
+    font-size: 15px;
+  }
+}
+
+/* expand and collaps section  */
+
+.section-wrapper {
+  padding-top: 130px;
+  padding-bottom: 80px;
+}
+
+/* LEFT MENU */
+.left-menu .list-group-item {
+  padding: 16px 18px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  border: none;
+  border-left: 4px solid transparent;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-decoration: none;
+}
+.list-group-item:hover {
+  background: #f9f9f9;
+  border-left: 4px solid #1a9137;
+  color: #1a9137;
+}
+
+.left-menu .active-tab {
+  color: #1a9137;
+  border-left: 4px solid #1a9137;
+  background: #f3faf4;
+}
+
+/* Icon styling */
+.menu-icon {
+  font-size: 18px;
+  color: rgb(0, 183, 255);
+  transition: transform 0.3s ease;
+}
+
+/* Rotate arrow when active */
+.rotate-right {
+  transform: rotate(-90deg);
+  /* pointing right */
+}
+
+/* RIGHT CONTENT BOX */
+.content-box {
+  background: #fff;
+  border-radius: 12px;
+  padding: 30px;
+  min-height: 350px;
+}
+
+/* Featured cards */
+.feature-card {
+  display: flex;
+  gap: 20px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #eaeaea;
+  margin-bottom: 20px;
+}
+
+.feature-card img {
+  width: 180px;
+  border-radius: 10px;
+}
+
+.feature-card h5 {
+  font-weight: 700;
+}
+
+.feature-card a {
+  color: #1a9137;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+@media (max-width: 768px) {
+  .feature-card {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .feature-card img {
+    width: 100%;
+  }
+}
+
+/* our quality statement  */
+
+.quality-section {
+  background-color: #0e4850;
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+
+/* LEFT IMAGE */
+.left-quality-img {
+  width: 100%;
+  border-radius: 10px;
+  object-fit: cover;
+  height: 480px;
+}
+
+/* RIGHT SIDE QUOTE BACKGROUND */
+.quote-bg {
+  position: absolute;
+  top: -10px;
+  right: 40px;
+  width: 180px;
+  opacity: 0.06;
+  /* Soft transparency */
+  z-index: 1;
+  pointer-events: none;
+}
+
+/* TEXT CONTENT */
+.quality-text {
+  font-size: 18px;
+  line-height: 1.7;
+  opacity: 0.9;
+  position: relative;
+  z-index: 3;
+  max-width: 95%;
+}
+
+h2 {
+  position: relative;
+  z-index: 3;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .left-quality-img {
+    height: 300px;
+  }
+
+  .quote-bg {
+    width: 120px;
+    top: -20px;
+    right: 10px;
+  }
+
+  .quality-text {
+    font-size: 16px;
+  }
+}
+
+/* our impartiality statement  */
+
+/* SECTION WRAPPER */
+.impartiality-section {
+  padding: 60px 0;
+  background: #fff;
+}
+
+/* LEFT CONTENT */
+.impartiality-section h2 {
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  color: #0a0a0a;
+}
+
+.impartiality-section p {
+  font-size: 15px;
+  color: #555;
+  line-height: 1.8;
+  text-align: justify;
+}
+
+/* IMAGE CONTAINER */
+.impartiality-image-box {
+  position: relative;
+  overflow: hidden; /* prevents overlay from spilling */
+  box-shadow: 0 4px 18px rgba(0, 0, 0, 0.12);
+}
+
+/* IMAGE */
+.impartiality-image-box img {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+/* OVERLAY TEXT */
+.impartiality-overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 18px 22px;
+  background: rgba(6, 50, 74, 0.92); /* navy blue transparent */
+  color: #fff;
+  font-size: 16px;
+  line-height: 1.6;
+  border-bottom-left-radius: 18px;
+  border-bottom-right-radius: 18px;
+}
+
+/* RESPONSIVE */
+@media (max-width: 991px) {
+  .impartiality-section h2 {
+    font-size: 28px;
+  }
+
+  .impartiality-overlay {
+    font-size: 15px;
+    padding: 14px 18px;
+  }
+}
+
+/* our commitments & sliders-----------------------------------------------  */
+
+/* ----- Swiper Container ----- */
+.mySwiper {
+  width: 100%;
+  padding: 20px 0;
+}
+
+/* ----- Card Layout (Desktop: row | Mobile: column) ----- */
+.info-card {
+  background: #fff;
+  border-radius: 12px;
+  overflow: hidden;
+  height: 100%;
+  display: flex;
+  flex-direction: row; /* Desktop layout: image left, content right */
+  gap: 0;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* ----- Image Styling (Equal Height) ----- */
+.info-card img {
+  width: 45%;
+  height: 280px; /* same height for all images */
+  object-fit: cover;
+}
+
+/* ----- Text Content ----- */
+.info-content {
+  width: 55%;
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.info-content h2 {
+  font-size: 1.5rem;
+  margin-bottom: 12px;
+}
+
+.info-content p {
+  font-size: 0.95rem;
+  line-height: 1.6;
+  text-align: justify;
+}
+
+/* ----- Pagination Dots ----- */
+.swiper-pagination-bullet {
+  background: #333 !important;
+}
+
+/* ============================
+   📱 MOBILE RESPONSIVE
+   stacks image on top
+================================ */
+@media (max-width: 768px) {
+  .info-card {
+    flex-direction: column; /* stack image top, text bottom */
+  }
+
+  .info-card img {
+    width: 100%;
+    height: 200px; /* reduce height for mobile */
+  }
+
+  .info-content {
+    width: 100%;
+    padding: 18px;
+  }
+
+  .info-content h2 {
+    font-size: 1.3rem;
+  }
+
+  .info-content p {
+    font-size: 0.9rem;
+  }
+}
+
+/* Extra small phones */
+@media (max-width: 480px) {
+  .info-card img {
+    height: 170px;
+  }
+
+  .info-content h2 {
+    font-size: 1.15rem;
+  }
+
+  .info-content p {
+    font-size: 0.85rem;
+  }
+}
+
+/* ---------------------new addons here--------------------------------------------------  */
+
+.values-section {
+  padding: 40px 20px;
+}
+
+.values-title {
+  color: rgb(0, 0, 0);
+  font-weight: bold;
+  margin-bottom: 20px;
+  font-size: 26px;
+}
+
+.values-gif-box {
+  background: url("https://i.pinimg.com/originals/c8/61/75/c8617584f5180a47f90de9004ed7afed.gif")
+    center/cover no-repeat;
+  border-radius: 10px;
+  padding: 60px 20px;
+  position: relative;
+  min-height: 150px;
+}
+
+.gif-overlay-text {
+  color: white;
+  font-size: 20px;
+  font-weight: 600;
+  text-align: center;
+}
+
+.values-description {
+  color: #007bff;
+  margin-top: 20px;
+  font-size: 18px;
+  line-height: 1.5;
+}
+
+
+
+
+
+
+
+
+
+/* careers--------------------------------------------------------------------------------------------------  */
+.threecol-section {
+  padding: 80px 0;
+}
+
+.container-max {
+  max-width: 1320px;
+  margin: auto;
+  padding: 0 20px;
+}
+
+.threecol-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 40px;
+  align-items: flex-start;
+}
+
+/* ---------- LEFT TEXT BLOCK ---------- */
+.eyebrow {
+  font-size: 14px;
+  letter-spacing: 2px;
+  color: #02a783;
+  font-weight: 600;
+  margin-bottom: 15px;
+  text-transform: uppercase;
+}
+
+.section-title {
+  font-size: 42px;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+.section-description {
+  font-size: 18px;
+  color: #555;
+  margin-top: 20px;
+  max-width: 420px;
+}
+
+/* ---------- CTA LINK ---------- */
+.cta-link {
+  color: #02a783;
+  font-weight: 600;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  margin-top: 20px;
+  font-size: 15px;
+  text-decoration: none;
+}
+
+/* ---------- IMAGE CARD ---------- */
+.image-card {
+  position: relative;
+  overflow: hidden;
+  border-radius: 12px;
+}
+
+.image-card img {
+  width: 100%;
+  height: 450px;
+  object-fit: cover;
+  transition: transform 0.6s ease;
+  display: block;
+}
+
+.image-card:hover img {
+  transform: scale(1.04);
+}
+
+/* ---------- TEXT OVERLAY (UPDATED) ---------- */
+.card-text {
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+
+  /* white background box */
+  background: #ffffff;
+  padding: 18px 20px;
+  border-radius: 0px;
+
+  /* 70% width of image */
+  width: 70%;
+
+  /* prevent overflow inside image */
+  box-sizing: border-box;
+
+  /* text color switch */
+  color: #000;
+}
+
+.card-text h2 {
+  font-size: 26px;
+  font-weight: 700;
+  margin-bottom: 8px;
+  color: #000;
+}
+
+.card-text a {
+  color: #02a783;
+  font-weight: 600;
+  font-size: 15px;
+  text-decoration: none;
+}
+
+/* ---------- RESPONSIVE RULES ---------- */
+@media (max-width: 1200px) {
+  .section-title {
+    font-size: 36px;
+  }
+}
+
+@media (max-width: 992px) {
+  .threecol-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .grid-full {
+    grid-column: span 2;
+  }
+
+  .section-title {
+    font-size: 34px;
+  }
+
+  .image-card img {
+    height: 320px;
+  }
+}
+
+@media (max-width: 768px) {
+  .threecol-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .grid-full {
+    grid-column: span 1;
+  }
+
+  .threecol-section {
+    padding: 50px 0;
+  }
+
+  .section-title {
+    font-size: 30px;
+  }
+
+  .section-description {
+    max-width: 100%;
+  }
+
+  .image-card img {
+    height: 300px;
+  }
+
+  .card-text {
+    width: 85%;
+    bottom: 18px;
+    left: 18px;
+    padding: 16px;
+  }
+
+  .card-text h2 {
+    font-size: 22px;
+  }
+}
+
+@media (max-width: 480px) {
+  .threecol-section {
+    padding: 40px 0;
+  }
+
+  .image-card img {
+    height: 260px;
+  }
+
+  .card-text {
+    width: 90%;
+    bottom: 12px;
+    left: 12px;
+    right: 12px;
+    padding: 14px;
+  }
+
+  .card-text h2 {
+    font-size: 20px;
+  }
+}
+/* --------------------------------------------------------------------------------------------------------  */

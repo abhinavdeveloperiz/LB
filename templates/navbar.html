@@ -1,23 +1,25 @@
+<!-- TOP FIXED WRAPPER -->
 <div class="fixedTop">
-  <!-- Top bar -->
+
+  <!-- TOP BAR (Desktop Only) -->
   <div class="d-none d-lg-block">
-    <div class="top-bar">
-      <div class="container d-flex justify-content-end align-items-center mx-auto">
-        <ul class="list-styled mb-0 d-flex" id="contact-info">
+    <div class="top-bar py-1 bg-light">
+      <div class="container d-flex justify-content-end align-items-center">
+        <ul class="list-styled d-flex mb-0" id="contact-info">
           <li>
-            <a href="#" class="text-align-right fw-bold top-bar-link">
+            <a href="#" class="fw-bold top-bar-link">
               <i class="fa-solid fa-phone-volume icon mx-2"></i> {{ phone }}
             </a>
           </li>
-          <li class="text-dark mx-2">|</li>
+          <li class="mx-2">|</li>
           <li>
-            <a href="mailto: {{ mail }}" class="text-align-right fw-bold top-bar-link">
+            <a href="mailto: {{ mail }}" class="fw-bold top-bar-link">
               <i class="fa-regular fa-envelope icon mx-2"></i> {{ mail }}
             </a>
           </li>
-          <li class="text-dark mx-2">|</li>
+          <li class="mx-2">|</li>
           <li>
-            <a href="/Verifycertificate" class="text-align-right fw-bold top-bar-link">
+            <a href="/Verifycertificate" class="fw-bold top-bar-link">
               <i class="fa-regular fa-file mx-2"></i> Verify Certificate
             </a>
           </li>
@@ -26,19 +28,26 @@
     </div>
   </div>
 
-  <!-- Navbar -->
-  <nav class="navbar navbar-expand-lg">
-    <div class="container-fluid">
+  <!-- NAVBAR -->
+  <nav class="navbar navbar-expand-lg py-2">
+    <div class="container-fluid d-flex align-items-center">
+
+      <!-- LOGO -->
       <a class="navbar-brand" href="/">
         <img src="static/images/logo.png" alt="Logo" class="logo">
       </a>
-      <button class="navbar-toggler togglerButton" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+
+      <!-- MOBILE TOGGLER -->
+      <button class="navbar-toggler togglerButton" type="button"
+        data-bs-toggle="collapse" data-bs-target="#navbarNav"
         aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <img src="static/images/icons8-menu.gif" alt="Menu Icon" style="height: 24px;">
       </button>
 
+      <!-- CENTER NAVIGATION -->
       <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
-        <ul class="navbar-nav d-flex gap-2">
+        <ul class="navbar-nav gap-2 text-center">
+
           <li class="nav-item">
             <a class="nav-link styled-link {% if request.path == '/' %}active-link{% endif %}" href="/">Home</a>
           </li>
@@ -72,137 +81,116 @@
             <a class="nav-link styled-link {% if request.path == '/contact' %}active-link{% endif %}"
               href="/contact">Contact Us</a>
           </li>
-        </ul>
 
+        </ul>
       </div>
 
-      <!-- addons------------------------------- -->
-      <style>
-        .customer-hub-wrapper {
-          position: relative;
-          max-width: 320px;
-          display: flex;
-          align-items: center;
-        }
+      <!-- RIGHT-SIDE ICONS WRAPPER -->
+      <div class="d-flex align-items-center gap-3">
 
-        .hub-icon {
-          position: absolute;
-          left: 12px;
-          font-size: 18px;
-          color: #02A783;
-        }
+        <!-- Profile Icon -->
+        <div class="nav-item position-relative d-flex align-items-center justify-content-center"
+          style="width: 45px; height: 45px;">
+          <a class="nav-link styled-link p-0" href="#download-section">
+            <dotlottie-player id="hoverLottie"
+              src="https://lottie.host/66513ce5-ad73-409e-bbfa-7c0c2b4bf68e/wBSP8oc94L.lottie"
+              background="transparent" speed="1" style="width: 100px; height: 100px;" loop>
+            </dotlottie-player>
+          </a>
+          <span class="custom-tooltip">Profile</span>
+        </div>
 
-        .hub-select {
-          width: 100%;
-          padding: 12px 16px 12px 42px;
-          border: none;
-          border-radius: 10px;
-          background: #ffffff;
-          font-size: 15px;
-          appearance: none;
-          outline: none;
-          cursor: pointer;
-        }
+        <!-- Portals Dropdown -->
+        <div class="nav-item dropdown" id="portalsDropdown">
+          <a class="nav-link styled-link d-flex align-items-center" href="#">
+            Portals <i class="ri-arrow-down-s-line ms-1"></i>
+          </a>
+          <div class="dropdown-menu text-center">
+            <a class="dropdown-item" href="#">Student Portal</a>
+            <a class="dropdown-item" href="#">Vendor Portal</a>
+            <a class="dropdown-item" href="#">Customer Portal</a>
+            <a class="dropdown-item" href="#">Employee Portal</a>
+          </div>
+        </div>
 
-       
-      </style>
-
-      <div class="customer-hub-wrapper">
-        <a href="" download="" class="hub-icon">
-          <i class="fa-solid fa-cloud-arrow-down"></i>
+        <!-- Location Lottie -->
+        <a class="nav-link styled-link" href="#our-locations"
+          style="width: 35px; height: 35px; display:flex; align-items:center; justify-content:center;">
+          <dotlottie-player
+            src="https://lottie.host/a0c08b52-c0ba-49f5-878d-02585178a7cc/5dO39dyEu4.lottie"
+            background="transparent" speed="1"
+            style="width:100%; height:100%;" loop autoplay>
+          </dotlottie-player>
         </a>
 
-        <select id="customerHub" class="hub-select">
-          <option selected disabled>Customer Hub </option>
-          <option>Canada</option>
-          <option>United Kingdom</option>
-          <option>Qatar</option>
-          <option>India</option>
-        </select>
-      </div>
-
-
-
-      <!-- Load Lottie Player -->
-      <script src="https://unpkg.com/@dotlottie/player-component@2.7.12/dist/dotlottie-player.mjs"
-        type="module"></script>
-
-      <!-- Lottie Icon -->
-      <a class="nav-link styled-link me-4" href="#our-locations"
-        style="display: flex; align-items: center; justify-content: center; width: 35px; height: 35px;">
-        <dotlottie-player src="https://lottie.host/a0c08b52-c0ba-49f5-878d-02585178a7cc/5dO39dyEu4.lottie"
-          background="transparent" speed="1" style="width: 100%; height: 100%;" direction="1" playMode="normal" loop
-          autoplay>
-        </dotlottie-player>
-      </a>
-      <!-- Wrapper with animated border -->
-      <div class="animated-border-box d-flex align-items-center gap-3 px-2 py-1">
-
-
-
         <!-- Country Dropdown -->
-        <form method="POST" action="/" class="d-flex mb-0">
-          <select name="country" class="form-select fw-bold custom-dropdown border-0 focus-border-none bg-transparent"
-            style="text-align: center; border: none;" onchange="this.form.submit()">
-            <option value="Canada" {% if country=='Canada' %}selected{% endif %}>Canada</option>
-            <option value="UK" {% if country=='UK' %}selected{% endif %}>UK</option>
-            <option value="Qatar" {% if country=='Qatar' %}selected{% endif %}>Qatar</option>
-            <option value="India" {% if country=='India' %}selected{% endif %}>India</option>
-          </select>
-        </form>
+        <div class="animated-border-box d-flex align-items-center px-2 py-1">
+          <form method="POST" action="/" class="mb-0">
+            <select name="country" class="form-select fw-bold custom-dropdown border-0 bg-transparent text-center"
+              onchange="this.form.submit()">
+              <option value="Canada" {% if country=='Canada' %}selected{% endif %}>Canada</option>
+              <option value="UK" {% if country=='UK' %}selected{% endif %}>UK</option>
+              <option value="Qatar" {% if country=='Qatar' %}selected{% endif %}>Qatar</option>
+              <option value="India" {% if country=='India' %}selected{% endif %}>India</option>
+            </select>
+          </form>
+        </div>
 
       </div>
 
     </div>
   </nav>
+
 </div>
 
-<!-- JavaScript for Auto Dropdown -->
+
+<!-- LOTTIE SCRIPT -->
+<script src="https://unpkg.com/@dotlottie/player-component@2.7.12/dist/dotlottie-player.mjs" type="module"></script>
+
+<!-- Hover Control -->
+<script type="module">
+  const lottiePlayer = document.getElementById('hoverLottie');
+  lottiePlayer.addEventListener('mouseenter', () => lottiePlayer.play());
+  lottiePlayer.addEventListener('mouseleave', () => lottiePlayer.stop());
+</script>
+
+<!-- Portals Dropdown Hover -->
 <script>
-  const portalsDropdown = document.getElementById('portalsDropdown');
-  const dropdownMenu = portalsDropdown.querySelector('.dropdown-menu');
+  const portals = document.getElementById('portalsDropdown');
+  const menu = portals.querySelector('.dropdown-menu');
 
-  portalsDropdown.addEventListener('mouseenter', () => {
-    dropdownMenu.style.display = 'block';
-  });
-
-  portalsDropdown.addEventListener('mouseleave', () => {
-    dropdownMenu.style.display = 'none';
-  });
+  portals.addEventListener('mouseenter', () => menu.style.display = 'block');
+  portals.addEventListener('mouseleave', () => menu.style.display = 'none');
 </script>
 
 <style>
-  /* Hover effect for dropdown items */
+  /* Dropdown Hover */
+  #portalsDropdown .dropdown-menu {
+    display: none;
+    border-radius: 0;
+    border: none;
+  }
+
   .dropdown-item:hover {
-    background-color: #0C334A;
+    background: #0C334A;
     color: white;
-    /* optional: make text readable */
   }
 
-  /* Show dropdown on hover */
-  #portalsDropdown:hover .dropdown-menu {
-    display: block;
-  }
-
+  /* Tooltip */
   .custom-tooltip {
     visibility: hidden;
-    background-color: white;
-    color: #0C334A;
-    text-align: center;
-    padding: 4px 8px;
-    border-radius: 4px;
+    opacity: 0;
+    transition: .2s;
     position: absolute;
     top: 60%;
-    /* Position it above the icon */
     left: 50%;
-    transform: translateX(-50%);
-    white-space: nowrap;
+    transform: translate(-50%);
+    background: white;
+    color: #0C334A;
+    padding: 4px 8px;
+    border-radius: 4px;
     font-size: 12px;
-    z-index: 1;
-    opacity: 0;
-    transition: opacity 0.2s ease;
-    border: none;
-    /* No border */
+    white-space: nowrap;
   }
 
   .nav-item:hover .custom-tooltip {
@@ -210,41 +198,33 @@
     opacity: 1;
   }
 
-
-  /* border animaton css */
+  /* Animated border */
   .animated-border-box {
     border: 3px solid transparent;
     border-radius: 10px;
-    position: relative;
     animation: borderMove 1s linear infinite;
   }
 
-  /* Animated Gradient Border */
   @keyframes borderMove {
     0% {
       border-color: #06324A;
-      /* Dark Blue */
       box-shadow: 0 0 8px #06324A;
     }
 
     50% {
       border-color: #6CC57C;
-      /* Light Green */
       box-shadow: 0 0 12px #6CC57C;
     }
 
     100% {
       border-color: #06324A;
-      /* Dark Blue */
       box-shadow: 0 0 8px #06324A;
     }
   }
 
-  /* color ::highlight */
-
+  /* Active Link */
   .active-link {
     color: #6CC57C !important;
-    /* Light Green */
     font-weight: 700;
   }
 </style>
