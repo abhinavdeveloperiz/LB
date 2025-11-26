@@ -102,24 +102,36 @@
             <!-- Hover-to-open JavaScript -->
             <script>
                 document.querySelectorAll(".hover-accordion").forEach((btn) => {
+
                     const targetId = btn.getAttribute("data-bs-target");
                     const targetEl = document.querySelector(targetId);
 
-                    const bsCollapse = new bootstrap.Collapse(targetEl, {
+                    // Create collapse controller
+                    const collapse = new bootstrap.Collapse(targetEl, {
                         toggle: false
                     });
 
-                    // Open on hover over button
-                    btn.addEventListener("mouseenter", () => {
-                        bsCollapse.show();
+                    // Disable click toggle (VERY IMPORTANT)
+                    btn.addEventListener("click", (e) => {
+                        e.preventDefault();
+                        e.stopPropagation();
+                        return false;
                     });
 
-                    // Close when mouse leaves the entire accordion-item
-                    btn.closest(".accordion-item").addEventListener("mouseleave", () => {
-                        bsCollapse.hide();
+                    // OPEN on hover over button
+                    btn.addEventListener("mouseenter", () => {
+                        collapse.show();
                     });
+
+                    // CLOSE when mouse leaves the whole accordion-item
+                    btn.closest(".accordion-item").addEventListener("mouseleave", () => {
+                        collapse.hide();
+                    });
+
                 });
             </script>
+
+
 
 
         </div>
@@ -196,7 +208,7 @@
                     <img src="https://static.vecteezy.com/system/resources/previews/017/603/639/non_2x/renewable-green-energy-icon-clean-alternative-energy-power-technology-concept-icon-with-electrical-energy-glow-effect-lightning-spark-or-electric-discharge-effects-background-illustration-vector.jpg"
                         alt="">
                     <div>
-                        <h5>Multisense Vector Power & Dynamics Mapping System</h5>
+                        <h5>Bespoke Training</h5>
                         <p class="text-muted">More accurate drilling improvements with data from the field.</p>
                         <a href="/services">READ MORE ></a>
                     </div>
@@ -207,7 +219,7 @@
                     <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT-jaZi6J-roTiRE0fnpBMs9x9kvoVEqQ3rzQ&s"
                         alt="">
                     <div>
-                        <h5>Production Enhancement</h5>
+                        <h5>Onboard Training</h5>
                         <p class="text-muted">Improve productivity with precision intervention tools.</p>
                         <a href="/services">READ MORE ></a>
                     </div>
