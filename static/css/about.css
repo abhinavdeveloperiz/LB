@@ -1,3 +1,23 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+h1:hover,
+h2:hover,
+h3:hover,
+h4:hover,
+h5:hover,
+h6:hover {
+  color: #24a700; 
+  cursor: pointer;
+}
+
+
 /* Background Section */
 .about-section {
   position: relative;
@@ -305,13 +325,16 @@ h2 {
   bottom: 0;
   left: 0;
   width: 100%;
-  padding: 18px 22px;
-  background: rgba(6, 50, 74, 0.92); /* navy blue transparent */
+  padding: 24px 28px; /* increased padding */
+  background: rgba(6, 50, 74, 0.92);
   color: #fff;
-  font-size: 16px;
-  line-height: 1.6;
-  border-bottom-left-radius: 18px;
-  border-bottom-right-radius: 18px;
+
+  font-size: 20px; /* 🔥 bigger font */
+  line-height: 1.7; /* improved readability */
+  font-weight: 500; /* semi-bold for clarity */
+
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
 }
 
 /* RESPONSIVE */
@@ -329,47 +352,49 @@ h2 {
 /* our commitments & sliders-----------------------------------------------  */
 
 /* ----- Swiper Container ----- */
+
 .mySwiper {
   width: 100%;
-  padding: 20px 0;
+  padding: 30px 0;
 }
 
-/* ----- Card Layout (Desktop: row | Mobile: column) ----- */
+/* ----- Bigger Card Layout (Desktop) ----- */
 .info-card {
   background: #fff;
-  border-radius: 12px;
+  border-radius: 16px;
   overflow: hidden;
-  height: 100%;
   display: flex;
-  flex-direction: row; /* Desktop layout: image left, content right */
+  flex-direction: row;
+  height: 380px; /* 🔥 Bigger card height */
   gap: 0;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
 }
 
-/* ----- Image Styling (Equal Height) ----- */
+/* ----- Bigger Image (Equal Height) ----- */
 .info-card img {
   width: 45%;
-  height: 280px; /* same height for all images */
+  height: 100%; /* 🔥 Full card height */
   object-fit: cover;
 }
 
-/* ----- Text Content ----- */
+/* ----- Text Section ----- */
 .info-content {
   width: 55%;
-  padding: 24px;
+  padding: 32px; /* bigger padding */
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
 
 .info-content h2 {
-  font-size: 1.5rem;
-  margin-bottom: 12px;
+  font-size: 1.8rem; /* bigger title */
+  margin-bottom: 16px;
+  font-weight: 700;
 }
 
 .info-content p {
-  font-size: 0.95rem;
-  line-height: 1.6;
+  font-size: 1rem;
+  line-height: 1.7;
   text-align: justify;
 }
 
@@ -379,22 +404,37 @@ h2 {
 }
 
 /* ============================
-   📱 MOBILE RESPONSIVE
-   stacks image on top
+   📱 TABLET / MOBILE RESPONSIVE
 ================================ */
 @media (max-width: 768px) {
   .info-card {
-    flex-direction: column; /* stack image top, text bottom */
+    flex-direction: column;
+    height: auto; /* let content adjust naturally */
   }
 
   .info-card img {
     width: 100%;
-    height: 200px; /* reduce height for mobile */
+    height: 260px; /* Bigger mobile image */
   }
 
   .info-content {
     width: 100%;
-    padding: 18px;
+    padding: 24px;
+  }
+
+  .info-content h2 {
+    font-size: 1.5rem;
+  }
+
+  .info-content p {
+    font-size: 0.95rem;
+  }
+}
+
+/* Extra small phones */
+@media (max-width: 480px) {
+  .info-card img {
+    height: 220px; /* bigger, not too small */
   }
 
   .info-content h2 {
@@ -406,25 +446,10 @@ h2 {
   }
 }
 
-/* Extra small phones */
-@media (max-width: 480px) {
-  .info-card img {
-    height: 170px;
-  }
-
-  .info-content h2 {
-    font-size: 1.15rem;
-  }
-
-  .info-content p {
-    font-size: 0.85rem;
-  }
-}
-
 /* ---------------------new addons here--------------------------------------------------  */
 
 .values-section {
-  padding: 40px 20px;
+  padding: 40px 0px;
 }
 
 .values-title {
@@ -457,14 +482,6 @@ h2 {
   line-height: 1.5;
 }
 
-
-
-
-
-
-
-
-
 /* careers--------------------------------------------------------------------------------------------------  */
 .threecol-section {
   padding: 80px 0;
@@ -485,18 +502,22 @@ h2 {
 
 /* ---------- LEFT TEXT BLOCK ---------- */
 .eyebrow {
-  font-size: 14px;
+  font-size: 44px;
   letter-spacing: 2px;
-  color: #02a783;
+  color: #00bc29;
   font-weight: 600;
   margin-bottom: 15px;
   text-transform: uppercase;
 }
 
 .section-title {
-  font-size: 42px;
+  font-size: 32px;
   font-weight: 700;
   line-height: 1.2;
+}
+
+.section-title:hover {
+  color: #0da702;
 }
 
 .section-description {
@@ -556,6 +577,9 @@ h2 {
 
   /* text color switch */
   color: #000;
+}
+.card-text:hover {
+  background: #2bd600;
 }
 
 .card-text h2 {
