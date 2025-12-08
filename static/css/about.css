@@ -353,41 +353,56 @@ h2 {
 
 /* ----- Swiper Container ----- */
 
+
+
+
+
+/* Swiper Container */
 .mySwiper {
   width: 100%;
-  padding: 30px 0;
+  padding: 40px 0;
 }
 
-/* ----- Bigger Card Layout (Desktop) ----- */
+/* Swiper Slide */
+.swiper-slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px; /* Equal spacing around each card */
+  box-sizing: border-box;
+}
+
+/* ----- Card Layout ----- */
 .info-card {
   background: #fff;
   border-radius: 16px;
   overflow: hidden;
   display: flex;
   flex-direction: row;
-  height: 380px; /* 🔥 Bigger card height */
-  gap: 0;
+  height: 380px;
+  width: 100%;
+  max-width: 780px;       /* 🔥 Very important: keeps card centered */
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
 }
 
-/* ----- Bigger Image (Equal Height) ----- */
+/* ----- Image ----- */
 .info-card img {
   width: 45%;
-  height: 100%; /* 🔥 Full card height */
+  height: 100%;
   object-fit: cover;
 }
 
 /* ----- Text Section ----- */
 .info-content {
   width: 55%;
-  padding: 32px; /* bigger padding */
+  padding: 32px;
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
 
 .info-content h2 {
-  font-size: 1.8rem; /* bigger title */
+  font-size: 1.8rem;
   margin-bottom: 16px;
   font-weight: 700;
 }
@@ -398,7 +413,7 @@ h2 {
   text-align: justify;
 }
 
-/* ----- Pagination Dots ----- */
+/* Pagination Dots */
 .swiper-pagination-bullet {
   background: #333 !important;
 }
@@ -406,15 +421,27 @@ h2 {
 /* ============================
    📱 TABLET / MOBILE RESPONSIVE
 ================================ */
+@media (max-width: 1024px) {
+  .info-card {
+    max-width: 680px;
+    height: 360px;
+  }
+}
+
 @media (max-width: 768px) {
+  .swiper-slide {
+    padding: 0; /* Avoid overflow on mobile */
+  }
+
   .info-card {
     flex-direction: column;
-    height: auto; /* let content adjust naturally */
+    height: auto;
+    max-width: 95%;
   }
 
   .info-card img {
     width: 100%;
-    height: 260px; /* Bigger mobile image */
+    height: 260px;
   }
 
   .info-content {
@@ -431,10 +458,9 @@ h2 {
   }
 }
 
-/* Extra small phones */
 @media (max-width: 480px) {
   .info-card img {
-    height: 220px; /* bigger, not too small */
+    height: 220px;
   }
 
   .info-content h2 {
@@ -446,45 +472,102 @@ h2 {
   }
 }
 
+
+
+
+
+
+
+
+
 /* ---------------------new addons here--------------------------------------------------  */
 
+
+
+
+
+
 .values-section {
-  padding: 40px 0px;
+  padding: 60px 0;
 }
 
 .values-title {
-  color: rgb(0, 0, 0);
-  font-weight: bold;
-  margin-bottom: 20px;
-  font-size: 26px;
+  color: #000;
+  font-weight: 700;
+  margin-bottom: 30px;
+  font-size: 32px;
+  text-align: center;
 }
 
 .values-gif-box {
   background: url("https://i.pinimg.com/originals/c8/61/75/c8617584f5180a47f90de9004ed7afed.gif")
     center/cover no-repeat;
-  border-radius: 10px;
-  padding: 60px 20px;
+  border-radius: 16px;
+  padding: 70px 30px;
   position: relative;
-  min-height: 150px;
+  min-height: 600px;
+  display: flex;
+  align-items: center;
 }
 
-.gif-overlay-text {
-  color: white;
-  font-size: 20px;
-  font-weight: 600;
+.values-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+  width: 100%;
+}
+
+.value-card {
+  background: rgba(255, 255, 255, 0.12);
+  backdrop-filter: blur(10px);
+  border-radius: 14px;
+  padding: 25px;
+  color: #fff;
   text-align: center;
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  transition: 0.3s ease;
 }
 
-.values-description {
-  color: #007bff;
-  margin-top: 20px;
-  font-size: 18px;
-  line-height: 1.5;
+.value-card:hover {
+  background: rgba(255, 255, 255, 0.22);
+  transform: translateY(-5px);
+  box-shadow: 0 6px 20px rgba(255, 255, 255, 0.25);
 }
+
+.value-card h3 {
+  font-size: 22px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.value-card p {
+  font-size: 16px;
+  line-height: 1.5;
+  opacity: 0.9;
+}
+
+/* Responsive */
+@media (max-width: 992px) {
+  .values-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 600px) {
+  .values-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+
+
+
+
 
 /* careers--------------------------------------------------------------------------------------------------  */
 .threecol-section {
   padding: 80px 0;
+  background: #2bd600;
 }
 
 .container-max {
@@ -501,35 +584,39 @@ h2 {
 }
 
 /* ---------- LEFT TEXT BLOCK ---------- */
+
 .eyebrow {
   font-size: 44px;
   letter-spacing: 2px;
-  color: #00bc29;
+  color: #ffffff;
   font-weight: 600;
   margin-bottom: 15px;
-  text-transform: uppercase;
+
 }
 
 .section-title {
   font-size: 32px;
   font-weight: 700;
   line-height: 1.2;
+  color: white;
 }
 
+
+
 .section-title:hover {
-  color: #0da702;
+  color: #ffffff;
 }
 
 .section-description {
   font-size: 18px;
-  color: #555;
+  color: #ffffff;
   margin-top: 20px;
   max-width: 420px;
 }
 
 /* ---------- CTA LINK ---------- */
 .cta-link {
-  color: #02a783;
+  color: #ffffff;
   font-weight: 600;
   display: inline-flex;
   align-items: center;

@@ -260,6 +260,24 @@
                         <a href="/services">READ MORE ></a>
                     </div>
                 </div>
+
+                <!-- new addons  -->
+                <div class="feature-card">
+                    <img src="https://cdn.pixabay.com/photo/2018/02/27/10/49/training-3185170_1280.jpg" alt="">
+                    <div>
+                        <h5>Training</h5>
+                        <p class="text-muted">Strengthen workplace safety through comprehensive training.</p>
+                        <a href="/services">READ MORE ></a>
+                    </div>
+                </div>
+                <div class="feature-card">
+                    <img src="https://cdn.pixabay.com/photo/2018/02/27/10/49/training-3185170_1280.jpg" alt="">
+                    <div>
+                        <h5>Training</h5>
+                        <p class="text-muted">Strengthen workplace safety through comprehensive training.</p>
+                        <a href="/services">READ MORE ></a>
+                    </div>
+                </div>
             </div>
 
 
@@ -754,8 +772,7 @@
                     <p>Haleys recognizes the paramount importance of nurturing talent, fostering continuous learning,
                         and promoting career growth for our employees. Within our dynamic environment, team members have
                         abundant opportunities to hone their skills, expand their knowledge, and advance their careers.
-                        We are dedicated to investing in our people, ensuring their professional development aligns
-                        seamlessly with our vision for a sustainable future.</p>
+                        We are dedicated to investing in our people</p>
                 </div>
             </div>
         </div>
@@ -781,8 +798,7 @@
                     <h2>Environmental Sustainability</h2>
                     <p>Acknowledging our responsibility to protect and preserve the environment, Haleys is resolutely
                         committed to sustainable practices in our operations. Continuously seeking ways to minimize our
-                        environmental footprint, we make responsible choices, employ eco-friendly solutions, and manage
-                        resources efficiently, all aimed at contributing positively to environmental sustainability.</p>
+                        environmental footprint, we make responsible choices, employ eco-friendly solutions.</p>
                 </div>
             </div>
         </div>
@@ -878,30 +894,54 @@
 <!-- new section here  -->
 
 <section class="values-section">
-    <div class="container-fluid">
+    <section class="container-fluid">
 
         <!-- Heading -->
-        <h2 class="values-title ">Our Values</h2>
+        <h2 class="values-title">Our Values</h2>
 
         <!-- GIF Background Section -->
         <div class="values-gif-box">
-            <p class="gif-overlay-text">
-                LLOYDS BUREAU is built on a foundation of core values that guide our actions
-            </p>
+
+            <div class="values-grid">
+
+                <div class="value-card">
+                    <h3>Integrity</h3>
+                    <p>We maintain honesty and transparency in all our actions and decisions.</p>
+                </div>
+
+                <div class="value-card">
+                    <h3>Innovation</h3>
+                    <p>We embrace creativity and new ideas to deliver progressive solutions.</p>
+                </div>
+
+                <div class="value-card">
+                    <h3>Excellence</h3>
+                    <p>We are committed to delivering exceptional results with consistency.</p>
+                </div>
+
+                <div class="value-card">
+                    <h3>Responsibility</h3>
+                    <p>We take ownership of our work and the impact we create globally.</p>
+                </div>
+
+                <div class="value-card">
+                    <h3>Customer Focus</h3>
+                    <p>We prioritize client satisfaction and build long-term relationships.</p>
+                </div>
+
+            </div>
+
         </div>
-
-        <!-- Blue Description Text -->
-
-
-    </div>
+    </section>
 </section>
 
 
 
 
 
+
 <!-- ===================== HSE Section ===================== -->
-<section class="hse-hero" style="background-color: #0e4850;">
+<section class="hse-hero" style="background-color: #ffffff;">
     <!-- <div class="overlay"></div> -->
 
     <div class="content-wrapper">
@@ -913,7 +953,7 @@
 
         <!-- RIGHT: TEXT CONTENT -->
         <div class="hse-right">
-            <img src="" class="zero-harm-logo will replace here" alt="Zero Harm Logo">
+            <!-- <img src="" class="zero-harm-logo will replace here" alt="Zero Harm Logo"> -->
 
             <h2 class="hse-title">We Prioritize Health, Safety and Environment</h2>
 
@@ -923,7 +963,7 @@
                 protection of the environment are the foundation of our success.
             </p>
 
-            <a href="#" class="btn-main">HSE Policy</a>
+            <a href="#" class="btn-main" style="text-decoration: none;">HSE Policy</a>
         </div>
 
     </div>
@@ -955,9 +995,6 @@
     .overlay {
         position: absolute;
         inset: 0;
-        background: linear-gradient(to right,
-                rgba(0, 40, 70, 0.10),
-                rgba(0, 80, 120, 0.90));
         z-index: 1;
     }
 
@@ -999,6 +1036,7 @@
         font-size: 30px;
         font-weight: 700;
         margin-bottom: 15px;
+        color: black;
     }
 
     .hse-desc {
@@ -1006,18 +1044,26 @@
         line-height: 1.7;
         margin-bottom: 25px;
         width: 90%;
+        color: rgb(57, 57, 57);
     }
 
     /* BUTTON */
     .btn-main {
         background: #fff;
-        color: #003b5c;
+        color: #00d031;
         padding: 12px 22px;
         border-radius: 6px;
         text-decoration: none;
         font-weight: 600;
         display: inline-block;
         box-shadow: 0 3px 8px rgba(0, 0, 0, 0.2);
+
+    }
+
+    .btn-main:hover {
+        background: #00d031;
+        color: #ffffff;
+        transition: 0.3s ease;
     }
 
     /* ============ MOBILE RESPONSIVE ============ */
@@ -1064,7 +1110,8 @@
         <!-- Card -->
         <div class="col-md-4" data-aos="zoom-in" data-aos-delay="0">
             <div class="explore-card">
-                <img src="https://media.istockphoto.com/id/1213499152/photo/sample-online-news-website-on-tablet.jpg?s=612x612&w=0&k=20&c=jvg2lHSshsqccRYpA0I6JMGq-RDKJg1OGqgVBH_Er7Q=" class="card-img" alt="">
+                <img src="https://media.istockphoto.com/id/1213499152/photo/sample-online-news-website-on-tablet.jpg?s=612x612&w=0&k=20&c=jvg2lHSshsqccRYpA0I6JMGq-RDKJg1OGqgVBH_Er7Q="
+                    class="card-img" alt="">
 
                 <div class="overlay">
                     <h5>Latest news and blogs</h5>
@@ -1076,7 +1123,8 @@
         <!-- Card -->
         <div class="col-md-4" data-aos="zoom-in" data-aos-delay="200">
             <div class="explore-card">
-                <img src="https://media.istockphoto.com/id/2062707205/photo/gold-star-on-a-blue-background-as-a-reward-top-performance-award-winners-cup-achievements.jpg?s=612x612&w=0&k=20&c=6HeaeFYryuuOyPTW8ucQKsUMUi3F8oHvE9CSPVgoV60=" class="card-img" alt="">
+                <img src="https://media.istockphoto.com/id/2062707205/photo/gold-star-on-a-blue-background-as-a-reward-top-performance-award-winners-cup-achievements.jpg?s=612x612&w=0&k=20&c=6HeaeFYryuuOyPTW8ucQKsUMUi3F8oHvE9CSPVgoV60="
+                    class="card-img" alt="">
 
                 <div class="overlay">
                     <h5>Our latest awards & recognition</h5>
@@ -1088,7 +1136,8 @@
         <!-- Card -->
         <div class="col-md-4" data-aos="zoom-in" data-aos-delay="400">
             <div class="explore-card">
-                <img src="https://plus.unsplash.com/premium_photo-1661315406324-329dd27ebc34?fm=jpg&q=60&w=3000" class="card-img" alt="">
+                <img src="https://plus.unsplash.com/premium_photo-1661315406324-329dd27ebc34?fm=jpg&q=60&w=3000"
+                    class="card-img" alt="">
 
                 <div class="overlay">
                     <h5>Our 2026 annual report</h5>
@@ -1101,84 +1150,90 @@
 </section>
 
 <style>
-/* Card Base */
-.explore-card {
-    position: relative;
-    overflow: hidden;
-    border-radius: 14px;
-}
-
-/* Image Styling */
-.card-img {
-    width: 100%;
-    height: 260px;
-    object-fit: cover;
-    border-radius: 14px;
-    transition: transform 0.4s ease;
-}
-.explore-card:hover .card-img {
-    transform: scale(1.07);
-}
-
-/* Overlay */
-.overlay {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-
-    width: 100%;
-    padding: 22px;
-    color: #fff;
-
-    background: linear-gradient(to top,
-            rgba(0, 0, 0, 0.85),
-            rgba(0, 0, 0, 0));
-
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;   /* Forces content to bottom */
-    gap: 8px;                    /* Spacing between title + learn more */
-    height: 100%;                /* Makes overlay cover the entire card */
-    padding-top: 120px;          /* Controls how high the text can appear */
-}
-
-
-.overlay h5 {
-    margin: 0;
-    font-size: 1.15rem;
-    font-weight: 600;
-}
-
-/* Learn More – TEXT only */
-.learn-more {
-    font-size: 0.9rem;
-    font-weight: 500;
-    text-decoration: none;
-    color: #ffffffd9;
-    display: inline-flex;
-    align-items: center;
-    gap: 4px;
-    transition: 0.3s ease;
-}
-
-.learn-more:hover {
-    color: #00ac45; /* light green */
-}
-
-.learn-more:hover i {
-    transform: translateX(4px);
-}
-
-/* Responsive */
-@media (max-width: 768px) {
-    .card-img {
-        height: 220px;
+    /* Card Base */
+    .explore-card {
+        position: relative;
+        overflow: hidden;
+        border-radius: 14px;
     }
+
+    /* Image Styling */
+    .card-img {
+        width: 100%;
+        height: 260px;
+        object-fit: cover;
+        border-radius: 14px;
+        transition: transform 0.4s ease;
+    }
+
+    .explore-card:hover .card-img {
+        transform: scale(1.07);
+    }
+
+    /* Overlay */
+    .overlay {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+
+        width: 100%;
+        padding: 22px;
+        color: #fff;
+
+        background: linear-gradient(to top,
+                rgba(0, 0, 0, 0.85),
+                rgba(0, 0, 0, 0));
+
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        /* Forces content to bottom */
+        gap: 8px;
+        /* Spacing between title + learn more */
+        height: 100%;
+        /* Makes overlay cover the entire card */
+        padding-top: 120px;
+        /* Controls how high the text can appear */
+    }
+
 
     .overlay h5 {
-        font-size: 1.05rem;
+        margin: 0;
+        font-size: 1.15rem;
+        font-weight: 600;
     }
-}
+
+    /* Learn More – TEXT only */
+    .learn-more {
+        font-size: 0.9rem;
+        font-weight: 500;
+        text-decoration: none;
+        color: #ffffffd9;
+        display: inline-flex;
+        align-items: center;
+        gap: 4px;
+        transition: 0.3s ease;
+    }
+
+    .learn-more:hover {
+        color: #00ac45;
+        /* light green */
+    }
+
+    .learn-more:hover i {
+        transform: translateX(4px);
+    }
+
+    /* Responsive */
+    @media (max-width: 768px) {
+        .card-img {
+            height: 220px;
+        }
+
+        .overlay h5 {
+            font-size: 1.05rem;
+        }
+    }
 </style>
 
 
@@ -1200,21 +1255,17 @@
 
             <!-- LEFT CONTENT -->
             <div class="grid-full">
-                <span class="eyebrow">CAREERS</span>
+                <span class="eyebrow">Careers</span>
                 <h2 class="section-title">Be a part of our story</h2>
                 <p class="section-description">
                     Check out our Careers site to learn more about how you can be a part of the team.
                 </p>
 
-                <a href="#" class="cta-link">
+                <a href="#" class="cta-link text-light">
                     EXPLORE
-                    <svg width="15" height="15" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M9.108 5.092l-5.101 5.1a.5.5 0 000 .707l.07.07a.5.5 0
-                        00.71-.002l5.21-5.28v5.1a.5.5 0 00.5.5h.099a.5.5 0
-                        00.5-.504l-.05-6.238v-.048a.5.5 0 00-.5-.5l-6.41-.005a.5.5 0
-                        00-.5.5v.096a.5.5 0 00.5.5l4.972.004z" fill="#02A783"></path>
-                    </svg>
+                    <i class="fa-solid fa-arrow-right text-light ms-2"></i>
                 </a>
+
             </div>
 
             <!-- IMAGE CARD 1 -->
@@ -1329,19 +1380,16 @@
 <section class="container py-5">
     <div class="row align-items-center">
 
-        <!-- LEFT COLUMN (Rotating Logos) -->
-        <div class="col-md-6">
+        <!-- LEFT COLUMN -->
+        <div class="col-md-6 text-center">
 
-            <div class="logo-rotator">
+            <h2 class="heading fw-bold mb-4">Our Strategic Partners</h2>
 
-                <!-- Logo 1 -->
+            <!-- Rotating Logo Box -->
+            <div class="logo-rotator mx-auto">
+
                 <img src="/static/images/logo.png" class="rotate-logo active" alt="logo">
-
-                <!-- Logo 2 -->
-                <img src="https://haleysgroup.com/wp-content/uploads/2024/01/logo.png"
-                    class="rotate-logo" alt="logo">
-
-                <!-- Logo 3 -->
+                <img src="https://haleysgroup.com/wp-content/uploads/2024/01/logo.png" class="rotate-logo" alt="logo">
                 <img src="/static/icons/3dlogo.png" class="rotate-logo" alt="logo">
 
             </div>
@@ -1350,61 +1398,60 @@
 
         <!-- RIGHT COLUMN -->
         <div class="col-md-6 mt-4 mt-md-0">
-            <h2 class="fw-bold">Our Strategic<br>Partners</h2>
 
             <p class="mt-3 text-justify">
                 <strong>Lloyds Bureau</strong><br>
-                At our esteemed global partners amplify our capabilities, allowing us
+                Our esteemed global partners amplify our capabilities, allowing us
                 to deliver superior quality and advanced technologies. These alliances
                 enable us to tackle a broader range of projects with precision, driving
-                growth and regional expansion. Together, we set new standards in
-                engineering support services for the energy industry.
+                growth and expansion. Together, we set new standards in engineering
+                support services for the energy industry.
             </p>
+
         </div>
 
     </div>
 </section>
 
 <style>
-    /* Logo Rotator Container */
-    .logo-rotator {
-        position: relative;
-        width: 200px;
-        height: 140px;
-
-        display: flex;
-        align-items: center;   /* vertical center */
-        justify-content: center; /* horizontal center */
-        margin: 0 auto;
+    .heading {
+        font-size: 1.5rem;
     }
 
-    /* Logos */
+    /* Rotator box centered */
+    .logo-rotator {
+        position: relative;
+        width: 220px;
+        height: 150px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    /* All logos stacked */
     .rotate-logo {
         position: absolute;
-        max-width: 100%;
-        max-height: 100%;
+        width: 100%;
+        height: 100%;
         object-fit: contain;
-
         opacity: 0;
         transition: opacity 1s ease-in-out;
     }
 
-    /* Active Logo */
+    /* Visible logo */
     .rotate-logo.active {
         opacity: 1;
     }
 
-    /* Responsive */
-    @media (max-width: 768px) {
+    @media(max-width: 768px) {
         .logo-rotator {
-            width: 150px;
-            height: 110px;
+            width: 160px;
+            height: 120px;
         }
     }
 </style>
 
 <script>
-    // Auto rotate logos every 2 seconds
     let logos = document.querySelectorAll(".rotate-logo");
     let index = 0;
 
@@ -1422,6 +1469,7 @@
 
 
 
+
 <section class="container py-5" id="our-hubs">
     <h2 class="mb-4" data-aos="fade-down">Our hubs</h2>
 
@@ -1429,22 +1477,18 @@
 
         <!-- Canada -->
         <div class="col-lg-3 col-md-4 col-sm-6 col-6" data-aos="flip-right" data-aos-delay="0">
-            <a href="/contact" class="hub-link">
+            <a href="/contact" class="hub-link" style="text-decoration: none;">
                 <div class="hub-card">
 
-                    <!-- Image Wrapper -->
                     <div class="img-wrapper">
                         <img src="https://img.freepik.com/premium-photo/canadian-national-flag-overlay-false-creek-downtown-vancouver-british-columbia-canada_645882-7889.jpg?semt=ais_hybrid&w=740&q=80"
                             class="img-fluid hub-img rounded" alt="Canada">
-
-                        <!-- Hover Text -->
                         <div class="hover-text">123 Maple Street, Toronto, Canada</div>
                     </div>
 
                     <h5 class="mt-2 fw-semibold">Canada</h5>
-                    <p class="text-muted mb-0">XYZ, Canada</p>
-                    <p class="text-muted mb-0">Visit <i class="ri-arrow-right-up-line"></i></p>
-
+                    <p class="mb-0 text-muted">XYZ, Canada</p>
+                    <p class="mb-0 text-muted">Visit <i class="ri-arrow-right-up-line"></i></p>
 
                 </div>
             </a>
@@ -1452,19 +1496,18 @@
 
         <!-- UK -->
         <div class="col-lg-3 col-md-4 col-sm-6 col-6" data-aos="flip-right" data-aos-delay="200">
-            <a href="/contact" class="hub-link">
+            <a href="/contact" class="hub-link" style="text-decoration: none;">
                 <div class="hub-card">
 
                     <div class="img-wrapper">
                         <img src="https://images.unsplash.com/photo-1505761671935-60b3a7427bad?w=800"
                             class="img-fluid hub-img rounded" alt="UK">
-
                         <div class="hover-text">45 Oxford Street, London, UK</div>
                     </div>
 
                     <h5 class="mt-2 fw-semibold">UK</h5>
-                    <p class="text-muted mb-0">London, England</p>
-                    <p class="text-muted mb-0">Visit <i class="ri-arrow-right-up-line"></i></p>
+                    <p class="mb-0 text-muted">London, England</p>
+                    <p class="mb-0 text-muted">Visit <i class="ri-arrow-right-up-line"></i></p>
 
                 </div>
             </a>
@@ -1472,19 +1515,18 @@
 
         <!-- Qatar -->
         <div class="col-lg-3 col-md-4 col-sm-6 col-6" data-aos="flip-right" data-aos-delay="400">
-            <a href="/contact" class="hub-link">
+            <a href="/contact" class="hub-link" style="text-decoration: none;">
                 <div class="hub-card">
 
                     <div class="img-wrapper">
                         <img src="https://skift.com/wp-content/uploads/2025/01/raffles-doha-luxury-hotel-accor.jpg"
                             class="img-fluid hub-img rounded" alt="Qatar">
-
                         <div class="hover-text">77 Corniche Road, Doha, Qatar</div>
                     </div>
 
                     <h5 class="mt-2 fw-semibold">Qatar</h5>
-                    <p class="text-muted mb-0">Doha, Qatar</p>
-                    <p class="text-muted mb-0">Visit <i class="ri-arrow-right-up-line"></i></p>
+                    <p class="mb-0 text-muted">Doha, Qatar</p>
+                    <p class="mb-0 text-muted">Visit <i class="ri-arrow-right-up-line"></i></p>
 
                 </div>
             </a>
@@ -1492,101 +1534,109 @@
 
         <!-- India -->
         <div class="col-lg-3 col-md-4 col-sm-6 col-6" data-aos="flip-right" data-aos-delay="600">
-            <a href="/contact" class="hub-link">
+            <div href="/contact" class="hub-link">
                 <div class="hub-card">
 
                     <div class="img-wrapper">
                         <img src="https://t3.ftcdn.net/jpg/02/65/64/24/360_F_265642486_IXw9DQVzjTfAzT8xMtTBXBvYD8Who6Fw.jpg"
                             class="img-fluid hub-img rounded" alt="India">
-
                         <div class="hover-text">22 MG Road, Cochin, India</div>
                     </div>
 
                     <h5 class="mt-2 fw-semibold">India</h5>
-                    <p class="text-muted mb-0">Cochin, India</p>
-                    <p class="text-muted mb-0">Visit <i class="ri-arrow-right-up-line"></i></p>
+                    <p class="mb-0 text-muted">Cochin, India</p>
+                    <p class="mb-0 text-muted">Visit <i class="ri-arrow-right-up-line"></i></p>
 
                 </div>
-            </a>
+            </div>
         </div>
 
     </div>
 </section>
 
-
-
 <style>
     /* IMAGE HEIGHT */
+#our-hubs .hub-img {
+    height: 190px;
+    width: 100%;
+    object-fit: cover;
+}
+
+@media (max-width: 576px) {
     #our-hubs .hub-img {
-        height: 190px;
-        width: 100%;
-        object-fit: cover;
+        height: 150px;
     }
+}
 
-    @media (max-width: 576px) {
-        #our-hubs .hub-img {
-            height: 150px;
-        }
-    }
+/* CLICKABLE CARD */
+.hub-link {
+    display: block;
+    text-decoration: none; /* remove underline */
+    color: inherit;
+}
 
-    /* MAKE CARD CLICKABLE */
-    .hub-link {
-        text-decoration: none;
-        color: inherit;
-        display: block;
-    }
-    .hub-link:hover {
-        
-        color: rgb(0, 174, 0);
-    }
+/* CARD HOVER LIFT */
+.hub-card {
+    transition: transform 0.3s ease-in-out;
+}
 
-    /* CARD HOVER LIFT */
-    .hub-card {
-        transition: 0.3s ease-in-out;
-    }
+.hub-card:hover {
+    transform: translateY(-6px);
+}
 
-    .hub-card:hover {
-        transform: translateY(-6px);
-        
-    }
+/* IMAGE HOVER */
+.img-wrapper {
+    position: relative;
+    overflow: hidden;
+    border-radius: 8px;
+}
 
-    /* IMAGE WRAPPER FOR HOVER EFFECT */
-    .img-wrapper {
-        position: relative;
-        overflow: hidden;
-        border-radius: 8px;
-    }
+.hover-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgba(0,0,0,0.55);
+    padding: 8px 14px;
+    border-radius: 6px;
+    color: #fff;
+    font-size: 15px;
+    font-weight: 500;
+    text-align: center;
+    opacity: 0;
+    transition: 0.35s ease;
+    width: 90%;
+}
 
-    /* HOVER TEXT (HIDDEN INITIALLY) */
-    .hover-text {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        background: rgba(0, 0, 0, 0.55);
-        padding: 8px 14px;
-        border-radius: 6px;
-        color: #fff;
-        font-size: 15px;
-        font-weight: 500;
-        text-align: center;
-        opacity: 0;
-        transition: 0.35s ease;
-        width: 90%;
-    }
-    
 
-    /* SHOW TEXT ONLY WHEN HOVER ON IMAGE */
-    .img-wrapper:hover .hover-text {
-        opacity: 1;
-    }
+.img-wrapper:hover .hover-text {
+    opacity: 1;
+}
 
-    /* DARKEN IMAGE SLIGHTLY ON HOVER */
-    .img-wrapper:hover img {
-        filter: brightness(0.6);
-        transition: 0.35s ease;
-    }
+.img-wrapper:hover img {
+    filter: brightness(0.6);
+    transition: 0.35s ease;
+}
+
+/* HOVER TEXT COLOR - INCLUDING text-muted */
+.hub-card h5,
+.hub-card p,
+.hub-card .hover-text,
+.hub-card i {
+    transition: color 0.35s ease;
+    text-decoration: none !important; /* remove underline everywhere */
+}
+
+/* ON HOVER: ALL TEXT INSIDE CARD TURNS LIGHT GREEN */
+.hub-card:hover h5,
+.hub-card:hover p,
+.hub-card:hover i {
+    color: #00d80e !important; /* light green */
+    text-decoration: none !important; /* remove underline */
+}
+
 </style>
+
 
 
 
