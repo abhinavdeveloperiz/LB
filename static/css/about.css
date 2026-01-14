@@ -357,13 +357,17 @@ h2 {
 
 
 
-/* Swiper Container */
+/* ============================
+   Swiper Container
+============================ */
 .mySwiper {
   width: 100%;
   padding: 40px 0;
 }
 
-/* Swiper Slide */
+/* ============================
+   Swiper Slide
+============================ */
 .swiper-slide {
   display: flex;
   justify-content: center;
@@ -372,27 +376,40 @@ h2 {
   box-sizing: border-box;
 }
 
-/* ----- Card Layout ----- */
+/* ============================
+   Card Layout
+============================ */
 .info-card {
-  background: #fff;
+  background: #ffffff;
   border-radius: 16px;
   overflow: hidden;
   display: flex;
   flex-direction: row;
   height: 380px;
   width: 100%;
-  max-width: 780px;       /* 🔥 Very important: keeps card centered */
+  max-width: 780px; /* Keeps card centered */
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-/* ----- Image ----- */
+/* Card Hover Effect */
+.info-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.18);
+}
+
+/* ============================
+   Image Section
+============================ */
 .info-card img {
   width: 45%;
   height: 100%;
   object-fit: cover;
 }
 
-/* ----- Text Section ----- */
+/* ============================
+   Content Section
+============================ */
 .info-content {
   width: 55%;
   padding: 32px;
@@ -401,26 +418,43 @@ h2 {
   justify-content: center;
 }
 
+/* Title */
 .info-content h2 {
   font-size: 1.8rem;
   margin-bottom: 16px;
   font-weight: 700;
+  color: #111111;
+  transition: color 0.3s ease;
 }
 
+/* ✅ Title turns green on card hover */
+.info-card:hover .info-content h2 {
+  color: #22c55e; /* Modern green */
+}
+
+/* Paragraph */
 .info-content p {
   font-size: 1rem;
   line-height: 1.7;
   text-align: justify;
-}
-
-/* Pagination Dots */
-.swiper-pagination-bullet {
-  background: #333 !important;
+  color: #444444;
 }
 
 /* ============================
-   📱 TABLET / MOBILE RESPONSIVE
-================================ */
+   Pagination Dots
+============================ */
+.swiper-pagination-bullet {
+  background: #333333 !important;
+  opacity: 0.6;
+}
+
+.swiper-pagination-bullet-active {
+  opacity: 1;
+}
+
+/* ============================
+   Tablet Responsive
+============================ */
 @media (max-width: 1024px) {
   .info-card {
     max-width: 680px;
@@ -428,9 +462,12 @@ h2 {
   }
 }
 
+/* ============================
+   Mobile Responsive
+============================ */
 @media (max-width: 768px) {
   .swiper-slide {
-    padding: 0; /* Avoid overflow on mobile */
+    padding: 0;
   }
 
   .info-card {
@@ -458,6 +495,9 @@ h2 {
   }
 }
 
+/* ============================
+   Small Mobile
+============================ */
 @media (max-width: 480px) {
   .info-card img {
     height: 220px;
@@ -477,14 +517,7 @@ h2 {
 
 
 
-
-
-
 /* ---------------------new addons here--------------------------------------------------  */
-
-
-
-
 
 
 .values-section {
@@ -501,7 +534,7 @@ h2 {
 
 .values-gif-box {
   background: url("https://i.pinimg.com/originals/c8/61/75/c8617584f5180a47f90de9004ed7afed.gif")
-    center/cover no-repeat;
+    center / cover no-repeat;
   border-radius: 16px;
   padding: 70px 30px;
   position: relative;
@@ -510,6 +543,7 @@ h2 {
   align-items: center;
 }
 
+/* Grid */
 .values-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -517,6 +551,7 @@ h2 {
   width: 100%;
 }
 
+/* Card */
 .value-card {
   background: rgba(255, 255, 255, 0.12);
   backdrop-filter: blur(10px);
@@ -525,21 +560,30 @@ h2 {
   color: #fff;
   text-align: center;
   border: 1px solid rgba(255, 255, 255, 0.25);
-  transition: 0.3s ease;
+  transition: transform 0.3s ease, background 0.3s ease, box-shadow 0.3s ease;
 }
 
+/* Card Hover */
 .value-card:hover {
   background: rgba(255, 255, 255, 0.22);
   transform: translateY(-5px);
   box-shadow: 0 6px 20px rgba(255, 255, 255, 0.25);
 }
 
+/* Title */
 .value-card h3 {
   font-size: 22px;
   font-weight: 700;
   margin-bottom: 10px;
+  transition: color 0.3s ease;
 }
 
+/* ✅ Title turns green on card hover */
+.value-card:hover h3 {
+  color: #22c55e; /* Tailwind green-500 (modern & clean) */
+}
+
+/* Text */
 .value-card p {
   font-size: 16px;
   line-height: 1.5;
@@ -562,12 +606,10 @@ h2 {
 
 
 
-
-
-/* careers--------------------------------------------------------------------------------------------------  */
+/* careers-------------------------------------------------------------------------------------------------- */
 .threecol-section {
   padding: 80px 0;
-  background: #2bd600;
+  background: #C7EDBC;
 }
 
 .container-max {
@@ -584,32 +626,27 @@ h2 {
 }
 
 /* ---------- LEFT TEXT BLOCK ---------- */
-
 .eyebrow {
   font-size: 44px;
   letter-spacing: 2px;
-  color: #ffffff;
+  color: #000000;
   font-weight: 600;
   margin-bottom: 15px;
-
 }
 
 .section-title {
   font-size: 32px;
   font-weight: 700;
   line-height: 1.2;
-  color: white;
+  color: rgb(0, 0, 0);
 }
-
-
-
 .section-title:hover {
-  color: #ffffff;
+  color: #000000;
 }
 
 .section-description {
   font-size: 18px;
-  color: #ffffff;
+  color: #3f3f3f;
   margin-top: 20px;
   max-width: 420px;
 }
@@ -645,51 +682,85 @@ h2 {
   transform: scale(1.04);
 }
 
-/* ---------- TEXT OVERLAY (UPDATED) ---------- */
+/* ---------- TEXT OVERLAY ---------- */
 .card-text {
   position: absolute;
-  bottom: 0px;
-  left: 0px;
-
-  /* white background box */
+  bottom: 0;
+  left: 0;
   background: #ffffff;
   padding: 18px 20px;
-  border-radius: 0px;
-
-  /* 70% width of image */
   width: 70%;
-
-  /* prevent overflow inside image */
   box-sizing: border-box;
-
-  /* text color switch */
-  color: #000;
-}
-.card-text:hover {
-  background: #2bd600;
 }
 
+/* TITLE — reacts ONLY to card hover */
 .card-text h2 {
   font-size: 26px;
   font-weight: 700;
   margin-bottom: 8px;
   color: #000;
+  transition: color 0.3s ease;
 }
 
-.card-text a {
-  color: #02a783;
+.image-card:hover .card-text h2 {
+  color: #22c55e;
+}
+
+/* ---------- LINKS ---------- */
+.card-link,
+.cta-link {
   font-weight: 600;
   font-size: 15px;
   text-decoration: none;
+  color: #22c55e;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
 }
 
-/* ---------- RESPONSIVE RULES ---------- */
-@media (max-width: 1200px) {
-  .section-title {
-    font-size: 36px;
-  }
+
+/* ---------- ARROW ANIMATION (LINK HOVER ONLY) ---------- */
+.arrow {
+  position: relative;
+  width: 16px;
+  height: 16px;
+  display: inline-block;
 }
 
+.arrow i {
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+/* Default arrow */
+.arrow-up {
+  opacity: 1;
+  transform: translate(0, 0);
+}
+
+/* Hover arrow */
+.arrow-right {
+  opacity: 0;
+  transform: translateX(-4px);
+}
+
+/* Trigger ONLY when hovering link */
+.card-link:hover .arrow-up,
+.cta-link:hover .arrow-up {
+  opacity: 0;
+  transform: translate(4px, -4px);
+  
+}
+
+.card-link:hover .arrow-right,
+.cta-link:hover .arrow-right {
+  opacity: 1;
+  transform: translateX(4px);
+}
+
+/* ---------- RESPONSIVE ---------- */
 @media (max-width: 992px) {
   .threecol-grid {
     grid-template-columns: 1fr 1fr;
@@ -697,10 +768,6 @@ h2 {
 
   .grid-full {
     grid-column: span 2;
-  }
-
-  .section-title {
-    font-size: 34px;
   }
 
   .image-card img {
@@ -717,18 +784,6 @@ h2 {
     grid-column: span 1;
   }
 
-  .threecol-section {
-    padding: 50px 0;
-  }
-
-  .section-title {
-    font-size: 30px;
-  }
-
-  .section-description {
-    max-width: 100%;
-  }
-
   .image-card img {
     height: 300px;
   }
@@ -737,7 +792,6 @@ h2 {
     width: 85%;
     bottom: 18px;
     left: 18px;
-    padding: 16px;
   }
 
   .card-text h2 {
@@ -746,10 +800,6 @@ h2 {
 }
 
 @media (max-width: 480px) {
-  .threecol-section {
-    padding: 40px 0;
-  }
-
   .image-card img {
     height: 260px;
   }
@@ -758,7 +808,6 @@ h2 {
     width: 90%;
     bottom: 12px;
     left: 12px;
-    right: 12px;
     padding: 14px;
   }
 
@@ -766,4 +815,4 @@ h2 {
     font-size: 20px;
   }
 }
-/* --------------------------------------------------------------------------------------------------------  */
+/* -------------------------------------------------------------------------------------------------------- */
