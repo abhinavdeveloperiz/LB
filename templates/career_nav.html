@@ -1,0 +1,195 @@
+  <!-- ================= NAVBAR ================= -->
+  <nav class="bg-white shadow-sm sticky top-0 z-50">
+    <div class="max-w-7xl mx-auto px-6 py-3 flex items-center justify-between">
+
+      <!-- LOGO -->
+      <a href="/" class="flex items-center">
+        <img src="/static/images/logo.png" alt="Lloyds Bureau" class="h-14 w-auto object-contain">
+      </a>
+
+      <!-- DESKTOP MENU -->
+      <div class="hidden lg:flex items-center gap-8 font-medium text-md ">
+
+        <a href="/about-us" class="hover:text-green-600">About Us</a>
+
+        <!-- Career -->
+        <div class="relative">
+          <button onclick="toggleDropdown('career')" class="hover:text-green-600 flex items-center gap-1">
+            Our Career Paths
+            <i class="fa-solid fa-chevron-down text-xs"></i>
+          </button>
+
+          <div id="career" class="dropdown absolute left-0 mt-3 hidden bg-white shadow-lg rounded-lg p-4 w-56">
+            <a href="#" class="block py-1 hover:text-green-600">Early Careers</a>
+            <a href="#" class="block py-1 hover:text-green-600">Experienced Careers</a>
+          </div>
+        </div>
+
+        <!-- You -->
+        <div class="relative">
+          <button onclick="toggleDropdown('you')" class="hover:text-green-600 flex items-center gap-1">
+            You & Lloyds Bureau
+            <i class="fa-solid fa-chevron-down text-xs"></i>
+          </button>
+
+          <div id="you" class="dropdown absolute left-0 mt-3 hidden bg-white shadow-lg rounded-lg p-4 w-56">
+            <a href="#" class="block py-1 hover:text-green-600">Rewards & Benefits</a>
+          </div>
+        </div>
+
+        <a href="#" class="hover:text-green-600">Join Our Talent Community</a>
+        <a href="#" class="hover:text-green-600">News</a>
+        <a href="#" class="hover:text-green-600">Contacts</a>
+      </div>
+
+      <!-- WARNING -->
+      <div class="hidden lg:flex items-center gap-3">
+
+        <button onclick="openWarning()" class="text-blue-700 font-semibold hover:text-green-600 text-sm">
+          <i class="fa-solid fa-triangle-exclamation text-4xl text-red-600 animate-pulse"></i>
+          <span class="text-base font-semibold text-gray-700 ">
+            <p>ALERT</p>
+          </span>
+        </button>
+      </div>
+
+      <!-- MOBILE MENU BUTTON -->
+      <button class="lg:hidden text-xl" onclick="openDrawer()">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+
+    </div>
+  </nav>
+
+  <!-- ================= MOBILE DRAWER ================= -->
+
+  <div id="overlay" class="fixed inset-0 bg-black/40 hidden z-40" onclick="closeDrawer()"></div>
+
+  <aside id="drawer"
+    class="fixed top-0 right-0 h-full w-80 bg-white shadow-xl transform translate-x-full transition duration-300 z-50">
+
+    <!-- header -->
+    <div class="flex justify-between items-center px-6 py-4 border-b">
+      <h2 class="font-semibold text-lg">Menu</h2>
+      <button onclick="closeDrawer()" class="text-xl">
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+    </div>
+
+    <!-- content -->
+    <div class="p-6 space-y-6 text-sm">
+
+      <!-- About -->
+      <a href="/about-us" class="block font-medium hover:text-green-600">
+        About Us
+      </a>
+
+      <!-- Career -->
+      <div>
+        <p class="text-xs uppercase text-gray-400 mb-2">Career Paths</p>
+        <div class="space-y-2">
+          <a href="#" class="block hover:text-green-600">Early Careers</a>
+          <a href="#" class="block hover:text-green-600">Experienced Careers</a>
+        </div>
+      </div>
+
+      <!-- Lloyds -->
+      <div>
+        <p class="text-xs uppercase text-gray-400 mb-2">You & Lloyds Bureau</p>
+        <a href="#" class="block hover:text-green-600">Rewards & Benefits</a>
+      </div>
+
+      <a href="#" class="block hover:text-green-600">Join Talent Community</a>
+      <a href="#" class="block hover:text-green-600">News</a>
+      <a href="#" class="block hover:text-green-600">Contacts</a>
+
+      <!-- Warning -->
+      <div class="pt-4 border-t">
+        <button onclick="openWarning()" class="flex items-center gap-2 text-blue-700 font-semibold">
+
+          <i class="fa-solid fa-triangle-exclamation text-4xl text-red-600 animate-pulse"></i>
+
+          <span class="text-base font-semibold text-gray-700">
+            ALERT
+          </span>
+
+        </button>
+      </div>
+
+    </div>
+  </aside>
+
+  <div id="warningModal" class="fixed inset-0 bg-black/50 hidden items-center justify-center z-50 p-4">
+
+    <div data-aos="zoom-in"
+      class="bg-white rounded-xl p-8 max-w-2xl w-full shadow-lg max-h-[85vh] overflow-y-auto text-left">
+
+      <!-- ICON -->
+      <div class="flex items-start gap-4">
+        <i class="fa-solid fa-triangle-exclamation text-red-600 text-3xl animate-pulse mt-1"></i>
+
+        <div>
+          <h2 class="text-xl font-semibold text-gray-800">
+            Recruitment Scam Warning
+          </h2>
+
+          <p class="text-gray-600 text-sm mt-3 leading-relaxed">
+            We are aware of a scam involving scammers impersonating members of the Lloyds Bureau
+            recruitment team, posting false advertisements on job websites, conducting interviews
+            (often via messaging sites such as Wire) and issuing false employment documents.
+            The scammer may capture the victims' personal information and ask them to transfer money
+            or purchase IT equipment.
+          </p>
+
+          <p class="text-gray-600 text-sm mt-4 leading-relaxed">
+            Lloyds Bureau does not conduct interviews or contact candidates using messaging apps
+            like Wire or Signal. We will never ask potential or successful candidates to transfer money,
+            provide credit card details or purchase IT equipment for any purpose before starting a
+            position with us.
+          </p>
+
+          <p class="text-gray-600 text-sm mt-4 leading-relaxed">
+            All of our open positions are listed on our Careers page. If you would like to verify the
+            authenticity of the contact you have had with our recruitment team, please contact us at:
+            <span class="font-medium text-gray-800">people@lloydsbureau.com</span>
+          </p>
+
+          <!-- LINKS -->
+          <div class="mt-6 space-y-3 text-sm">
+
+            <p>
+              <span class="font-semibold text-gray-800">Search our jobs</span> —
+              <a href="#" class="text-blue-700 hover:text-green-600 underline">
+                Link to jobs
+              </a>
+            </p>
+
+            <p>
+              <span class="font-semibold text-gray-800">Life at Lloyds Bureau</span> —
+              <a href="#" class="text-blue-700 hover:text-green-600 underline">
+                Link to You & Lloyds Bureau
+              </a>
+            </p>
+
+            <p>
+              <span class="font-semibold text-gray-800">Diversity at Lloyds Bureau</span><br>
+              <span class="text-gray-600">
+                We understand that our people are our greatest asset and acknowledge that diversity
+                makes Lloyds Bureau stronger.
+              </span>
+            </p>
+
+          </div>
+        </div>
+      </div>
+
+      <!-- BUTTON -->
+      <div class="text-center mt-8">
+        <button onclick="closeWarning()"
+          class="bg-blue-700 text-white px-8 py-2 rounded-lg hover:bg-green-600 transition">
+          Close
+        </button>
+      </div>
+
+    </div>
+  </div>
