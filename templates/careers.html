@@ -6,783 +6,860 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Lloyds Bureau | Careers</title>
 
-  <!-- Tailwind -->
-  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Bootstrap 5 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
 
   <!-- Font Awesome -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
 
   <!-- AOS -->
   <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet" />
-  <link rel="stylesheet" href="/static/css/style.css">
-</head>
-
-<body class="bg-gray-50 text-gray-700">
-
-
-
-
-
-
-
-  {% include 'career/career_nav.html' %}
-
-
-
-
-
-  <section class="py-20 px-6 bg-gradient-to-br from-gray-50 to-white text-center" data-aos="zoom-in">
-
-    <!-- Badge / Small Tag -->
-    <div class="mb-4">
-      <span class="text-sm font-medium text-green-600 bg-green-100 px-4 py-1 rounded-full">
-        Careers at Lloyds Bureau
-      </span>
-    </div>
-
-    <!-- Main Heading -->
-    <h1 class="text-4xl md:text-5xl font-extrabold text-gray-900 mb-4 leading-tight">
-      Join Our <span class="text-green-600">Team</span>
-    </h1>
-
-    <!-- Subheading -->
-    <h2 class="text-xl md:text-2xl font-semibold text-gray-700 mb-6 max-w-2xl mx-auto">
-      Build Your Career With Us
-    </h2>
-
-    <!-- Description -->
-    <p class="text-gray-600 max-w-3xl mx-auto mb-8 leading-relaxed">
-      At Lloyds Bureau, we believe our people are the foundation of our success.
-      We bring together skilled professionals, technical specialists, and future leaders
-      who are passionate about safety, quality, and excellence across safety-critical industries.
-    </p>
-
-    <!-- CTA Buttons -->
-    <div class="flex justify-center gap-4 flex-wrap">
-
-
-      <a href="#about"
-        class="border border-gray-300 text-gray-700 px-6 py-3 rounded-lg font-medium hover:bg-green-500 hover:text-white transition">
-        Learn More
-      </a>
-    </div>
-
-  </section>
-
-
-
-
-
-
-  <!-- ================= WHY WORK WITH US ================= -->
-  <section class="max-w-7xl mx-auto px-6 py-10 grid lg:grid-cols-2 gap-12" id="about">
-
-    <!-- LEFT COLUMN -->
-    <div class="space-y-12">
-
-      <!-- Early Careers -->
-      <article class="career-card " data-aos="flip-right">
-        <img src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d" class="career-img">
-
-        <h3 class="career-title">Early careers</h3>
-
-        <p class="career-text">
-          Launch your growth, discover your potential, and shape the future of energy
-          as you define your own career path.
-        </p>
-
-        <button class="career-btn">
-          Learn more <i class="fa-solid fa-arrow-right text-xs"></i>
-        </button>
-      </article>
-
-      <!-- Experienced Careers -->
-      <article class="career-card" data-aos="flip-right">
-        <img src="https://images.unsplash.com/photo-1551434678-e076c223a692" class="career-img">
-
-        <h3 class="career-title">Experienced careers</h3>
-
-        <p class="career-text">
-          Join innovators and professionals with relevant industry and transferable
-          expertise to transform the delivery of energy-based solutions.
-        </p>
-
-        <button class="career-btn">
-          Learn more <i class="fa-solid fa-arrow-right text-xs"></i>
-        </button>
-      </article>
-
-    </div>
-
-
-    <!-- RIGHT COLUMN -->
-    <div class="bg-sky-100 rounded-xl p-8 h-[70vh] md:h-[100vh]">
-
-      <h2 class="text-3xl font-bold text-gray-800 text-center">
-        Why <span class="text-green-600">Work With Us</span>
-      </h2>
-
-      <p class="text-gray-600 mt-2 mb-8 text-center">
-        More than a workplace — Lloyds Bureau is a place to learn,
-        contribute, and grow with purpose.
-      </p>
-
-      <!-- SCROLL WRAPPER -->
-      <div class="scroll-wrapper">
-
-        <div class="scroll-cards grid sm:grid-cols-2 gap-6">
-
-          <!-- CARD 1 -->
-          <div class="info-card">
-            <i class="fa-solid fa-users card-icon"></i>
-            <h4>Safety & Compliance Culture</h4>
-            <p>
-              Work within a strong safety-first culture where health,
-              safety, quality, and ethics are non-negotiable.
-            </p>
-          </div>
-
-          <!-- CARD 2 -->
-          <div class="info-card">
-            <i class="fa-solid fa-trophy card-icon"></i>
-            <h4>Competence & Capability Development</h4>
-            <p>
-              We invest in professional development through structured
-              training, mentoring, and competency-based growth pathways.
-            </p>
-          </div>
-
-          <!-- CARD 3 -->
-          <div class="info-card">
-            <i class="fa-solid fa-lightbulb card-icon"></i>
-            <h4>Meaningful & Impactful Work</h4>
-            <p>
-              Contribute to projects that protect people, assets,
-              and the environment across global industries.
-            </p>
-          </div>
-
-          <!-- CARD 4 -->
-          <div class="info-card">
-            <i class="fa-solid fa-shield-halved card-icon"></i>
-            <h4>Professional Integrity</h4>
-            <p>
-              Be part of an organization built on impartiality,
-              transparency, and technical credibility.
-            </p>
-          </div>
-
-          <!-- CARD 5 -->
-          <div class="info-card">
-            <i class="fa-solid fa-globe card-icon"></i>
-            <h4>Global Exposure</h4>
-            <p>
-              Gain experience working with international teams,
-              clients, and projects across multiple regions.
-            </p>
-          </div>
-
-          <!-- CARD 6 -->
-          <div class="info-card">
-            <i class="fa-solid fa-handshake card-icon"></i>
-            <h4>Inclusive & Respectful Workplace</h4>
-            <p>
-              We value diversity, collaboration, and mutual respect,
-              creating an environment where everyone can perform at their best.
-            </p>
-          </div>
-
-          <!-- DUPLICATED CARDS FOR SMOOTH LOOP -->
-
-          <div class="info-card">
-            <i class="fa-solid fa-users card-icon"></i>
-            <h4>Safety & Compliance Culture</h4>
-            <p>
-              Work within a strong safety-first culture where health,
-              safety, quality, and ethics are non-negotiable.
-            </p>
-          </div>
-
-          <div class="info-card">
-            <i class="fa-solid fa-trophy card-icon"></i>
-            <h4>Competence & Capability Development</h4>
-            <p>
-              We invest in professional development through structured
-              training, mentoring, and competency-based growth pathways.
-            </p>
-          </div>
-
-          <div class="info-card">
-            <i class="fa-solid fa-lightbulb card-icon"></i>
-            <h4>Meaningful & Impactful Work</h4>
-            <p>
-              Contribute to projects that protect people, assets,
-              and the environment across global industries.
-            </p>
-          </div>
-
-          <div class="info-card">
-            <i class="fa-solid fa-shield-halved card-icon"></i>
-            <h4>Professional Integrity</h4>
-            <p>
-              Be part of an organization built on impartiality,
-              transparency, and technical credibility.
-            </p>
-          </div>
-
-          <div class="info-card">
-            <i class="fa-solid fa-globe card-icon"></i>
-            <h4>Global Exposure</h4>
-            <p>
-              Gain experience working with international teams,
-              clients, and projects across multiple regions.
-            </p>
-          </div>
-
-          <div class="info-card">
-            <i class="fa-solid fa-handshake card-icon"></i>
-            <h4>Inclusive & Respectful Workplace</h4>
-            <p>
-              We value diversity, collaboration, and mutual respect,
-              creating an environment where everyone can perform at their best.
-            </p>
-          </div>
-
-        </div>
-
-      </div>
-
-    </div>
-
-  </section>
-
-
 
   <style>
-    /* SCROLL AREA */
+    /* ===== GLOBAL ===== */
+    body {
+      background: #f9fafb;
+      color: #374151;
+      font-family: 'Segoe UI', sans-serif;
+    }
 
-    .scroll-wrapper {
-      height: 500px;
-      overflow: hidden;
+    /* ===== NAVBAR ===== */
+    .main-navbar {
+      background: #fff;
+      box-shadow: 0 1px 6px rgba(0,0,0,.08);
+      position: sticky;
+      top: 0;
+      z-index: 1050;
+    }
+    .navbar-inner {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 10px 24px;
+      max-width: 1280px;
+      margin: 0 auto;
+    }
+
+    /* Logo */
+    .navbar-logo img {
+      height: 56px;
+      width: auto;
+      object-fit: contain;
+    }
+
+    /* Desktop links */
+    .nav-links {
+      display: none;
+      align-items: center;
+      gap: 28px;
+      font-size: .95rem;
+      font-weight: 500;
+      color: #374151;
+    }
+    @media (min-width: 992px) {
+      .nav-links { display: flex; }
+    }
+    .nav-links a {
+      color: #374151;
+      text-decoration: none;
+      transition: color .2s;
+      white-space: nowrap;
+    }
+    .nav-links a:hover { color: #16a34a; }
+
+    /* Dropdown wrapper */
+    .nav-dd {
       position: relative;
     }
+    .nav-dd-btn {
+      background: none;
+      border: none;
+      padding: 0;
+      font-size: .95rem;
+      font-weight: 500;
+      color: #374151;
+      display: flex;
+      align-items: center;
+      gap: 5px;
+      cursor: pointer;
+      transition: color .2s;
+      white-space: nowrap;
+    }
+    .nav-dd-btn:hover { color: #16a34a; }
+    .nav-dd-menu {
+      display: none;
+      position: absolute;
+      top: calc(100% + 12px);
+      left: 0;
+      background: #fff;
+      border: 1px solid #e5e7eb;
+      border-radius: 10px;
+      box-shadow: 0 8px 24px rgba(0,0,0,.1);
+      min-width: 210px;
+      padding: 8px 0;
+      z-index: 9999;
+    }
+    .nav-dd-menu.open { display: block; }
+    .nav-dd-menu a {
+      display: block;
+      padding: 9px 18px;
+      font-size: .88rem;
+      font-weight: 400;
+      color: #374151;
+      text-decoration: none;
+      transition: background .15s, color .15s;
+    }
+    .nav-dd-menu a:hover { background: #f0fdf4; color: #16a34a; }
 
-    .scroll-cards {
-      animation: scrollUp 28s linear infinite;
+    /* ALERT button */
+    .alert-btn {
+      background: none;
+      border: none;
+      cursor: pointer;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 2px;
+      padding: 0 4px;
+    }
+    .alert-btn i {
+      font-size: 2.2rem;
+      color: #dc2626;
+    }
+    .alert-btn span {
+      font-size: .8rem;
+      font-weight: 600;
+      color: #374151;
+      line-height: 1;
+    }
+    @keyframes pulse-icon {
+      0%, 100% { opacity: 1; }
+      50%        { opacity: .4; }
+    }
+    .pulse { animation: pulse-icon 1.4s ease-in-out infinite; }
+
+    /* Right side actions */
+    .navbar-right {
+      display: flex;
+      align-items: center;
+      gap: 16px;
     }
 
-    .scroll-wrapper:hover .scroll-cards {
-      animation-play-state: paused;
+    /* Mobile hamburger */
+    .hamburger-btn {
+      background: none;
+      border: none;
+      font-size: 1.4rem;
+      color: #374151;
+      cursor: pointer;
+      padding: 4px 8px;
+      border-radius: 6px;
+      transition: color .2s;
+      display: none;
+    }
+    @media (max-width: 991px) {
+      .hamburger-btn { display: block; }
     }
 
-    @keyframes scrollUp {
-      0% {
-        transform: translateY(0);
-      }
+    /* ===== DRAWER ===== */
+    .drawer-overlay {
+      display: none;
+      position: fixed;
+      inset: 0;
+      background: rgba(0,0,0,.4);
+      z-index: 2000;
+    }
+    .drawer-overlay.show { display: block; }
 
-      100% {
-        transform: translateY(-50%);
-      }
+    .side-drawer {
+      position: fixed;
+      top: 0;
+      right: 0;
+      height: 100vh;
+      width: 300px;
+      background: #fff;
+      box-shadow: -6px 0 32px rgba(0,0,0,.14);
+      transform: translateX(100%);
+      transition: transform .3s ease;
+      z-index: 2100;
+      display: flex;
+      flex-direction: column;
+      overflow-y: auto;
+    }
+    .side-drawer.open { transform: translateX(0); }
+
+    .drawer-header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 16px 20px;
+      border-bottom: 1px solid #f3f4f6;
+    }
+    .drawer-header h2 {
+      font-size: 1rem;
+      font-weight: 600;
+      margin: 0;
+      color: #111827;
+    }
+    .drawer-close-btn {
+      background: none;
+      border: none;
+      font-size: 1.2rem;
+      color: #6b7280;
+      cursor: pointer;
+      padding: 4px 8px;
+      border-radius: 6px;
+      transition: .2s;
+    }
+    .drawer-close-btn:hover { background: #f3f4f6; color: #111827; }
+
+    .drawer-body {
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+      gap: 18px;
+      font-size: .88rem;
+      flex: 1;
+    }
+    .drawer-body a {
+      display: block;
+      color: #374151;
+      text-decoration: none;
+      font-weight: 500;
+      transition: color .2s;
+    }
+    .drawer-body a:hover { color: #16a34a; }
+    .drawer-section-label {
+      font-size: .72rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      color: #9ca3af;
+      letter-spacing: .06em;
+      margin-bottom: 6px;
+    }
+    .drawer-section { display: flex; flex-direction: column; gap: 8px; }
+    .drawer-divider { border-top: 1px solid #f3f4f6; padding-top: 16px; }
+
+    .drawer-alert-btn {
+      background: none;
+      border: none;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      padding: 0;
+    }
+    .drawer-alert-btn i { font-size: 2.2rem; color: #dc2626; }
+    .drawer-alert-btn span { font-size: .95rem; font-weight: 600; color: #374151; }
+
+    /* ===== WARNING MODAL ===== */
+    .warning-backdrop {
+      display: none;
+      position: fixed;
+      inset: 0;
+      background: rgba(0,0,0,.5);
+      z-index: 3000;
+      align-items: center;
+      justify-content: center;
+      padding: 16px;
+    }
+    .warning-backdrop.show { display: flex; }
+
+    .warning-box {
+      background: #fff;
+      border-radius: 14px;
+      padding: 36px 32px;
+      max-width: 660px;
+      width: 100%;
+      max-height: 85vh;
+      overflow-y: auto;
+      box-shadow: 0 20px 60px rgba(0,0,0,.2);
+      animation: popIn .3s cubic-bezier(.34,1.56,.64,1);
+    }
+    @keyframes popIn {
+      from { transform: scale(.85); opacity: 0; }
+      to   { transform: scale(1);   opacity: 1; }
     }
 
+    .warning-top {
+      display: flex;
+      align-items: flex-start;
+      gap: 18px;
+    }
+    .warning-top > i {
+      font-size: 1.9rem;
+      color: #dc2626;
+      flex-shrink: 0;
+      margin-top: 2px;
+    }
+    .warning-top h2 {
+      font-size: 1.15rem;
+      font-weight: 600;
+      color: #1f2937;
+      margin: 0 0 14px;
+    }
+    .warning-top p {
+      font-size: .88rem;
+      color: #6b7280;
+      line-height: 1.75;
+      margin-bottom: 14px;
+    }
+    .warning-top p span {
+      font-weight: 600;
+      color: #1f2937;
+    }
 
-    /* LEFT CAREER CARDS */
+    .warning-links { margin-top: 20px; display: flex; flex-direction: column; gap: 12px; font-size: .88rem; }
+    .warning-links a {
+      font-weight: 600;
+      color: #1f2937;
+      text-decoration: underline;
+    }
+    .warning-links a:hover { color: #16a34a; }
+    .warning-links .wl-label { font-weight: 600; color: #1f2937; }
+    .warning-links .wl-text  { color: #6b7280; margin-top: 2px; }
 
+    .warning-close-wrap { text-align: center; margin-top: 28px; }
+    .warning-close-wrap button {
+      background: #1d4ed8;
+      color: #fff;
+      border: none;
+      padding: 10px 34px;
+      border-radius: 8px;
+      font-size: .9rem;
+      font-weight: 600;
+      cursor: pointer;
+      transition: background .2s;
+    }
+    .warning-close-wrap button:hover { background: #16a34a; }
+
+    /* ===== HERO ===== */
+    .hero-section {
+      background: linear-gradient(135deg, #f9fafb 0%, #ffffff 100%);
+      padding: 80px 0 60px;
+      text-align: center;
+    }
+    .hero-badge {
+      display: inline-block;
+      background: #dcfce7;
+      color: #15803d;
+      font-size: .8rem;
+      font-weight: 600;
+      padding: 6px 18px;
+      border-radius: 999px;
+      margin-bottom: 16px;
+    }
+    .hero-title {
+      font-size: clamp(2rem, 5vw, 3.2rem);
+      font-weight: 800;
+      color: #111827;
+      line-height: 1.2;
+    }
+    .hero-title span { color: #16a34a; }
+    .hero-sub {
+      font-size: clamp(1rem, 2.5vw, 1.3rem);
+      font-weight: 600;
+      color: #374151;
+    }
+    .hero-desc {
+      color: #6b7280;
+      max-width: 680px;
+      margin: 0 auto 28px;
+      line-height: 1.75;
+    }
+    .btn-outline-hero {
+      border: 1.5px solid #d1d5db;
+      color: #374151;
+      padding: 11px 26px;
+      border-radius: 8px;
+      font-weight: 500;
+      background: transparent;
+      transition: .25s;
+      text-decoration: none;
+      display: inline-block;
+    }
+    .btn-outline-hero:hover {
+      background: #16a34a;
+      border-color: #16a34a;
+      color: #fff;
+    }
+
+    /* ===== CAREER CARDS ===== */
     .career-img {
       width: 100%;
       height: 210px;
       object-fit: cover;
       border-radius: 12px;
-      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+      box-shadow: 0 4px 10px rgba(0,0,0,.08);
     }
-
-    .career-title {
-      font-size: 18px;
+    .career-title-h {
+      font-size: 1.05rem;
       font-weight: 600;
       margin-top: 14px;
+      color: #111827;
     }
-
     .career-text {
-      font-size: 14px;
+      font-size: .875rem;
       color: #555;
       margin-top: 6px;
       line-height: 1.6;
     }
-
     .career-btn {
       margin-top: 14px;
       border: 1px solid #d1d5db;
       padding: 8px 16px;
       border-radius: 999px;
-      font-size: 14px;
+      font-size: .85rem;
+      background: transparent;
       display: inline-flex;
       align-items: center;
       gap: 8px;
+      cursor: pointer;
       transition: .25s;
     }
+    .career-btn:hover { background: #f3f4f6; }
 
-    .career-btn:hover {
-      background: #f3f4f6;
+    /* ===== WHY WORK WITH US ===== */
+    .why-col {
+      background: #e0f2fe;
+      border-radius: 14px;
+      padding: 30px 22px;
     }
+    .why-col h2 {
+      font-size: 1.6rem;
+      font-weight: 700;
+      color: #1f2937;
+      text-align: center;
+    }
+    .why-col h2 span { color: #16a34a; }
+    .why-col > p { color: #6b7280; text-align: center; margin-bottom: 18px; }
 
-
-    /* INFO CARDS */
+    .scroll-wrapper {
+      height: 440px;
+      overflow: hidden;
+      position: relative;
+    }
+    .scroll-cards { animation: scrollUp 28s linear infinite; }
+    .scroll-wrapper:hover .scroll-cards { animation-play-state: paused; }
+    @keyframes scrollUp {
+      0%   { transform: translateY(0); }
+      100% { transform: translateY(-50%); }
+    }
 
     .info-card {
       background: #fff;
       border-radius: 14px;
-      padding: 26px 20px;
+      padding: 22px 16px;
       text-align: center;
       border: 1px solid #e5e7eb;
-      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+      box-shadow: 0 4px 12px rgba(0,0,0,.05);
       transition: all .25s ease;
     }
-
     .info-card:hover {
       transform: translateY(-6px);
-      box-shadow: 0 12px 22px rgba(0, 0, 0, 0.08);
+      box-shadow: 0 12px 22px rgba(0,0,0,.08);
     }
-
     .card-icon {
-      font-size: 30px;
+      font-size: 1.75rem;
       color: #1f2937;
-      margin-bottom: 12px;
+      margin-bottom: 10px;
       transition: .25s;
     }
-
-    .info-card:hover .card-icon {
-      color: #16a34a;
-    }
-
+    .info-card:hover .card-icon { color: #16a34a; }
     .info-card h4 {
       font-weight: 600;
+      font-size: .88rem;
       margin-bottom: 6px;
       color: #1f2937;
     }
-
     .info-card p {
-      font-size: 14px;
+      font-size: .78rem;
       color: #555;
       line-height: 1.55;
       text-align: justify;
+      margin: 0;
+    }
+
+    /* ===== VALUES ===== */
+    .values-section { padding: 60px 0; }
+    .values-section .v-label {
+      font-size: 1.1rem;
+      font-weight: 600;
+      color: #1f2937;
+      margin-bottom: 4px;
+    }
+    .values-section .v-sub {
+      color: #6b7280;
+      margin-bottom: 44px;
+    }
+    .value-pill {
+      position: relative;
+      height: 112px;
+      border-radius: 999px;
+      background: linear-gradient(to right, #0b3f33, #0e5c4a);
+      color: #fff;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      overflow: hidden;
+      box-shadow: 0 4px 12px rgba(0,0,0,.12);
+      transition: transform .3s, box-shadow .3s;
+    }
+    .value-pill:hover { transform: scale(1.05); box-shadow: 0 12px 24px rgba(0,0,0,.18); }
+    .value-pill .pill-label { font-size: 1.05rem; font-weight: 600; transition: opacity .3s; }
+    .value-pill .pill-desc {
+      position: absolute; inset: 0;
+      display: flex; align-items: center; justify-content: center;
+      text-align: center; padding: 0 14px;
+      font-size: .75rem; line-height: 1.5;
+      opacity: 0; transform: translateY(10px);
+      transition: opacity .3s, transform .3s;
+    }
+    .value-pill:hover .pill-label { opacity: 0; }
+    .value-pill:hover .pill-desc  { opacity: 1; transform: translateY(0); }
+    .value-under {
+      font-size: .82rem; color: #6b7280;
+      margin-top: 12px; text-align: center;
+      transition: opacity .3s;
+    }
+    .value-item:hover .value-under { opacity: 0; }
+
+    /* ===== PEOPLE FIRST ===== */
+    .people-section {
+      position: relative; padding: 80px 0; overflow: hidden;
+    }
+    .people-bg {
+      position: absolute; inset: 0;
+      background-image: url('https://png.pngtree.com/thumb_back/fh260/background/20251123/pngtree-safety-first-construction-worker-securing-equipment-at-height-image_20557190.webp');
+      background-size: cover; background-position: center; background-attachment: fixed;
+      filter: blur(8px); transform: scale(1.08); z-index: 0;
+    }
+    .people-overlay { position: absolute; inset: 0; background: rgba(255,255,255,.82); z-index: 1; }
+    .people-section .container { position: relative; z-index: 2; }
+    .people-section h2 { font-size: clamp(1.3rem,3vw,1.9rem); font-weight: 600; color: #5a7ea6; margin-bottom: 40px; }
+    .people-section img { border-radius: 24px; box-shadow: 0 10px 40px rgba(0,0,0,.12); width: 100%; }
+    .people-text { color: #5a7ea6; font-size: 1.05rem; line-height: 1.8; text-align: justify; }
+
+    /* ===== HSE ===== */
+    .hse-section { background: #fff; padding: 60px 0; }
+    .hse-section h2 {
+      font-size: clamp(1rem,2.5vw,1.3rem); font-weight: 700;
+      color: #111827; text-transform: uppercase; letter-spacing: .03em;
+      transition: color .2s; margin-bottom: 18px;
+    }
+    .hse-section h2:hover { color: #16a34a; }
+    .hse-section p { font-size: 1rem; color: #374151; line-height: 1.75; text-align: justify; }
+    .btn-hse {
+      display: inline-block; border: 1.5px solid #00d031; color: #00d031;
+      font-weight: 600; padding: 10px 24px; border-radius: 6px;
+      text-decoration: none; transition: .3s; background: #fff; margin-top: 8px;
+      box-shadow: 0 4px 10px rgba(0,0,0,.08);
+    }
+    .btn-hse:hover { background: #00d031; color: #fff; }
+    .hse-logo { max-width: 260px; width: 100%; }
+
+    /* ===== ROLES ===== */
+    .roles-section {
+      background: #111827; border-radius: 24px;
+      margin: 0 16px 40px; padding: 60px 24px;
+    }
+    .roles-section h2 {
+      font-size: clamp(1.2rem,3vw,1.6rem); font-weight: 600;
+      color: #f9fafb; text-transform: uppercase; text-align: center;
+      transition: color .2s; margin-bottom: 8px;
+    }
+    .roles-section h2:hover { color: #16a34a; }
+    .roles-sub { text-align: center; color: #f9fafb; margin-bottom: 40px; }
+    .roles-sub span { color: #3b82f6; font-weight: 600; }
+
+    .role-card {
+      background: #fff; border-radius: 14px; padding: 28px 16px;
+      text-align: center; box-shadow: 0 4px 12px rgba(0,0,0,.08); transition: .3s;
+    }
+    .role-card:hover { transform: translateY(-6px); box-shadow: 0 16px 32px rgba(0,0,0,.14); }
+    .role-icon-wrap {
+      width: 70px; height: 70px; border-radius: 50%; background: #dcfce7;
+      display: flex; align-items: center; justify-content: center; margin: 0 auto 16px;
+    }
+    .role-icon-wrap i { font-size: 1.5rem; color: #16a34a; }
+    .role-card h3 { font-size: .92rem; font-weight: 600; color: #111827; transition: color .2s; margin-bottom: 4px; }
+    .role-card:hover h3 { color: #16a34a; }
+    .role-card a { font-size: .75rem; color: #6b7280; text-decoration: none; display: block; margin-top: 4px; }
+    .role-card a:hover { color: #16a34a; }
+
+    /* ===== RESPONSIVE ===== */
+    @media (max-width: 767px) {
+      .scroll-wrapper { height: 380px; }
+      .why-col { margin-top: 28px; }
+      .people-section { padding: 50px 0; }
     }
   </style>
+</head>
 
+<body>
 
+ 
+  {% include 'career/career_nav.html' %}
 
+  <!-- ================================================================
+       HERO
+  ================================================================ -->
+  <section class="hero-section" data-aos="zoom-in">
+    <div class="container">
+      <div class="hero-badge">Careers at Lloyds Bureau</div>
+      <h1 class="hero-title mb-3">Join Our <span>Team</span></h1>
+      <h2 class="hero-sub mb-4">Build Your Career With Us</h2>
+      <p class="hero-desc">
+        At Lloyds Bureau, we believe our people are the foundation of our success.
+        We bring together skilled professionals, technical specialists, and future leaders
+        who are passionate about safety, quality, and excellence across safety-critical industries.
+      </p>
+      <a href="#about" class="btn-outline-hero">Learn More</a>
+    </div>
+  </section>
 
+  <!-- ================================================================
+       WHY WORK WITH US
+  ================================================================ -->
+  <section class="container py-5" id="about">
+    <div class="row g-4 align-items-start">
 
+      <!-- LEFT: Career cards -->
+      <div class="col-lg-6">
+        <div class="row g-4">
 
-
-
-  <section class="max-w-7xl mx-auto px-6 py-16">
-
-    <h2 class="text-xl font-semibold text-gray-800">
-      Our Values
-    </h2>
-
-    <p class="text-gray-600 mt-2 mb-12">
-      Our values guide how we work, how we lead, and how we grow together.
-    </p>
-
-    <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-10">
-
-      <!-- GROW -->
-      <div class="text-center group">
-        <div class="relative h-28 flex items-center justify-center 
-                  rounded-full bg-gradient-to-r from-[#0b3f33] to-[#0e5c4a] 
-                  text-white cursor-pointer overflow-hidden
-                  shadow-md hover:shadow-xl hover:scale-105 transition duration-300">
-
-          <span class="text-lg font-semibold transition duration-300 group-hover:opacity-0">
-            Grow
-          </span>
-
-          <div class="absolute inset-0 flex items-center justify-center text-center px-4
-                    text-sm leading-relaxed opacity-0 translate-y-3
-                    transition duration-300 group-hover:opacity-100 group-hover:translate-y-0">
-            We encourage continuous learning and professional development,
-            enabling our people to expand their skills
+          <div class="col-12" data-aos="flip-right">
+            <img src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d" alt="Early Careers" class="career-img" />
+            <h3 class="career-title-h">Early careers</h3>
+            <p class="career-text">Launch your growth, discover your potential, and shape the future of energy as you define your own career path.</p>
+            <button class="career-btn">Learn more <i class="fa-solid fa-arrow-right" style="font-size:.7rem;"></i></button>
           </div>
-        </div>
 
-        <p class="mt-4 text-sm text-gray-600 transition duration-300 group-hover:opacity-0">
-          We encourage continuous learning and professional development,
-          enabling our people to expand their skills and advance their careers.
-        </p>
+          <div class="col-12" data-aos="flip-right" data-aos-delay="100">
+            <img src="https://images.unsplash.com/photo-1551434678-e076c223a692" alt="Experienced Careers" class="career-img" />
+            <h3 class="career-title-h">Experienced careers</h3>
+            <p class="career-text">Join innovators and professionals with relevant industry and transferable expertise to transform the delivery of energy-based solutions.</p>
+            <button class="career-btn">Learn more <i class="fa-solid fa-arrow-right" style="font-size:.7rem;"></i></button>
+          </div>
+
+        </div>
       </div>
 
-      <!-- LEAD -->
-      <div class="text-center group">
-        <div class="relative h-28 flex items-center justify-center 
-                  rounded-full bg-gradient-to-r from-[#0b3f33] to-[#0e5c4a] 
-                  text-white cursor-pointer overflow-hidden
-                  shadow-md hover:shadow-xl hover:scale-105 transition duration-300">
+      <!-- RIGHT: Scrolling cards -->
+      <div class="col-lg-6">
+        <div class="why-col">
+          <h2>Why <span>Work With Us</span></h2>
+          <p>More than a workplace — Lloyds Bureau is a place to learn, contribute, and grow with purpose.</p>
 
-          <span class="text-lg font-semibold transition duration-300 group-hover:opacity-0">
-            Lead
-          </span>
-
-          <div class="absolute inset-0 flex items-center justify-center text-center px-4
-                    text-sm leading-relaxed opacity-0 translate-y-3
-                    transition duration-300 group-hover:opacity-100 group-hover:translate-y-0">
-            We empower individuals to take initiative, make informed decisions,
-            and deliver with confidence and accountability.
+          <div class="scroll-wrapper">
+            <div class="scroll-cards">
+              <div class="row g-3">
+                <div class="col-6"><div class="info-card"><i class="fa-solid fa-users card-icon"></i><h4>Safety &amp; Compliance Culture</h4><p>Work within a strong safety-first culture where health, safety, quality, and ethics are non-negotiable.</p></div></div>
+                <div class="col-6"><div class="info-card"><i class="fa-solid fa-trophy card-icon"></i><h4>Competence &amp; Capability Development</h4><p>We invest in professional development through structured training, mentoring, and competency-based growth pathways.</p></div></div>
+                <div class="col-6"><div class="info-card"><i class="fa-solid fa-lightbulb card-icon"></i><h4>Meaningful &amp; Impactful Work</h4><p>Contribute to projects that protect people, assets, and the environment across global industries.</p></div></div>
+                <div class="col-6"><div class="info-card"><i class="fa-solid fa-shield-halved card-icon"></i><h4>Professional Integrity</h4><p>Be part of an organization built on impartiality, transparency, and technical credibility.</p></div></div>
+                <div class="col-6"><div class="info-card"><i class="fa-solid fa-globe card-icon"></i><h4>Global Exposure</h4><p>Gain experience working with international teams, clients, and projects across multiple regions.</p></div></div>
+                <div class="col-6"><div class="info-card"><i class="fa-solid fa-handshake card-icon"></i><h4>Inclusive &amp; Respectful Workplace</h4><p>We value diversity, collaboration, and mutual respect, creating an environment where everyone can perform at their best.</p></div></div>
+                <!-- Duplicate for seamless loop -->
+                <div class="col-6"><div class="info-card"><i class="fa-solid fa-users card-icon"></i><h4>Safety &amp; Compliance Culture</h4><p>Work within a strong safety-first culture where health, safety, quality, and ethics are non-negotiable.</p></div></div>
+                <div class="col-6"><div class="info-card"><i class="fa-solid fa-trophy card-icon"></i><h4>Competence &amp; Capability Development</h4><p>We invest in professional development through structured training, mentoring, and competency-based growth pathways.</p></div></div>
+                <div class="col-6"><div class="info-card"><i class="fa-solid fa-lightbulb card-icon"></i><h4>Meaningful &amp; Impactful Work</h4><p>Contribute to projects that protect people, assets, and the environment across global industries.</p></div></div>
+                <div class="col-6"><div class="info-card"><i class="fa-solid fa-shield-halved card-icon"></i><h4>Professional Integrity</h4><p>Be part of an organization built on impartiality, transparency, and technical credibility.</p></div></div>
+                <div class="col-6"><div class="info-card"><i class="fa-solid fa-globe card-icon"></i><h4>Global Exposure</h4><p>Gain experience working with international teams, clients, and projects across multiple regions.</p></div></div>
+                <div class="col-6"><div class="info-card"><i class="fa-solid fa-handshake card-icon"></i><h4>Inclusive &amp; Respectful Workplace</h4><p>We value diversity, collaboration, and mutual respect, creating an environment where everyone can perform at their best.</p></div></div>
+              </div>
+            </div>
           </div>
         </div>
-
-        <p class="mt-4 text-sm text-gray-600 transition duration-300 group-hover:opacity-0">
-          We empower individuals to take initiative, make informed decisions,
-          and deliver with confidence and accountability.
-        </p>
-      </div>
-
-      <!-- COLLABORATE -->
-      <div class="text-center group">
-        <div class="relative h-28 flex items-center justify-center 
-                  rounded-full bg-gradient-to-r from-[#0b3f33] to-[#0e5c4a] 
-                  text-white cursor-pointer overflow-hidden
-                  shadow-md hover:shadow-xl hover:scale-105 transition duration-300">
-
-          <span class="text-lg font-semibold transition duration-300 group-hover:opacity-0">
-            Collaborate
-          </span>
-
-          <div class="absolute inset-0 flex items-center justify-center text-center px-4
-                    text-sm leading-relaxed opacity-0 translate-y-3
-                    transition duration-300 group-hover:opacity-100 group-hover:translate-y-0">
-            We believe the best outcomes are achieved through teamwork,
-            shared knowledge, and mutual respect.
-          </div>
-        </div>
-
-        <p class="mt-4 text-sm text-gray-600 transition duration-300 group-hover:opacity-0">
-          We believe the best outcomes are achieved through teamwork,
-          shared knowledge, and mutual respect.
-        </p>
-      </div>
-
-      <!-- CARE -->
-      <div class="text-center group">
-        <div class="relative h-28 flex items-center justify-center 
-                  rounded-full bg-gradient-to-r from-[#0b3f33] to-[#0e5c4a] 
-                  text-white cursor-pointer overflow-hidden
-                  shadow-md hover:shadow-xl hover:scale-105 transition duration-300">
-
-          <span class="text-lg font-semibold transition duration-300 group-hover:opacity-0">
-            Care
-          </span>
-
-          <div class="absolute inset-0 flex items-center justify-center text-center px-4
-                    text-sm leading-relaxed opacity-0 translate-y-3
-                    transition duration-300 group-hover:opacity-100 group-hover:translate-y-0">
-            We care for our people, our clients, and the communities and
-            environments in which we operate.
-          </div>
-        </div>
-
-        <p class="mt-4 text-sm text-gray-600 transition duration-300 group-hover:opacity-0">
-          We care for our people, our clients, and the communities and
-          environments in which we operate.
-        </p>
       </div>
 
     </div>
   </section>
 
+  <!-- ================================================================
+       OUR VALUES
+  ================================================================ -->
+  <section class="values-section">
+    <div class="container">
+      <p class="v-label">Our Values</p>
+      <p class="v-sub">Our values guide how we work, how we lead, and how we grow together.</p>
 
+      <div class="row g-4">
 
-
-
-
-
-
-
-  <section class="relative py-24 overflow-hidden">
-
-    <div class="absolute inset-0 -z-10">
-      <div
-        class="absolute inset-0 bg-[url('https://png.pngtree.com/thumb_back/fh260/background/20251123/pngtree-safety-first-construction-worker-securing-equipment-at-height-image_20557190.webp')] bg-cover bg-center bg-fixed blur-md scale-110">
-      </div>
-      <div class="absolute inset-0 bg-white/80"></div>
-    </div>
-
-    <div class="max-w-7xl mx-auto px-6">
-
-      <h2 class="text-2xl md:text-3xl font-semibold text-[#5a7ea6] mb-14">
-        We Are a People-First Organization
-      </h2>
-
-      <div class="grid md:grid-cols-2 gap-14 items-center">
-
-        <div>
-          <img
-            src="https://static.vecteezy.com/system/resources/thumbnails/050/033/022/small_2x/emergency-drill-in-manufacturing-facility-focused-on-safety-protocols-and-teamwork-photo.jpg"
-            alt="Team" class="rounded-3xl shadow-xl w-full" />
+        <div class="col-6 col-lg-3 value-item text-center">
+          <div class="value-pill">
+            <span class="pill-label">Grow</span>
+            <div class="pill-desc">We encourage continuous learning and professional development, enabling our people to expand their skills.</div>
+          </div>
+          <p class="value-under">We encourage continuous learning and professional development, enabling our people to expand their skills and advance their careers.</p>
         </div>
 
-        <div class="text-[#5a7ea6] text-lg leading-relaxed space-y-6 text-justify">
+        <div class="col-6 col-lg-3 value-item text-center">
+          <div class="value-pill">
+            <span class="pill-label">Lead</span>
+            <div class="pill-desc">We empower individuals to take initiative, make informed decisions, and deliver with confidence and accountability.</div>
+          </div>
+          <p class="value-under">We empower individuals to take initiative, make informed decisions, and deliver with confidence and accountability.</p>
+        </div>
 
-          <p>
-            At Lloyds Bureau, we recognize that technical excellence is driven by people.
-            We are committed to creating a supportive and engaging work environment where
-            employees feel valued, respected, and empowered.
-          </p>
+        <div class="col-6 col-lg-3 value-item text-center">
+          <div class="value-pill">
+            <span class="pill-label">Collaborate</span>
+            <div class="pill-desc">We believe the best outcomes are achieved through teamwork, shared knowledge, and mutual respect.</div>
+          </div>
+          <p class="value-under">We believe the best outcomes are achieved through teamwork, shared knowledge, and mutual respect.</p>
+        </div>
 
-          <p>
-            We promote open communication, ethical leadership, and work-life balance
-            while encouraging innovation and continuous improvement. Our people are
-            trusted to perform, supported to grow, and recognized for their contributions.
-          </p>
-
+        <div class="col-6 col-lg-3 value-item text-center">
+          <div class="value-pill">
+            <span class="pill-label">Care</span>
+            <div class="pill-desc">We care for our people, our clients, and the communities and environments in which we operate.</div>
+          </div>
+          <p class="value-under">We care for our people, our clients, and the communities and environments in which we operate.</p>
         </div>
 
       </div>
-
     </div>
   </section>
 
-
-
-
-  <section class="relative w-full bg-white flex items-center justify-center overflow-hidden md:h-[480px] py-12 md:py-0">
-
-    <div class="relative z-10 flex flex-col md:flex-row items-center justify-between w-[90%] max-w-[1200px]">
-
-      <div class="md:flex w-[50%] justify-center" data-aos="flip-right">
-        <img src="/static/icons/3dlogo.png" alt="3D Logo" class="w-[300px] drop-shadow-[0_0_8px_rgba(255,255,255,0.4)]">
+  <!-- ================================================================
+       PEOPLE FIRST
+  ================================================================ -->
+  <section class="people-section">
+    <div class="people-bg"></div>
+    <div class="people-overlay"></div>
+    <div class="container">
+      <h2>We Are a People-First Organization</h2>
+      <div class="row g-5 align-items-center">
+        <div class="col-md-6">
+          <img src="https://static.vecteezy.com/system/resources/thumbnails/050/033/022/small_2x/emergency-drill-in-manufacturing-facility-focused-on-safety-protocols-and-teamwork-photo.jpg" alt="Team" />
+        </div>
+        <div class="col-md-6">
+          <p class="people-text">At Lloyds Bureau, we recognize that technical excellence is driven by people. We are committed to creating a supportive and engaging work environment where employees feel valued, respected, and empowered.</p>
+          <p class="people-text mt-3">We promote open communication, ethical leadership, and work-life balance while encouraging innovation and continuous improvement. Our people are trusted to perform, supported to grow, and recognized for their contributions.</p>
+        </div>
       </div>
-
-      <div class="w-full md:w-[50%] text-center md:text-left">
-
-        <h2 class="text-xl md:text-2xl font-bold mb-4 text-black hover:text-green-500 transition uppercase">
-          We Prioritize Health, Safety, and Wellbeing
-        </h2>
-
-        <p class="text-[16px] leading-7 text-gray-700 mb-6 md:w-[90%] text-justify">
-          The health, safety, and wellbeing of our employees and partners are central to everything we do. We maintain
-          strong HSEQ systems, promote safe behaviors, and provide the resources necessary to ensure a safe and healthy
-          working environment.
-
-          
-        </p>
-        <p class="text-[16px] leading-7 text-gray-700 mb-6 md:w-[90%] text-justify">
-          We believe everyone has the right to return home safely every day, and we actively foster a culture where
-          safety and wellbeing are shared responsibilities.
-        </p>
-
-        <a href="#"
-          class="inline-block bg-white text-[#00d031] border border-[#00d031] font-semibold px-6 py-3 rounded-md shadow-md hover:bg-[#00d031] hover:text-white transition duration-300">
-          HSE Policy
-        </a>
-
-      </div>
-
-    </div>
-
-  </section>
-
-
-
-
-
-
-  <section class="bg-gray-900 py-16 mx-4 md:mx-10 rounded-3xl">
-    <div class="max-w-5xl mx-auto px-6">
-
-      <div class="text-center mb-12">
-        <h2 class="text-3xl font-semibold text-gray-50 hover:text-green-500 transition uppercase">
-          Explore role by function
-        </h2>
-
-        <p class="text-gray-50 mt-2">
-          Choose your specialization and
-          <span class="text-blue-600 font-semibold">
-            find your dream job - our recruitment programe
-          </span>
-        </p>
-      </div>
-
-      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
-
-        <div class="group bg-white rounded-xl p-8 text-center shadow-md hover:shadow-xl transition duration-300">
-
-          <div class="w-20 h-20 mx-auto flex items-center justify-center rounded-full bg-green-100 mb-5">
-            <i class="fa-solid fa-anchor text-2xl text-green-500"></i>
-          </div>
-
-          <h3 class="text-md font-semibold text-black group-hover:text-green-500 transition">
-            Roustabout
-          </h3>
-
-          <a href="" class="text-xs mt-3 text-gray-500">
-            Learn more
-          </a>
-
-        </div>
-
-
-        <div class="group bg-white rounded-xl p-8 text-center shadow-md hover:shadow-xl transition duration-300">
-
-          <div class="w-20 h-20 mx-auto flex items-center justify-center rounded-full bg-green-100 mb-5">
-            <i class="fa-solid fa-user-gear text-2xl text-green-500"></i>
-          </div>
-
-          <h3 class="text-md font-semibold text-black group-hover:text-green-500 transition">
-            Rigger
-          </h3>
-
-          <a href="" class="text-xs mt-3 text-gray-500">
-            Learn more
-          </a>
-
-        </div>
-
-
-        <div class="group bg-white rounded-xl p-8 text-center shadow-md hover:shadow-xl transition duration-300">
-
-          <div class="w-20 h-20 mx-auto flex items-center justify-center rounded-full bg-green-100 mb-5">
-            <i class="fa-solid fa-industry text-2xl text-green-500"></i>
-          </div>
-
-          <h3 class="text-md font-semibold text-black group-hover:text-green-500 transition">
-            Offshore Crane Operator
-          </h3>
-
-          <a href="" class="text-xs mt-3 text-gray-500">
-            Learn more
-          </a>
-
-        </div>
-
-
-        <div class="group bg-white rounded-xl p-8 text-center shadow-md hover:shadow-xl transition duration-300">
-
-          <div class="w-20 h-20 mx-auto flex items-center justify-center rounded-full bg-green-100 mb-5">
-            <i class="fa-solid fa-screwdriver-wrench text-2xl text-green-500"></i>
-          </div>
-
-          <h3 class="text-md font-semibold text-black group-hover:text-green-500 transition">
-            Bolt Technician
-          </h3>
-
-          <a href="" class="text-xs mt-3 text-gray-500">
-            Learn more
-          </a>
-
-        </div>
-
-
-        <div class="group bg-white rounded-xl p-8 text-center shadow-md hover:shadow-xl transition duration-300">
-
-          <div class="w-20 h-20 mx-auto flex items-center justify-center rounded-full bg-green-100 mb-5">
-            <i class="fa-solid fa-broadcast-tower text-2xl text-green-500"></i>
-          </div>
-
-          <h3 class="text-md font-semibold text-black group-hover:text-green-500 transition">
-            Scaffolder
-          </h3>
-
-          <a href="" class="text-xs mt-3 text-gray-500">
-            Learn more
-          </a>
-
-        </div>
-
-
-        <div class="group bg-white rounded-xl p-8 text-center shadow-md hover:shadow-xl transition duration-300">
-
-          <div class="w-20 h-20 mx-auto flex items-center justify-center rounded-full bg-green-100 mb-5">
-            <i class="fa-solid fa-user-shield text-2xl text-green-500"></i>
-          </div>
-
-          <h3 class="text-md font-semibold text-black group-hover:text-green-500 transition">
-            Health & Safety Officer
-          </h3>
-
-          <a href="" class="text-xs mt-3 text-gray-500">
-            Learn more
-          </a>
-
-        </div>
-
-
-        <div class="group bg-white rounded-xl p-8 text-center shadow-md hover:shadow-xl transition duration-300">
-
-          <div class="w-20 h-20 mx-auto flex items-center justify-center rounded-full bg-green-100 mb-5">
-            <i class="fa-solid fa-microchip text-2xl text-green-500"></i>
-          </div>
-
-          <h3 class="text-md font-semibold text-black group-hover:text-green-500 transition">
-            Instrumentation Technician
-          </h3>
-
-          <a href="" class="text-xs mt-3 text-gray-500">
-            Learn more
-          </a>
-
-        </div>
-
-
-        <div class="group bg-white rounded-xl p-8 text-center shadow-md hover:shadow-xl transition duration-300">
-
-          <div class="w-20 h-20 mx-auto flex items-center justify-center rounded-full bg-green-100 mb-5">
-            <i class="fa-solid fa-wind text-2xl text-green-500"></i>
-          </div>
-
-          <h3 class="text-md font-semibold text-black group-hover:text-green-500 transition">
-            Wind Turbine Technician
-          </h3>
-
-          <a href="" class="text-xs mt-3 text-gray-500">
-            Learn more
-          </a>
-
-        </div>
-
-      </div>
-
     </div>
   </section>
 
+  <!-- ================================================================
+       HSE SECTION
+  ================================================================ -->
+  <section class="hse-section">
+    <div class="container">
+      <div class="row align-items-center g-5">
 
+        <div class="col-md-5 text-center" data-aos="flip-right">
+          <img src="/static/icons/3dlogo.png" alt="Lloyds Bureau 3D Logo" class="hse-logo"
+               onerror="this.onerror=null;this.style.display='none';document.getElementById('logo-fb').style.display='block';" />
+          <div id="logo-fb" style="display:none;font-size:3rem;font-weight:900;color:#16a34a;">LB</div>
+        </div>
+
+        <div class="col-md-7">
+          <h2>We Prioritize Health, Safety &amp; Wellbeing</h2>
+          <p>The health, safety, and wellbeing of our employees and partners are central to everything we do. We maintain strong HSEQ systems, promote safe behaviors, and provide the resources necessary to ensure a safe and healthy working environment.</p>
+          <p>We believe everyone has the right to return home safely every day, and we actively foster a culture where safety and wellbeing are shared responsibilities.</p>
+          <a href="#" class="btn-hse">HSE Policy</a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ================================================================
+       ROLES BY FUNCTION
+  ================================================================ -->
+  <div class="roles-section">
+    <h2>Explore Role by Function</h2>
+    <p class="roles-sub">Choose your specialization and <span>find your dream job — our recruitment programme</span></p>
+
+    <div class="container">
+      <div class="row g-3 justify-content-center">
+
+        <div class="col-6 col-sm-4 col-md-3">
+          <div class="role-card"><div class="role-icon-wrap"><i class="fa-solid fa-anchor"></i></div><h3>Roustabout</h3><a href="#">Learn more</a></div>
+        </div>
+        <div class="col-6 col-sm-4 col-md-3">
+          <div class="role-card"><div class="role-icon-wrap"><i class="fa-solid fa-user-gear"></i></div><h3>Rigger</h3><a href="#">Learn more</a></div>
+        </div>
+        <div class="col-6 col-sm-4 col-md-3">
+          <div class="role-card"><div class="role-icon-wrap"><i class="fa-solid fa-industry"></i></div><h3>Offshore Crane Operator</h3><a href="#">Learn more</a></div>
+        </div>
+        <div class="col-6 col-sm-4 col-md-3">
+          <div class="role-card"><div class="role-icon-wrap"><i class="fa-solid fa-screwdriver-wrench"></i></div><h3>Bolt Technician</h3><a href="#">Learn more</a></div>
+        </div>
+        <div class="col-6 col-sm-4 col-md-3">
+          <div class="role-card"><div class="role-icon-wrap"><i class="fa-solid fa-broadcast-tower"></i></div><h3>Scaffolder</h3><a href="#">Learn more</a></div>
+        </div>
+        <div class="col-6 col-sm-4 col-md-3">
+          <div class="role-card"><div class="role-icon-wrap"><i class="fa-solid fa-user-shield"></i></div><h3>Health &amp; Safety Officer</h3><a href="#">Learn more</a></div>
+        </div>
+        <div class="col-6 col-sm-4 col-md-3">
+          <div class="role-card"><div class="role-icon-wrap"><i class="fa-solid fa-microchip"></i></div><h3>Instrumentation Technician</h3><a href="#">Learn more</a></div>
+        </div>
+        <div class="col-6 col-sm-4 col-md-3">
+          <div class="role-card"><div class="role-icon-wrap"><i class="fa-solid fa-wind"></i></div><h3>Wind Turbine Technician</h3><a href="#">Learn more</a></div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <div style="height:40px;"></div>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
   <!-- AOS -->
   <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
 
   <script>
-    AOS.init();
+    AOS.init({ once: true, duration: 700 });
 
-    /* Drawer */
+    /* ---- Drawer ---- */
     function openDrawer() {
-      document.getElementById("drawer").classList.remove("translate-x-full");
-      document.getElementById("overlay").classList.remove("hidden");
+      document.getElementById('drawer').classList.add('open');
+      document.getElementById('drawerOverlay').classList.add('show');
+      document.body.style.overflow = 'hidden';
     }
-
     function closeDrawer() {
-      document.getElementById("drawer").classList.add("translate-x-full");
-      document.getElementById("overlay").classList.add("hidden");
+      document.getElementById('drawer').classList.remove('open');
+      document.getElementById('drawerOverlay').classList.remove('show');
+      document.body.style.overflow = '';
     }
 
-    /* Dropdown */
+    /* ---- Dropdowns ---- */
     function toggleDropdown(id) {
-      document.querySelectorAll(".dropdown").forEach(d => {
-        if (d.id !== id) d.classList.add("hidden");
+      document.querySelectorAll('.nav-dd-menu').forEach(function(d) {
+        if (d.id !== id) d.classList.remove('open');
       });
-      document.getElementById(id).classList.toggle("hidden");
+      document.getElementById(id).classList.toggle('open');
     }
+    document.addEventListener('click', function(e) {
+      if (!e.target.closest('.nav-dd')) {
+        document.querySelectorAll('.nav-dd-menu').forEach(function(d) {
+          d.classList.remove('open');
+        });
+      }
+    });
 
-    /* Modal */
+    /* ---- Warning Modal ---- */
     function openWarning() {
-      const m = document.getElementById("warningModal");
-      m.classList.remove("hidden");
-      m.classList.add("flex");
+      const m = document.getElementById('warningModal');
+      m.classList.add('show');
+      document.body.style.overflow = 'hidden';
     }
-
     function closeWarning() {
-      document.getElementById("warningModal").classList.add("hidden");
+      document.getElementById('warningModal').classList.remove('show');
+      document.body.style.overflow = '';
     }
+    document.getElementById('warningModal').addEventListener('click', function(e) {
+      if (e.target === this) closeWarning();
+    });
+    document.addEventListener('keydown', function(e) {
+      if (e.key === 'Escape') { closeWarning(); closeDrawer(); }
+    });
   </script>
 
 </body>
-
 </html>
