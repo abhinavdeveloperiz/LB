@@ -242,11 +242,13 @@
 
   font-weight: 500;
 
-  transition: background 0.3s ease-in-out, color 0.2s ease-in-out;
+  transition:
+    background 0.3s ease-in-out,
+    color 0.2s ease-in-out;
 }
 
 .search-box button:hover {
-  background: #75D457;
+  background: #75d457;
   color: #fff;
 }
 
@@ -334,11 +336,13 @@
   text-decoration: none;
   font-weight: 500;
 
-  transition: background 0.3s ease-in-out, color 0.2s ease-in-out;
+  transition:
+    background 0.3s ease-in-out,
+    color 0.2s ease-in-out;
 }
 
 .apply-btn:hover {
-  background: #75D457;
+  background: #75d457;
   color: #fff;
 }
 
@@ -435,7 +439,9 @@
   padding: 10px 20px;
   border-radius: 0.375rem;
 
-  transition: background 0.3s ease-in-out, color 0.2s ease-in-out;
+  transition:
+    background 0.3s ease-in-out,
+    color 0.2s ease-in-out;
 }
 
 .explore-arrow-wrap {
@@ -467,7 +473,7 @@
 }
 
 .explore-btn:hover {
-  background: #75D457;
+  background: #75d457;
   color: #fff;
 }
 
@@ -565,12 +571,14 @@
   color: #fff;
   border: none;
 
-  transition: background 0.3s ease-in-out, color 0.2s ease-in-out;
+  transition:
+    background 0.3s ease-in-out,
+    color 0.2s ease-in-out;
 }
 
 .contact-btn:hover,
 .resume-btn:hover {
-  background: #75D457;
+  background: #75d457;
   color: #fff;
 }
 
@@ -1188,11 +1196,13 @@ a:focus {
   align-items: center;
   gap: 10px;
 
-  transition: background 0.3s ease-in-out, color 0.2s ease-in-out;
+  transition:
+    background 0.3s ease-in-out,
+    color 0.2s ease-in-out;
 }
 
 .subscribe-form button:hover {
-  background: #75D457;
+  background: #75d457;
   color: #fff;
 }
 
