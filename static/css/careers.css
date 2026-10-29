@@ -661,6 +661,8 @@
   }
 }
 
+
+
 /* =========================================================
    HIRING PROCESS
 ========================================================= */
@@ -669,6 +671,10 @@
   padding: 100px 0;
   background: #ffffff;
   overflow: hidden;
+}
+
+.hiring-process-section * {
+  box-sizing: border-box;
 }
 
 /* =========================================================
@@ -694,7 +700,13 @@
   font-weight: 800;
   color: #0f172a;
   margin-bottom: 14px;
+  transition: color 0.3s ease;
 }
+
+.hiring-heading h2 span {
+  color: #16a34a;
+}
+
 .hiring-heading h2:hover {
   color: #16a34a;
 }
@@ -705,12 +717,19 @@
   font-size: 1rem;
   font-weight: 600;
   display: inline-block;
+  margin-bottom: 0;
 
-  background: linear-gradient(90deg, #3b82f6, #22c55e, #3b82f6);
+  background: linear-gradient(
+    90deg,
+    #3b82f6,
+    #22c55e,
+    #3b82f6
+  );
 
   background-size: 200% auto;
 
   -webkit-background-clip: text;
+  background-clip: text;
   -webkit-text-fill-color: transparent;
 
   animation: textRun 4s linear infinite;
@@ -725,6 +744,332 @@
     background-position: 200% center;
   }
 }
+
+/* =========================================================
+   PROCESS TIMELINE
+========================================================= */
+
+.process-wrapper {
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 24px;
+}
+
+/* Horizontal connecting line */
+
+.process-line {
+  position: absolute;
+  top: 31px;
+  left: 12.5%;
+  right: 12.5%;
+  height: 2px;
+  background: #dcefe2;
+  z-index: 0;
+}
+
+/* =========================================================
+   PROCESS CARD
+========================================================= */
+
+.process-card {
+  position: relative;
+  z-index: 1;
+  min-width: 0;
+  text-align: center;
+}
+
+/* Number circle */
+
+.process-circle {
+  width: 64px;
+  height: 64px;
+  margin: 0 auto 25px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  position: relative;
+  z-index: 2;
+
+  border: 5px solid #ffffff;
+  border-radius: 50%;
+
+  background: #16a34a;
+  color: #ffffff;
+
+  box-shadow:
+    0 0 0 1px #d8f0df,
+    0 8px 20px rgba(22, 163, 74, 0.16);
+
+  transition:
+    transform 0.3s ease,
+    background 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+.process-circle span {
+  font-size: 14px;
+  font-weight: 800;
+}
+
+.process-card:hover .process-circle {
+  transform: translateY(-4px);
+  background: #15803d;
+
+  box-shadow:
+    0 0 0 1px #bbf7d0,
+    0 12px 24px rgba(22, 163, 74, 0.24);
+}
+
+/* =========================================================
+   CARD CONTENT
+========================================================= */
+
+.process-content-box {
+  height: calc(100% - 89px);
+  padding: 26px 18px 28px;
+
+  background: #ffffff;
+  border: 1px solid #e5eee7;
+  border-radius: 12px;
+
+  box-shadow: 0 6px 24px rgba(15, 23, 42, 0.04);
+
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease,
+    border-color 0.3s ease;
+}
+
+.process-card:hover .process-content-box {
+  transform: translateY(-4px);
+  border-color: #bbf7d0;
+  box-shadow: 0 14px 30px rgba(15, 23, 42, 0.08);
+}
+
+/* Step label */
+
+.step-label {
+  display: inline-block;
+  margin-bottom: 12px;
+
+  color: #16a34a;
+  font-size: 10px;
+  font-weight: 800;
+  letter-spacing: 1.5px;
+}
+
+/* Card title */
+
+.process-card h3 {
+  color: #0f172a;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.5;
+
+  margin: 0 0 12px;
+}
+
+/* Card description */
+
+.process-description {
+  color: #64748b;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 1.9;
+
+  margin: 0;
+}
+
+/* =========================================================
+   TABLET RESPONSIVE
+========================================================= */
+
+@media (max-width: 991.98px) {
+
+  .hiring-process-section {
+    padding: 80px 0;
+  }
+
+  .hiring-heading {
+    margin-bottom: 55px;
+  }
+
+  .process-wrapper {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 35px 24px;
+  }
+
+  .process-line {
+    display: none;
+  }
+
+  .process-content-box {
+    height: auto;
+    min-height: 200px;
+    padding: 25px 20px;
+  }
+
+  .process-card h3 {
+    font-size: 15px;
+  }
+
+  .process-description {
+    font-size: 12px;
+  }
+}
+
+/* =========================================================
+   MOBILE RESPONSIVE
+========================================================= */
+
+@media (max-width: 575.98px) {
+
+  .hiring-process-section {
+    padding: 60px 0;
+  }
+
+  .hiring-heading {
+    margin-bottom: 40px;
+    padding: 0 10px;
+  }
+
+  .mini-line {
+    width: 48px;
+    height: 4px;
+    margin-bottom: 15px;
+  }
+
+  .hiring-heading h2 {
+    font-size: 1.4rem;
+    line-height: 1.4;
+    margin-bottom: 10px;
+  }
+
+  .hiring-heading p {
+    font-size: 0.85rem;
+  }
+
+  /* Vertical timeline */
+
+  .process-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+  }
+
+  .process-line {
+    display: block;
+    top: 25px;
+    bottom: 25px;
+    left: 26px;
+    right: auto;
+
+    width: 2px;
+    height: auto;
+  }
+
+  .process-card {
+    display: grid;
+    grid-template-columns: 54px minmax(0, 1fr);
+    align-items: start;
+    gap: 14px;
+
+    text-align: left;
+  }
+
+  .process-circle {
+    width: 54px;
+    height: 54px;
+    margin: 0;
+    border-width: 4px;
+  }
+
+  .process-circle span {
+    font-size: 12px;
+  }
+
+  .process-content-box {
+    height: auto;
+    min-height: 0;
+    padding: 19px 16px;
+    border-radius: 10px;
+  }
+
+  .step-label {
+    font-size: 9px;
+    margin-bottom: 8px;
+  }
+
+  .process-card h3 {
+    font-size: 14px;
+    line-height: 1.5;
+    margin-bottom: 9px;
+  }
+
+  .process-description {
+    font-size: 11px;
+    line-height: 1.8;
+  }
+}
+
+/* =========================================================
+   EXTRA SMALL MOBILE
+========================================================= */
+
+@media (max-width: 360px) {
+
+  .hiring-process-section {
+    padding: 45px 0;
+  }
+
+  .hiring-heading h2 {
+    font-size: 1.25rem;
+  }
+
+  .process-card {
+    grid-template-columns: 46px minmax(0, 1fr);
+    gap: 10px;
+  }
+
+  .process-circle {
+    width: 46px;
+    height: 46px;
+  }
+
+  .process-line {
+    left: 22px;
+  }
+
+  .process-content-box {
+    padding: 16px 12px;
+  }
+
+  .process-card h3 {
+    font-size: 13px;
+  }
+
+  .process-description {
+    font-size: 10px;
+  }
+}
+
+/* Accessibility: reduce animation when requested */
+
+@media (prefers-reduced-motion: reduce) {
+  .hiring-heading p {
+    animation: none;
+  }
+
+  .process-circle,
+  .process-content-box {
+    transition: none;
+  }
+}
+
+
 
 /* =========================================================
    PROCESS WRAPPER
